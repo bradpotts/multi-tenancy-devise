@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Subengine</title>
-  <%= stylesheet_link_tag    "subengine/application", media: "all" %>
-  <%= javascript_include_tag "subengine/application" %>
-  <%= csrf_meta_tags %>
+	<title>Subengine by CoastDigitalGroup</title>
+	<%= stylesheet_link_tag    "subengine/application", media: "all" %>
+	<%= javascript_include_tag "subengine/application" %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<% flash.each do |k,v| %>
+		<div class='flash <%= k %>'><%= v %></div>
+	<% end %>
+	<%= yield %>
 </body>
 </html>

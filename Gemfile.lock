@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    subengine (0.0.1)
+    subengine (0.5.0)
       rails (~> 4.2.1)
 
 GEM

@@ -1,0 +1,8 @@
+<h2>Sign Up</h2>
+<%= form_for(@account) do |account| %>
+	<p> 
+		<%= account.label :name %><br> 
+		<%= account.text_field :name %>
+	</p> 
+	<%= account.submit %>
+<% end %>
