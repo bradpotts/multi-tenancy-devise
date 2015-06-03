@@ -11,14 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150603173110) do
+=======
+ActiveRecord::Schema.define(version: 20150603062227) do
+>>>>>>> 6df417d... Adjusted accounts for to register through devise users. Spec test passed.
 
   create_table "subengine_accounts", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "owner_id"
+<<<<<<< HEAD
     t.string   "subdomain"
+=======
+>>>>>>> 6df417d... Adjusted accounts for to register through devise users. Spec test passed.
   end
 
   add_index "subengine_accounts", ["subdomain"], name: "index_subengine_accounts_on_subdomain"
