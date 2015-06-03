@@ -4,13 +4,15 @@ module Subengine
 	class AccountsController < ApplicationController
 		def new 
 			@account = Subengine::Account.new
+			@account.build_owner
 		end
 
 		def create 
 			account = Subengine::Account.create(account_params)
 			flash[:success] = "Your account has been successfully created."
 			redirect_to subengine.root_url
-		end
+		end    
+
 		private 
 		def account_params
 			params.require(:account).permit(:name)
