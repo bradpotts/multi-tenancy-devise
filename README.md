@@ -6,8 +6,8 @@
 The main authetication and subscription engine for all CoastDigitalGroup's apps open sourced.
 
 ##### Step 1: Required in gemfile
-* For Development - Remote Github - gem 'cdgsubengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine.git'
-* For Production - Local Folder  - gem 'cdgsubengine', path: 'cdgsubengine' Download cdg-subengine into root foler.
+For Development - Remote Github - gem 'subengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine.git'  
+For Production - Download to Root  - gem 'subengine', path: 'cdgsubengine'  
 
 ##### Step 2: Add below line to load requried file to the top of routes file. (routes.rb)
 require "cdgsubengine/constraints/subdomain_required"  
