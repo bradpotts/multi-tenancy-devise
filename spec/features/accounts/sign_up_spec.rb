@@ -11,5 +11,6 @@ feature "Accounts" do
 		fill_in "Password confirmation", :with => "password"
 		click_button "Create Account"
 		success_message = "Your account has been successfully created."
+		expect(page.current_url).to eq("http://test.example.com/subscribem/")
 	end
 end
