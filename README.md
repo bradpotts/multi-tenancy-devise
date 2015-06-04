@@ -5,19 +5,19 @@
 
 The main authetication and subscription engine for all CoastDigitalGroup's apps open sourced.
 
-#### Step 1: Required in gemfile
+##### Step 1: Required in gemfile
 * For Development - Remote Github - gem 'cdgsubengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine.git'
 * For Production - Local Folder  - gem 'cdgsubengine', path: 'cdgsubengine' Download cdg-subengine into root foler.
 
-#### Step 2: Add below line to load requried file to the top of routes file. (routes.rb)
+##### Step 2: Add below line to load requried file to the top of routes file. (routes.rb)
 require "cdgsubengine/constraints/subdomain_required"  
 
-#### Step 3: Add contraints to routes that requires multitenancy function between the two lines below . (routes.rb)
+##### Step 3: Add contraints to routes that requires multitenancy function between the two lines below . (routes.rb)
 constraints(Cdgsubengine::Constraints::SubdomainRequired) do  
 
 end
 
-#### Step 4: Copy below line insert at the bottom of the routes file. (routes.rb)
+##### Step 4: Copy below line insert at the bottom of the routes file. (routes.rb)
 mount Cdgsubengine::Engine, :at => '/'  
 
 
@@ -38,6 +38,10 @@ mount Cdgsubengine::Engine, :at => '/'
 Devise Implementation
 * Registration w/ Confirmation
 * Forget Password Reset
+* Remember User Login
+* Track User Login Times
+* Lock User Accounts /Too Many Failed Logins
+* Validates User Fields
 
 Stripe Plan & Payment System
 * Stripe Payment Integration
