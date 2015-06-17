@@ -17,14 +17,14 @@ Gem::Specification.new do |s|
 	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   # Main Dependencies
-	s.add_dependency "rails", "~> 4.2.1"
+	s.add_dependency "rails", "~> 4.2.2"
 	s.add_dependency "sqlite3"
 
   # Authetication
-  s.add_dependency "devise"
+  s.add_dependency "devise", "3.5.1"
   
 	# Testing Dependencies
-	s.add_development_dependency "rspec-rails", "3.0.1"
-	s.add_development_dependency "capybara", "2.3.0"
+	s.add_development_dependency "rspec-rails", "3.3.1"
+	s.add_development_dependency "capybara", "2.4.4"
 
 end
