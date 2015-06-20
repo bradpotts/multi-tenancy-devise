@@ -4,13 +4,6 @@
 		<%= account.label :name %><br> 
 		<%= account.text_field :name %>
 	</p>
-<<<<<<< HEAD
-	<p> 
-    <%= account.label :subdomain %><br> 
-    <%= account.text_field :subdomain %>
-	</p>
-=======
->>>>>>> 6df417d... Adjusted accounts for to register through devise users. Spec test passed.
 	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
 
 		<div><%= f.label :email %><br />
