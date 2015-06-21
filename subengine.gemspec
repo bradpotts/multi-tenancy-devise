@@ -20,12 +20,38 @@ Gem::Specification.new do |s|
 	s.add_dependency "rails", "~> 4.2.2"
 	s.add_dependency "pg"
 
-	# Authetication
+	# Authentication and Data Management
 	s.add_dependency "devise", "3.5.1"
+	s.add_dependency 'houser', '~> 2.0'
+	s.add_dependency 'omniauth-facebook'
+	s.add_dependency 'omniauth-google-oauth2'
+	s.add_dependency 'omniauth-twitter'
+	s.add_dependency 'omniauth-instagram'
+	s.add_dependency 'omniauth-github'
+
+	# UI and UX
+	s.add_dependency 'jquery-rails'
+	s.add_dependency 'simple_form'
+	s.add_dependency 'slim', '~> 3.0'
+	s.add_dependency 'bootstrap-sass', '~> 3.3.3'
+	s.add_dependency 'sass-rails', '~> 5.0'
+	s.add_dependency 'rolify', '~> 4.0.0'
 
 	# Testing Dependencies
+	# s.add_dependency 'pry'
+	# s.add_dependency 'pry-nav'
+
 	s.add_development_dependency "rspec-rails"
 	s.add_development_dependency "capybara"
 	s.add_development_dependency "sqlite3"
+
+	s.add_development_dependency 'mailcatcher'
+	s.add_development_dependency 'database_cleaner', '1.0.1'
+	s.add_development_dependency 'shoulda-matchers'
+	s.add_development_dependency 'factory_girl', '4.1.0'
+
+	s.add_development_dependency 'minitest'
+	s.add_development_dependency 'simplecov'
+	s.add_development_dependency 'coveralls'
 
 end

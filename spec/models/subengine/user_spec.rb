@@ -1,7 +1,12 @@
-require 'rails_helper'
+require 'spec_helper'
 
-module Subengine
-  RSpec.describe User, :type => :model do
-    pending "add some examples to (or delete) #{__FILE__}"
+describe subengine::User do
+  context "fields" do
+    
   end
+
+  context "validations" do
+    it { is_expected.to validate_presence_of(:email) }
+  end
+
 end

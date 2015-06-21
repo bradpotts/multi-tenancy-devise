@@ -1,4 +1,4 @@
-module Subengine
+module subengine
   module DashboardHelper
   end
 end

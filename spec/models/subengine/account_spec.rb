@@ -1,7 +1,31 @@
-require 'rails_helper'
+# == Schema Information
+#
+# Table name: subengine_accounts
+#
+#  id         :integer          not null, primary key
+#  name       :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#  owner_id   :integer
+#  subdomain  :string(255)
+#
 
-module Subengine
-  RSpec.describe Account, :type => :model do
-    pending "add some examples to (or delete) #{__FILE__}"
+require 'spec_helper'
+
+describe subengine::Account do
+  it "can be created with an owner" do
+    params = {
+      :name => "Test Account",
+      :subdomain => "test",
+      :owner_attributes => {
+        :email => "user@example.com",
+        :password => "password",
+        :password_confirmation => "password"
+      }
+    }
+    account = subengine::Account.create_with_owner(params)
+    users = account.users
+    expect(account).to be_persisted
+    expect(users.first).to eq(account.owner)
   end
 end

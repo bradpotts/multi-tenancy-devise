@@ -1,0 +1,13 @@
+h2.col-lg-12.text-center Forgot your password?
+.col-lg-6.col-lg-offset-3
+  .jumbotron
+    = simple_form_for resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'form-horizontal multiple_tags', role: 'form'}, wrapper: :horizontal_form, wrapper_mappings: { check_boxes: :horizontal_radio_and_checkboxes, radio_buttons: :horizontal_radio_and_checkboxes, file: :horizontal_file_input, boolean: :horizontal_boolean } do |f|
+      = f.error_notification
+      .form-inputs
+        = f.input :email, required: true, autofocus: true
+      .form-group
+        .col-lg-offset-5.col-lg-8
+          = f.button :submit, "Reset", class: 'btn btn-default block-center'
+    .block-center.text-center
+      = render "devise/shared/links"
+

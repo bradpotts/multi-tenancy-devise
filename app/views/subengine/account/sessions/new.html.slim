@@ -1,0 +1,13 @@
+= link_to "New User?", subengine.user_sign_up_url
+h2 Sign in
+= form_for @user, :url => sessions_url do |f|
+  p
+    = f.label :email
+    br
+      = f.email_field :email
+  p
+    = f.label :password
+    br
+      = f.password_field :password
+  p
+    = f.submit "Sign in"

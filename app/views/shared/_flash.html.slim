@@ -1,0 +1,13 @@
+.container
+  .alert.alert-dismissible role="alert" class="alert-warning hidden alert-please-update"
+    button.close aria-label="Close" data-dismiss="alert" type="button" 
+      span aria-hidden="true"  ×
+    strong Please update
+    | Despite the fact that the record doens't show on your screen you must save it to delete it!
+
+  - flash.each do |k,v|
+    .alert.alert-dismissible role="alert" class="#{alert_class(k)}"
+      button.close aria-label="Close" data-dismiss="alert" type="button" 
+        span aria-hidden="true"  ×
+      strong 
+      = v

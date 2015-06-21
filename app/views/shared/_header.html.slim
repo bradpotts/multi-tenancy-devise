@@ -1,0 +1,18 @@
+.navbar.navbar-default.navbar-fixed-top
+  .container
+    /! Brand and toggle get grouped for better mobile display
+    .navbar-header
+      =link_to 'The main app', account_root_path, class: 'navbar-brand'
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        - if user_signed_in?
+          li.dropdown
+            a.dropdown-toggle aria-expanded="false" data-toggle="dropdown" href="#" role="button" 
+              | Settings
+              span.caret
+            ul.dropdown-menu role="menu" 
+              li
+              | Signed in as #{current_user.email}
+              li.divider
+              li
+                =link_to 'Log out', destroy_user_session_path, method: :delete

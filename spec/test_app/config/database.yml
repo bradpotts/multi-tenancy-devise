@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  database: subengine_development 
+  min_messages: warning
+test:
+  adapter: postgresql
+  database: subengine_test 
+  min_messages: warning

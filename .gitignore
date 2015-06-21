@@ -1,8 +1,10 @@
 .bundle/
 log/*.log
 pkg/
-spec/testapp/db/*.sqlite3
-spec/testapp/db/*.sqlite3-journal
-spec/testapp/log/*.log
-spec/testapp/tmp/
-spec/testapp/.sass-cache
+coverage
+coverage/*
+spec/test_app/db/*.sqlite3
+spec/test_app/db/*.sqlite3-journal
+spec/test_app/log/*.log
+spec/test_app/tmp/
+spec/test_app/.sass-cache

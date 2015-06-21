@@ -1,0 +1,4 @@
+h2 Sign Up
+= form_for(@user, :url => do_user_sign_up_url) do |user|
+  = render "subengine/account/users/form", :user => user
+  = user.submit "Sign up"

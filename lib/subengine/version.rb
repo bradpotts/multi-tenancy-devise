@@ -1,3 +1,3 @@
-module Subengine
-	VERSION = "0.5.0"
+module subengine
+  VERSION = '0.0.014'
 end
