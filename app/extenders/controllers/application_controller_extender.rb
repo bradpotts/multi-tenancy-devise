@@ -10,7 +10,7 @@
   #   if user_signed_in?
   #     @current_user ||= begin
   #       user_id = env["warden"].user(:scope => :user)
-  #       subengine::User.find(user_id)
+  #       Subscribem::User.find(user_id)
   #     end
   #   end
   # end

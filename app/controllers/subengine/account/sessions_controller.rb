@@ -1,7 +1,7 @@
 # require_dependency "subengine/application_controller"
 
-# module subengine
-#   class Account::SessionsController < subengine::ApplicationController
+# module Subscribem
+#   class Account::SessionsController < Subscribem::ApplicationController
 #     def new
 #       @user = User.new
 #     end

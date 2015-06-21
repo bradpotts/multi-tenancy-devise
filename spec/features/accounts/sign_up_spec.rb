@@ -39,7 +39,7 @@ feature 'Accounts' do
       expect(page).to have_content("has already been taken")
     end
     scenario "Ensure subdomain uniqueness" do
-      subengine::Account.create!(:subdomain => "test", :name => "Test")
+      Subscribem::Account.create!(:subdomain => "test", :name => "Test")
       visit subengine.root_path
       click_link "Sign Up Today"
       fill_in "Name", :with => "Test"

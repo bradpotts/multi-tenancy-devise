@@ -1,4 +1,4 @@
-class AddSubdomainTosubengineAccounts < ActiveRecord::Migration
+class AddSubdomainToSubscribemAccounts < ActiveRecord::Migration
   def change
     add_column :subengine_accounts, :subdomain, :string
     add_index :subengine_accounts, :subdomain

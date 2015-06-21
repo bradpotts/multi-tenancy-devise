@@ -1,8 +1,8 @@
 require 'subengine/constraints/subdomain_required'
 
-subengine::Engine.routes.draw do
+Subscribem::Engine.routes.draw do
 
-  constraints(subengine::Constraints::SubdomainRequired) do
+  constraints(Subscribem::Constraints::SubdomainRequired) do
     scope :module => "account" do
       root :to => "dashboard#index", :as => :account_root
       # get "/sign_in", :to => "sessions#new"
@@ -14,7 +14,7 @@ subengine::Engine.routes.draw do
 
   root 'welcome#index'
 
-  devise_for :users, class_name: 'subengine::User', module: :devise
+  devise_for :users, class_name: 'Subscribem::User', module: :devise
 
   get '/sign_up', :to => 'accounts#new', :as => :sign_up
   resources :accounts, only: [:create, :index, :new]

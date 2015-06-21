@@ -1,4 +1,4 @@
-class CreatesubengineUsers < ActiveRecord::Migration
+class CreateSubscribemUsers < ActiveRecord::Migration
   def change
     create_table :subengine_users do |t|
       t.string :email

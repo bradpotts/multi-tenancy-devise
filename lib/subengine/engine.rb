@@ -10,13 +10,13 @@ require 'sass-rails'
 require 'bootstrap-sass'
 require 'rolify'
 
-module subengine
+module Subscribem
   class Engine < ::Rails::Engine
-    isolate_namespace subengine
+    isolate_namespace Subscribem
 
     initializer 'subengine.middleware.houser' do
       Rails.application.config.middleware.use Houser::Middleware,
-        :class_name => 'subengine::Account'
+        :class_name => 'Subscribem::Account'
     end
 
     config.generators do |g|
@@ -24,7 +24,7 @@ module subengine
     end
 
     config.to_prepare do
-      root = subengine::Engine.root
+      root = Subscribem::Engine.root
       extenders_path = root + "app/extenders/**/*.rb"
       Dir.glob(extenders_path) do |file|
         Rails.configuration.cache_classes ? require(file) : load(file)

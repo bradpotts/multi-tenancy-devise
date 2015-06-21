@@ -1,3 +1,0 @@
-database:
-  pre:
-    - cp -f spec/test_app/config/database.circle.yml spec/test_app/config/database.yml

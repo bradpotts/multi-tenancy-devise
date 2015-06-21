@@ -1,4 +1,4 @@
-module subengine
+module Subscribem
   module WelcomeHelper
   end
 end

@@ -12,7 +12,7 @@
 
 require 'spec_helper'
 
-describe subengine::Account do
+describe Subscribem::Account do
   it "can be created with an owner" do
     params = {
       :name => "Test Account",
@@ -23,7 +23,7 @@ describe subengine::Account do
         :password_confirmation => "password"
       }
     }
-    account = subengine::Account.create_with_owner(params)
+    account = Subscribem::Account.create_with_owner(params)
     users = account.users
     expect(account).to be_persisted
     expect(users.first).to eq(account.owner)

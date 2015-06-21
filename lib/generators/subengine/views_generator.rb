@@ -1,6 +1,6 @@
 require 'rails/generators/base'
 
-module subengine
+module Subscribem
   module Generators
 
     module ViewPathTemplates
@@ -47,13 +47,13 @@ module subengine
     class SharedViewsGenerator < Rails::Generators::Base
       include ViewPathTemplates
       source_root File.expand_path("../../../../app/views", __FILE__)
-      desc "Copies subengine views to your application."
+      desc "Copies Subscribem views to your application."
       hide!
     end
 
 
     class ViewsGenerator < Rails::Generators::Base
-      desc "Copies subengine views to your application."
+      desc "Copies Subscribem views to your application."
 
       invoke SharedViewsGenerator
     end

@@ -1,11 +1,11 @@
 require 'spec_helper'
 
-describe subengine::AccountsController do
+describe Subscribem::AccountsController do
   context "creates the account's schema" do
-    routes { subengine::Engine.routes }
-    # let!(:account) { double(subengine::Account) }
+    routes { Subscribem::Engine.routes }
+    # let!(:account) { double(Subscribem::Account) }
     # before do
-    #   subengine::Account.should_receive(:create_with_owner).
+    #   Subscribem::Account.should_receive(:create_with_owner).
     #   and_return(account)
     #   allow(account).to receive(:valid?).and_return(value)
     #   account.stub :valid? => true
@@ -20,7 +20,7 @@ describe subengine::AccountsController do
       end
       it 'adds the admin role for this account' do
         post :create, params
-        account = subengine::Account.first
+        account = Subscribem::Account.first
         user = account.owner
         expect(user.has_role? :admin, account).to be_truthy
       end
@@ -31,7 +31,7 @@ describe subengine::AccountsController do
       end
       it 'adds the admin role for this account' do
         post :create, params
-        account = subengine::Account.first
+        account = Subscribem::Account.first
         user = account.owner
         expect(user.has_role? :admin, account).to be_truthy
       end

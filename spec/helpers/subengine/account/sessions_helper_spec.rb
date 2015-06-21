@@ -10,7 +10,7 @@ require 'spec_helper'
 #     end
 #   end
 # end
-module subengine
+module Subscribem
   describe Account::SessionsHelper do
     pending "add some examples to (or delete) #{__FILE__}"
   end

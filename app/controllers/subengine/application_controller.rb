@@ -1,4 +1,4 @@
-module subengine
+module Subscribem
   # class ApplicationController < ActionController::Base
   class ApplicationController < ::ApplicationController
 

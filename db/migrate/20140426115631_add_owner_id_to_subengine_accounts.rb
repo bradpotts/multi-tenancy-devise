@@ -1,4 +1,4 @@
-class AddOwnerIdTosubengineAccounts < ActiveRecord::Migration
+class AddOwnerIdToSubscribemAccounts < ActiveRecord::Migration
   def change
     add_column :subengine_accounts, :owner_id, :integer
   end
