@@ -32,23 +32,23 @@ Gem::Specification.new do |s|
 	# UI and UX
 	s.add_dependency 'jquery-rails'
 	s.add_dependency 'simple_form'
-	s.add_dependency 'slim', '~> 3.0'
-	s.add_dependency 'bootstrap-sass', '~> 3.3.3'
-	s.add_dependency 'sass-rails', '~> 5.0'
-	s.add_dependency 'rolify', '~> 4.0.0'
+	s.add_dependency 'slim'
+	s.add_dependency 'bootstrap-sass'
+	s.add_dependency 'sass-rails'
+	s.add_dependency 'rolify'
 
 	# Testing Dependencies
 	# s.add_dependency 'pry'
 	# s.add_dependency 'pry-nav'
 
-	s.add_development_dependency "rspec-rails"
-	s.add_development_dependency "capybara"
-	s.add_development_dependency "sqlite3"
+	s.add_development_dependency 'rspec-rails'
+	s.add_development_dependency 'capybara'
+	s.add_development_dependency 'sqlite3'
 
 	s.add_development_dependency 'mailcatcher'
-	s.add_development_dependency 'database_cleaner', '1.0.1'
+	s.add_development_dependency 'database_cleaner'
 	s.add_development_dependency 'shoulda-matchers'
-	s.add_development_dependency 'factory_girl', '4.1.0'
+	s.add_development_dependency 'factory_girl'
 
 	s.add_development_dependency 'minitest'
 	s.add_development_dependency 'simplecov'
