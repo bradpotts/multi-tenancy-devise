@@ -1,6 +1,7 @@
 {<img src="https://hakiri.io/github/CoastDigitalGroup/cdg-subengine/master.svg" alt="security" />}[https://hakiri.io/github/CoastDigitalGroup/cdg-subengine/master]
 {<img src="https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine/badges/gpa.svg" />}[https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine]
 {<img src="https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine/badge.svg" alt="Coverage Status" />}[https://coveralls.io/r/CoastDigitalGroup/cdg-subengine]
+{<img src="https://travis-ci.org/CoastDigitalGroup/cdg-subengine.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/CoastDigitalGroup/cdg-subengine]
 
 = CoastDigitalGroup - Subscription Engine
 
