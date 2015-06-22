@@ -8,6 +8,9 @@ require 'shoulda-matchers'
 require 'capybara/rspec'
 require "factory_girl"
 require "database_cleaner"
+require "codeclimate-test-reporter"
+
+CodeClimate::TestReporter.start
 
 if ENV["RAILS_ENV"] == 'test'
   unless ENV["SKIP_COV"]
