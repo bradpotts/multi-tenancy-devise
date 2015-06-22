@@ -1,8 +1,17 @@
 development:
-  adapter: postgresql
-  database: subengine_development 
-  min_messages: warning
+ adapter: sqlite3
+ database: db/development.sqlite3
+ pool: 5
+ timeout: 5000
+
 test:
-  adapter: postgresql
-  database: subengine_test 
-  min_messages: warning
+ adapter: sqlite3
+ database: db/test.sqlite3
+ pool: 5
+ timeout: 5000
+
+production:
+ adapter: sqlite3
+ database: db/production.sqlite3
+ pool: 5
+ timeout: 5000
