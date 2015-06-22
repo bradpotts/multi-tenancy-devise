@@ -10,13 +10,13 @@
 #  subdomain  :string(255)
 #
 
-module Subscribem
+module Subengine
   class Account < ActiveRecord::Base
-    belongs_to :owner, :class_name => "Subscribem::User"
-    has_many :members, :class_name => "Subscribem::Member"
+    belongs_to :owner, :class_name => "Subengine::User"
+    has_many :members, :class_name => "Subengine::Member"
     has_many :users, :through => :members
 
-    resourcify :subengine_roles, role_cname: 'Subscribem::Role'
+    resourcify :subengine_roles, role_cname: 'Subengine::Role'
 
     accepts_nested_attributes_for :owner
 

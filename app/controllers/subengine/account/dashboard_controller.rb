@@ -1,7 +1,7 @@
 require_dependency "subengine/application_controller"
 
-module Subscribem
-  class Account::DashboardController < Subscribem::ApplicationController
+module Subengine
+  class Account::DashboardController < Subengine::ApplicationController
 
     before_action :authenticate_user!
 

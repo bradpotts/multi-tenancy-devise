@@ -1,4 +1,4 @@
-module Subscribem
+module Subengine
   module Constraints
     class SubdomainRequired
       def self.matches?(request)

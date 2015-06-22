@@ -1,4 +1,4 @@
-module Subscribem
+module Subengine
   module DashboardHelper
   end
 end

@@ -1,4 +1,4 @@
-module Subscribem
+module Subengine
   module Account::DashboardHelper
   end
 end

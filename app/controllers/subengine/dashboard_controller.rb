@@ -1,6 +1,6 @@
 require_dependency "subengine/application_controller"
 
-module Subscribem
+module Subengine
   class DashboardController < ApplicationController
     def index
       

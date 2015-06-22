@@ -22,12 +22,12 @@
 #  unconfirmed_email      :string(255)
 #
 
-module Subscribem
+module Subengine
   class User < ::User
-    include Subscribem::UserStorage
-    rolify role_join_table_name: 'subengine_users_subengine_roles', role_cname: 'Subscribem::Role'
+    include Subengine::UserStorage
+    rolify role_join_table_name: 'subengine_users_subengine_roles', role_cname: 'Subengine::Role'
 
-    has_many :accounts, :class_name => "Subscribem::Account", :foreign_key => "owner_id"
+    has_many :accounts, :class_name => "Subengine::Account", :foreign_key => "owner_id"
 
     # Include default devise modules. Others available are:
     # :confirmable, :lockable, :timeoutable and :omniauthable

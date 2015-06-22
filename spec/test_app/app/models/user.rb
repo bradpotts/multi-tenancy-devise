@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  include Subscribem::UserStorage
+  include Subengine::UserStorage
 end

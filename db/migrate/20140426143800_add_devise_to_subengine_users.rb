@@ -1,4 +1,4 @@
-class AddDeviseToSubscribemUsers < ActiveRecord::Migration
+class AddDeviseToSubengineUsers < ActiveRecord::Migration
   def self.up
     change_table(:subengine_users) do |t|
       ## Database authenticatable

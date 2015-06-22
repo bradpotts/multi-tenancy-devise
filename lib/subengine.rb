@@ -1,6 +1,6 @@
 require "subengine/engine"
 
-module Subscribem
+module Subengine
   # TODO check this
   # class Engine < ::Rails::Engine
   #   config.to_prepare do

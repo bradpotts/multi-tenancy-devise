@@ -1,6 +1,6 @@
 require_dependency "subengine/application_controller"
 
-module Subscribem
+module Subengine
   class WelcomeController < ApplicationController
     before_filter :redirect_logged_in_users_to_account_page
 

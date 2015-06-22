@@ -1,4 +1,4 @@
-module Subscribem
+module Subengine
   module UserStorage
 
     extend ActiveSupport::Concern

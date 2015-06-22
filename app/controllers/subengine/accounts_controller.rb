@@ -1,6 +1,6 @@
 require_dependency "subengine/application_controller"
 
-module Subscribem
+module Subengine
   class AccountsController < ApplicationController
 
     before_action :redirect_if_coming_form_sign_up, only: :new
@@ -11,15 +11,15 @@ module Subscribem
     end
 
     def new
-      @account = Subscribem::Account.new
+      @account = Subengine::Account.new
       @account.build_owner unless user_signed_in?
     end
 
     def create
       account = if user_signed_in?
-          Subscribem::Account.create(account_params)
+          Subengine::Account.create(account_params)
         else
-          Subscribem::Account.create_with_owner(account_params)
+          Subengine::Account.create_with_owner(account_params)
         end
       @account = account
       if account.valid?

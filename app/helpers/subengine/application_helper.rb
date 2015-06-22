@@ -1,4 +1,4 @@
-module Subscribem
+module Subengine
   module ApplicationHelper
     def alert_class(k)
       alerts = {:success => 'alert-success', :notice => 'alert-success', :alert => 'alert-warning', :error => 'alert-danger'}

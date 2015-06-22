@@ -1,12 +1,12 @@
 require_dependency "subengine/application_controller"
 
-module Subscribem
+module Subengine
   class Account::UsersController < ApplicationController
     def new
-      @user = Subscribem::User.new
+      @user = Subengine::User.new
     end
     def create
-      account = Subscribem::Account.find_by_subdomain!(request.subdomain)
+      account = Subengine::Account.find_by_subdomain!(request.subdomain)
       user = account.users.create(user_params)
       sign_in user
       flash[:success] = "You have signed up successfully."

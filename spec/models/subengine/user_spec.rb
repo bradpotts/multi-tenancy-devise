@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Subscribem::User do
+describe Subengine::User do
   context "fields" do
     
   end
