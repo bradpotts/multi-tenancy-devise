@@ -13,5 +13,6 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-# Codeclimate Coverage
+# Coverage Testing
 gem "codeclimate-test-reporter", group: :test, require: nil
+gem 'coveralls', require: false
