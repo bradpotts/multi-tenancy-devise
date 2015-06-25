@@ -42,7 +42,7 @@ module Subengine
       account = new(params)
       if account.save
         account.users << account.owner
-        account.owner.confirm!
+        account.owner.confirm
       end
       account
     end
