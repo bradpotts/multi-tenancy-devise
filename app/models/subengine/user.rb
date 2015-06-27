@@ -24,16 +24,10 @@
 
 module Subengine
 	class User < ::User
-
-		# Include default devise modules. Others available are:
-		# :confirmable, :lockable, :timeoutable and :omniauthable
-		devise  :database_authenticatable
-		devise  :confirmable
-		devise  :recoverable,
-			:rememberable,
-			:trackable,
-			:validatable,
-			:omniauthable
+    # Include default devise modules. Others available are:
+    # :confirmable, :lockable, :timeoutable and :omniauthable
+    devise :database_authenticatable, :registerable,
+           :recoverable, :rememberable, :trackable, :validatable, :confirmable, :omniauthable
 
 		include Subengine::UserStorage
 		rolify role_join_table_name: 'subengine_users_subengine_roles', role_cname: 'Subengine::Role'
