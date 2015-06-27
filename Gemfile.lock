@@ -3,7 +3,7 @@ PATH
   specs:
     subengine (0.8.5)
       bootstrap-sass (~> 3.3.3)
-      devise
+      devise (~> 3.4.1)
       houser (~> 2.0)
       jquery-rails
       omniauth-facebook
@@ -81,7 +81,7 @@ GEM
       thor (~> 0.19.1)
     daemons (1.2.3)
     database_cleaner (1.0.1)
-    devise (3.5.1)
+    devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
