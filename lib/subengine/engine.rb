@@ -1,7 +1,7 @@
+require 'devise'
 # require 'pry'
 # require 'pry-nav'
 require 'subengine/active_record_extensions'
-require 'devise'
 require 'houser'
 require 'slim'
 require 'simple_form'
