@@ -24,19 +24,14 @@
 
 module Subengine
   class User < ::User
-    include Subengine::UserStorage
-    rolify role_join_table_name: 'subengine_users_subengine_roles', role_cname: 'Subengine::Role'
-
-    has_many :accounts, :class_name => "Subengine::Account", :foreign_key => "owner_id"
-
     # Include default devise modules. Others available are:
     # :confirmable, :lockable, :timeoutable and :omniauthable
-    devise  :database_authenticatable
-    devise  :confirmable
-    devise  :recoverable,
-            :rememberable,
-            :trackable,
-            :validatable,
-            :omniauthable
+    devise :database_authenticatable, :registerable,
+           :recoverable, :rememberable, :trackable, :validatable
+    
+    include Subengine::UserStorage
+    rolify role_join_table_name: 'subengine_users_subengine_roles', role_cname: 'Subengine::Role'
+    has_many :accounts, :class_name => "Subengine::Account", :foreign_key => "owner_id"
+    
   end
 end
