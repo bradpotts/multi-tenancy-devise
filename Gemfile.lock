@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    subengine (0.9.2)
+    subengine (0.9.3)
       bootstrap-sass
       devise
       houser
