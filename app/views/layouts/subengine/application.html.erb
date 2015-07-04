@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CoastDigitalGroup - Subengine</title>
+		<%= stylesheet_link_tag    "subengine/application", media: "all" %>
+		<%= stylesheet_link_tag    "subengine/non-responsive", media: "all" %>
+		<%= javascript_include_tag "subengine/application" %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body data-no-turbolink="true">
+		<div class="container">
+			<%= render 'shared/header' %>
+			<%= render 'shared/flash' %>
+			<%= yield %>
+		</div>
+	</body>
+</html>

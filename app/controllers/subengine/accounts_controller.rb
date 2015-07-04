@@ -9,7 +9,7 @@ module Subengine
     def index
       @accounts = current_user.accounts
     end
-
+    
     def new
       @account = Subengine::Account.new
       @account.build_owner unless user_signed_in?
