@@ -1,0 +1,22 @@
+<div class="page-header">
+	<h1>Your Accounts</h1>
+</div>
+<table class="table table-stripped table-hover">
+	<thead>
+		<tr>
+			<th>Account Name</th>
+			<th>Subdomain</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @accounts.each do |account| %>
+			<tr>
+				<th scope="row"><%= account.name %></th>
+			</tr>
+			<tr>
+				<th scope="row"><%= link_to account.subdomain, "http://#{account.subdomain}.#{request.host}" %></th>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<div class="text-center"><%= link_to 'Create a new Account', subengine.new_account_path, class: 'btn btn-success btn-lg' %></div>

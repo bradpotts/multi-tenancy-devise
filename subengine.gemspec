@@ -17,11 +17,11 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency 'pg'
+  s.add_dependency 'pg', '~> 0.18.2'
   s.add_dependency 'rails'
-  s.add_dependency 'jquery-rails'
-  s.add_dependency 'devise'
-  s.add_dependency 'houser'
+  s.add_dependency 'jquery-rails', '~> 4.0.4'
+  s.add_dependency 'devise', '~> 3.5.1'
+  s.add_dependency 'houser', '~> 2.0.0'
   s.add_dependency 'simple_form'
   s.add_dependency 'slim'
   s.add_dependency 'omniauth-facebook'
