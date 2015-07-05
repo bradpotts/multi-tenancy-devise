@@ -5,11 +5,10 @@
 
 = CoastDigitalGroup - Subscription Engine
 
-The main authetication and subscription engine for all CoastDigitalGroup's apps open sourced.
+Multi-tenancy rails engine that authenticates users through sub-domain logins. CDG subengine gem uses Devise for stable and secure authentication while the rails subengine handles user accounts and subdomains.
 
 ===== Step 1: Required in gemfile
-Remote Github - gem 'subengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine.git'  
-Best for Production - Download to Root  - gem 'subengine', path: 'cdgsubengine'  
+Remote Github - gem 'subengine'
 
 ===== Step 2: Add below line to load requried file to the top of routes file. (routes.rb)
 require "cdgsubengine/constraints/subdomain_required"  
