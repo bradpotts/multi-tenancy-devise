@@ -1,0 +1,20 @@
+<h2 class="col-lg-12 text-center">Resend confirmation instructions</h2>
+<div class="col-lg-6 col-lg-offset-3">
+	<div class="jumbotron">
+		<%= simple_form_for resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'form-horizontal multiple_tags', role: 'form'}, wrapper: :horizontal_form, wrapper_mappings: { check_boxes: :horizontal_radio_and_checkboxes, radio_buttons: :horizontal_radio_and_checkboxes, file: :horizontal_file_input, boolean: :horizontal_boolean } do |f| %>
+			<%= f.error_notification %>
+			<%= f.full_error :confirmation_token %>
+			<div class="form-inputs">
+				<%= f.input :email, required: true, autofocus: true %>
+			</div>
+			<div class="form-group">
+				<div class="col-lg-offset-5 col-lg-8">
+					<%= f.button :submit, "Resend", class: 'btn btn-default block-center' %>
+				</div>
+			</div>
+			<div class="block-center text-center">
+				<%= render "devise/shared/links" %>
+			</div>
+		<% end %>
+	</div>
+</div>
