@@ -10,15 +10,15 @@ Multi-tenancy rails engine that authenticates users through sub-domain logins. C
 ===== Step 1: Required in gemfile
 Remote Github - gem 'subengine'
 
-===== Step 2: Add below line to load requried file to the top of routes file. (routes.rb)
-require "cdgsubengine/constraints/subdomain_required"  
+===== Step 2: Configure the Environment
+ 
 
 ===== Step 3: Add contraints to routes that requires multitenancy function between the two lines below . (routes.rb)
 constraints(Cdgsubengine::Constraints::SubdomainRequired) do  
 
 end
 
-===== Step 4: Copy below line insert at the bottom of the routes file. (routes.rb)
+===== Step 4: Mount the Engine in your Routes File
 mount Cdgsubengine::Engine, :at => '/'  
 
 
