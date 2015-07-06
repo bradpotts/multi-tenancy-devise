@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Brad Potts"]
   s.email       = ["bradley.j.potts@gmail.com"]
   s.homepage    = "http://www.coastdigitalgroup.com"
-  s.summary     = "Multi-Tenancy Rails Engine with basecamp style subdomain login"
-  s.description = "Multi-Tenancy Rails Engine using Devise for Authetication."
+  s.summary     = "Multi-Tenancy rails engine with subdomain authetication using devise."
+  s.description = "Multi-Tenancy rails engine with subdomain authetication using devise. Users can manage multiple subdomain accounts. Also featres two ways to login. A central login point for all users that rediects them to their subdomain account, or the ability to login using their own respective subdomain."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
