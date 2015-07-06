@@ -1,21 +1,21 @@
 PATH
   remote: .
   specs:
-    subengine (0.9.9.1)
-      bootstrap-sass (~> 3.3.5.1)
-      devise (~> 3.5.1)
-      houser (~> 2.0.0)
-      jquery-rails (~> 4.0.4)
-      omniauth-facebook (~> 2.0.1)
-      omniauth-github (~> 1.1.2)
-      omniauth-google-oauth2 (~> 0.2.6)
-      omniauth-instagram (~> 1.0.1)
-      omniauth-twitter (~> 1.2.0)
-      pg (~> 0.18.2)
-      rails
-      rolify (~> 4.0.0)
-      sass-rails (~> 5.0.3)
-      simple_form (~> 3.1.0)
+    subengine (0.9.9.2)
+      bootstrap-sass (>= 3.3.5.1)
+      devise (>= 3.5.1)
+      houser (>= 2.0.0)
+      jquery-rails (~> 4.0.0, >= 4.0.4)
+      omniauth-facebook (~> 2.0.0, >= 2.0.1)
+      omniauth-github (>= 1.1.2)
+      omniauth-google-oauth2 (>= 0.2.6)
+      omniauth-instagram (>= 1.0.1)
+      omniauth-twitter (>= 1.2.0)
+      pg (~> 0.18.0, >= 0.18.2)
+      rails (>= 4.2.3)
+      rolify (>= 4.0.0)
+      sass-rails (~> 5.0.0, >= 5.0.3)
+      simple_form (>= 3.1.0)
 
 GEM
   remote: https://rubygems.org/
