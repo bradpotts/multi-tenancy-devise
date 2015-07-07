@@ -7,11 +7,11 @@ require "subengine/version"
 Gem::Specification.new do |s|
   s.name        = "subengine"
   s.version     = Subengine::VERSION
-  s.authors     = ["Brad Potts"]
+  s.authors     = ["BradPotts"]
   s.email       = ["bradley.j.potts@gmail.com"]
   s.homepage    = "http://www.coastdigitalgroup.com"
-  s.summary     = "Multi-Tenancy rails engine with subdomain authetication using devise."
-  s.description = "Multi-Tenancy rails engine with subdomain authetication using devise. Users can manage multiple subdomain accounts. Also featres two ways to login. A central login point for all users that rediects them to their subdomain account, or the ability to login using their own respective subdomain."
+  s.summary     = "Multi-Tenancy Rails Engine with Subdomain Authetication Using Devise."
+  s.description = "Multi-Tenancy rails engine with subdomain authentication using devise. Users can manage multiple subdomain accounts. Also features two ways to login. A central login point for all users that redirects them to their subdomain accounts, or the ability to login using their own respective subdomain."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
