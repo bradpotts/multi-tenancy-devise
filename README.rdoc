@@ -3,45 +3,38 @@
 {<img src="https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine/badge.svg" alt="Coverage Status" />}[https://coveralls.io/r/CoastDigitalGroup/cdg-subengine]
 {<img src="https://travis-ci.org/CoastDigitalGroup/cdg-subengine.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/CoastDigitalGroup/cdg-subengine]
 
-= CoastDigitalGroup - Subscription Engine
+= CDG Subengine Multi-Tenant Rails Engine
 
-Multi-tenancy rails engine that authenticates users through sub-domain logins. CDG subengine gem uses Devise for stable and secure authentication while the rails subengine handles user accounts and subdomains.
+CoastDigitalGroup subengine gem adds multi-tenancy and additional user account management features to super secure rails devise authentication system.
 
-===== Step 1: Required in gemfile
-Remote Github - gem 'subengine'
+Users can now have multiple accounts, features subdomain data scoping, a central for all login page and sub-domain login pages. Subengine can be adapted to any project or start fresh with substarter multi-tenancy starter app.
 
-===== Step 2: Configure the Environment
+* See our Github Wiki or Website for More information
 
-===== Step 3: Add contraints to routes that requires multitenancy function between the two lines below . (routes.rb)
-constraints(Cdgsubengine::Constraints::SubdomainRequired) do  
+===== Step 1 - Install CDG Subengine GEM
+Install GEM: gem install subengine  
+Bundle File: gem 'subengine', '~> 0.9.9.4'  
+Run Command: bundle exec install  
 
-end
+===== Step 2 - Configure ActionMailer
+Sign up will fail if there's no mailer function.
+Mailer is used for confirmation and password forget functions.
 
-===== Step 4: Mount the Engine in your Routes File
-mount Cdgsubengine::Engine, :at => '/'  
+===== Step 3 - Mount the Engine in your Routes File
+mount Subengine::Engine, :at => '/'  
 
 
 ===== Security and Login
-* Uses Warden for Authetication
-* Authetication through Subdomain
+* Uses Devise for Authentication
+* Subdomain Login Screens
+* Central Login Screen
 
 ===== Account Data Management
 * Sub-domain Restriction
 * Sub-domain Validation
-* Separated Account Data
-
-===== User UI and Interaction
-* Gravatar Support
+* Scoped Account Data
 
 ===== InProgress
-
-Devise Implementation
-* Registration w/ Confirmation
-* Forget Password Reset
-* Remember User Login
-* Track User Login Times
-* Lock User Accounts /Too Many Failed Logins
-* Validates User Fields
 
 Stripe Plan & Payment System
 * Stripe Payment Integration
@@ -52,4 +45,4 @@ Stripe Plan & Payment System
 
 This project rocks and uses MIT-LICENSE and is open sourced. 
 
-Notice: Some major changes can break applications and we cannot be held liable. Under production, load the engine locally within the root of your project instead of using github repository.
+Notice: Some major changes can break applications and we cannot be held liable for use of this engine. Please thoroughly test any updates before pushing to production.
