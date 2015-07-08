@@ -20,9 +20,9 @@ Users can now have multiple accounts, features subdomain data scoping, a central
 * Sign up will fail if there's no mailer function.
 * Mailer is used for confirmation and password forget functions.
 
-===== Step 3 - Mount the Engine in your Routes File
-* mount Subengine::Engine, :at => '/'  
-
+===== Step 3 - Mount the Engine
+* At the bottom of your routes.rb add
+* mount Subengine::Engine, :at => '/'
 
 ===== Security and Login
 * Uses Devise for Authentication
@@ -33,6 +33,7 @@ Users can now have multiple accounts, features subdomain data scoping, a central
 * Sub-domain Restriction
 * Sub-domain Validation
 * Scoped Account Data
+* Users Can Have Multiple Accounts
 
 ===== InProgress
 
