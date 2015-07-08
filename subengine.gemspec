@@ -11,9 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["bradley.j.potts@gmail.com"]
   s.homepage    = "http://www.coastdigitalgroup.com"
   s.summary     = "Multi-Tenancy Rails Engine with Subdomain Authetication Using Devise."
-  s.description = "CoastDigitalGroup subengine gem adds multi-tenancy and additional user account management features to super secure rails devise authentication system.
-
-Users can now have multiple accounts, features subdomain data scoping, a central for all login page and sub-domain login pages. Subengine can be adapted to any project or start fresh with substarter multi-tenancy starter app."
+  s.description = "CoastDigitalGroup subengine gem adds multi-tenancy and additional user account management features to super secure rails devise authentication system. Users can now have multiple accounts, features subdomain data scoping, a central for all login page and sub-domain login pages. Subengine can be adapted to any project or start fresh with substarter multi-tenancy starter app."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
@@ -48,4 +46,5 @@ Users can now have multiple accounts, features subdomain data scoping, a central
   s.add_development_dependency 'factory_girl'
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'capybara'
+
 end

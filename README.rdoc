@@ -24,24 +24,13 @@ Users can now have multiple accounts, features subdomain data scoping, a central
 * At the bottom of your routes.rb add
 * mount Subengine::Engine, :at => '/'
 
-===== Security and Login
-* Uses Devise for Authentication
-* Subdomain Login Screens
-* Central Login Screen
-
-===== Account Data Management
-* Sub-domain Restriction
-* Sub-domain Validation
-* Scoped Account Data
-* Users Can Have Multiple Accounts
-
-===== InProgress
-
-Stripe Plan & Payment System
-* Stripe Payment Integration
-* Plan/Subscription Stripe Integration
-* Plan Switching & Management
-
+===== Step 4 - Constrain the routs you want secured
+* Copy the two lines of code below.
+* Insert routes you want secure in-between code below:
+* constraints(Subengine::Constraints::SubdomainRequired) do
+* end
+  
+  
 ==== Licence and Terms of Use
 
 This project rocks and uses MIT-LICENSE and is open sourced. 
