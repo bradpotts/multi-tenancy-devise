@@ -12,16 +12,16 @@ Users can now have multiple accounts, features subdomain data scoping, a central
 * See our Github Wiki or Website for More information
 
 ===== Step 1 - Install CDG Subengine GEM
-Install GEM: gem install subengine  
-Bundle File: gem 'subengine', '~> 0.9.9.4'  
-Run Command: bundle exec install  
+* Install GEM: gem install subengine  
+* Bundle File: gem 'subengine', '~> 0.9.9.4'  
+* Run Command: bundle exec install  
 
 ===== Step 2 - Configure ActionMailer
-Sign up will fail if there's no mailer function.
-Mailer is used for confirmation and password forget functions.
+* Sign up will fail if there's no mailer function.
+* Mailer is used for confirmation and password forget functions.
 
 ===== Step 3 - Mount the Engine in your Routes File
-mount Subengine::Engine, :at => '/'  
+* mount Subengine::Engine, :at => '/'  
 
 
 ===== Security and Login
