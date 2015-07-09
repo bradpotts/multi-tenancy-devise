@@ -24,4 +24,9 @@ Add this line near the end of the routes file.
 Any route between these constraints will be secured and have multi-tenant functions. Copy the block of code below.  
   
     constraints(Subengine::Constraints::SubdomainRequired) do  
-    end
+    end  
+  
+#### Step 5 - Add subengine extention to models
+Add the suvengine extensions to the models with routes in between the constraints.  
+  
+    extend Subengine::ScopedTo
