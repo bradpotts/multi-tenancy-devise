@@ -19,24 +19,31 @@ Multi-Tenancy engine with devise authentication is easy to incorporate into any 
 + Mailer functions are required in order for subengine to operate.
 + Mailer is used for confirmation and password reset functions.
 
-#### Step 3 - Mount the Engine in your Routes File
+#### Step 4 - Mount the Engine in your Routes File
 Add this line at the end of the routes file.  
   
     mount Subengine::Engine, :at => '/'
 
-#### Step 4 - Constrain the routs you want secured
+#### Step 5 - Constrain the routs you want secured
 All the routes you want to have multi-tenacy login functions goes inbetween the constrainsts block.
 
     constraints(Subengine::Constraints::SubdomainRequired) do  
       # Routes Requiring Security & Multi-Tenancy Routes    
     end  
   
-#### Step 5 - Add subengine extention to models
+#### Step 6 - Add subengine extention to models
 Add the subengine extension to the top of all models for the routes configured in the previous step.
   
     extend Subengine::ScopedTo
 
-#### Step 6 - Configure scopes in your controller
+#### Step 7 - Add user model to your app
+Generate a user.rb file and add the code blew 
+
+    rails g model User  
+
+    include Subengine::UserStorage
+
+#### Step 8 - Configure scopes in your controller
 Scope your controllers. Examples on github wiki or cdg-substarter app.
 
     .scoped_to(current_account)  
