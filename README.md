@@ -47,4 +47,6 @@ Generate a user.rb file and add the code blew
 Scope your controllers. Examples on github wiki or cdg-substarter app.
 
     .scoped_to(current_account)  
-  
+
+#### Having troubles ?
+Example substarter app - <https://github.com/CoastDigitalGroup/cdg-substarter>  
