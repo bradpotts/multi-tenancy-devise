@@ -48,5 +48,12 @@ Scope your controllers. Examples on github wiki or cdg-substarter app.
 
     .scoped_to(current_account)  
 
+### Additional Information
+
+#### Views - Subengine Views Can be Customized
+Once installed views can be generated and customized to your apps needs.
+
+    rails generate subengine:views
+
 #### Having troubles ?
 Example substarter app - <https://github.com/CoastDigitalGroup/cdg-substarter>  
