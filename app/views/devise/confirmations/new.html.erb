@@ -1,6 +1,6 @@
 <div class="container">    
-	<div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
-		<div class="panel panel-primary" >
+	<div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<div class="panel-title">Resend Confirmation Token</div>
 			</div>     
@@ -13,17 +13,13 @@
 						<%= f.input_field :email, required: true, autofocus: true, :class => "form-control", :placeholder => "Email" %>
 					</div>
 					<div style="margin-top:10px" class="form-group">
-						<div class="col-sm-12 controls">
-							<%= f.button :submit, "Resend", class: 'btn btn-default block-center' %>
-						</div>
+						<%= f.button :submit, "Resend" %>
 					</div>
-					<div class="col-md-12 control">
-						<div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-								<%= render "devise/shared/links" %>
-						</div>
+					<div id="loginborder">
+						<%= render "devise/shared/links" %>
 					</div>    
 				<% end %>
 			</div>
-		</div>  
+		</div>
 	</div>
 </div>
