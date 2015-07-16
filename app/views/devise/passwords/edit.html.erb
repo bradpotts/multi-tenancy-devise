@@ -11,20 +11,21 @@
 					<%= f.full_error :reset_password_token %>
 					<div style="margin-bottom: 25px" class="input-group">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-						<%= f.input_field :password, label: "New password", required: true, autofocus: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), :class => "form-control", :placeholder => "New Password" %>
-					</div>
-					<div style="margin-bottom: 25px" class="input-group">
-						<span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-						<%= f.input_field :password_confirmation, label: "Confirm your new password", required: true, :class => "form-control", :placeholder => "Confirm Password" %>
-					</div>
-					<div style="margin-top:10px" class="form-group">
-						<%= f.button :submit, "Change my password" %>
-					</div>
-					<div id="loginborder" >
+							<%= f.input_field :password, label: "New password", required: true, autofocus: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), :class => "form-control", :placeholder => "New Password" %>
+						</div>
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+							<%= f.input_field :password_confirmation, label: "Confirm your new password", required: true, :class => "form-control", :placeholder => "Confirm Password" %>
+						</div>
+						<div style="margin-top:10px" class="form-group">
+								<%= f.button :submit, "Change my password", :class => "btn btn-default" %>
+						</div>
+						<div id="loginborder">
 							<%= render "devise/shared/links" %>
+						</div>
 					</div>
 				<% end %>
 			</div>
-		</div>  
+		</div>
 	</div>
 </div>
