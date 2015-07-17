@@ -10,7 +10,7 @@ feature "User sign in" do
       expect(page.current_url).to eq(subengine.new_user_session_url(subdomain: account.subdomain))
       fill_in "user_email", :with => account.owner.email
       fill_in "user_password", :with => "password"
-      click_button "Sign in"
+      click_button "Sign-In"
       expect(page).to have_content("Signed in as #{account.owner.email}")
       expect(page.current_url).to eq(subengine.root_url(subdomain: account.subdomain))
     end
@@ -19,7 +19,7 @@ feature "User sign in" do
       expect(page.current_url).to eq(subengine.new_user_session_url(subdomain: account.subdomain))
       fill_in "user_email", :with => account.owner.email
       fill_in "user_password", :with => "invalidpwd"
-      click_button "Sign in"
+      click_button "Sign-In"
       expect(page).to have_content("Invalid email or password.")
       expect(page.current_url).to eq(subengine.new_user_session_url(subdomain: account.subdomain))
     end
@@ -28,7 +28,7 @@ feature "User sign in" do
       expect(page.current_url).to eq(subengine.new_user_session_url(subdomain: account.subdomain))
       fill_in "user_email", :with => "foo@example.com"
       fill_in "user_password", :with => "password"
-      click_button "Sign in"
+      click_button "Sign-In"
       expect(page).to have_content("Invalid email or password.")
       expect(page.current_url).to eq(subengine.new_user_session_url(subdomain: account.subdomain))
     end
@@ -37,7 +37,7 @@ feature "User sign in" do
       visit subengine.root_url(:subdomain => account.subdomain)
       fill_in "user_email", :with => other_account.owner.email
       fill_in "user_password", :with => "password"
-      click_button "Sign in"
+      click_button "Sign-In"
       expect(page).to have_content("Invalid email or password.")
       expect(page.current_url).to eq(subengine.new_user_session_url(subdomain: account.subdomain))
     end

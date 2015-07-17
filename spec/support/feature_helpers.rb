@@ -7,7 +7,7 @@ module Features
       visit subengine.new_user_session_path
       fill_in "user_email", with: visitor.email
       fill_in 'user_password', with: password
-      click_on 'Sign in'
+      click_on 'Sign-In'
     end
     def logout
       click_on 'settings_dropdown'
