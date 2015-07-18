@@ -1,3 +1,3 @@
-<%= user.input :email %>
-<%= user.input :password %>
-<%= user.input :password_confirmation %>
+<%= user.input :email, label: false, :class => "form-control", :placeholder => "Email"  %>
+<%= user.input :password, label: false, :class => "form-control", :placeholder => "Password"  %>
+<%= user.input :password_confirmation, label: false, :class => "form-control", :placeholder => "Confirm Password"  %>

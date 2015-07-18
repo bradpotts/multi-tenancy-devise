@@ -12,11 +12,11 @@ feature 'Accounts' do
     scenario 'creating an account' do
       visit subengine.root_path
       click_link 'Sign Up Today'
-      fill_in 'Name', :with => 'Test'
+      fill_in 'Account Name', :with => 'Test'
       fill_in "Subdomain", :with => "test"
       fill_in 'Email', :with => 'subengine@example.com'
       fill_in 'Password', :with => 'password', :exact => true
-      fill_in 'Password confirmation', :with => 'password'
+      fill_in 'Confirm Password', :with => 'password'
       click_button 'Create Account'
       success_message = 'Your account has been successfully created.'
       expect(page).to have_content(success_message)
@@ -28,11 +28,11 @@ feature 'Accounts' do
       owner = account.owner
       visit subengine.root_path
       click_link "Sign Up Today"
-      fill_in "Name", :with => "another name"
+      fill_in "Account Name", :with => "another name"
       fill_in "Subdomain", :with => "anothersubdomain"
       fill_in "Email", :with => owner.email
       fill_in "Password", :with => "password", :exact => true
-      fill_in "Password confirmation", :with => 'password'
+      fill_in "Confirm Password", :with => 'password'
       click_button "Create Account"
       expect(page.current_url).to eq("http://example.com/accounts")
       expect(page).to have_content("Sorry, your account could not be created.")
@@ -42,11 +42,11 @@ feature 'Accounts' do
       Subengine::Account.create!(:subdomain => "test", :name => "Test")
       visit subengine.root_path
       click_link "Sign Up Today"
-      fill_in "Name", :with => "Test"
+      fill_in "Account Name", :with => "Test"
       fill_in "Subdomain", :with => "test"
       fill_in "Email", :with => "subengine@example.com"
       fill_in "Password", :with => "password", :exact => true
-      fill_in "Password confirmation", :with => 'password'
+      fill_in "Confirm Password", :with => 'password'
       click_button "Create Account"
       expect(page.current_url).to eq( "http://example.com/accounts")
       expect(page).to have_content("Sorry, your account could not be created.")
@@ -55,11 +55,11 @@ feature 'Accounts' do
     scenario "Subdomain with restricted name" do
       visit subengine.root_path
       click_link "Sign Up Today"
-      fill_in "Name", :with => "Test"
+      fill_in "Account Name", :with => "Test"
       fill_in "Subdomain", :with => "admin"
       fill_in "Email", :with => "subengine@example.com"
       fill_in "Password", :with => "password"
-      fill_in "Password confirmation", :with => "password"
+      fill_in "Confirm Password", :with => "password"
       click_button "Create Account"
       expect(page.current_url).to eq("http://example.com/accounts")
       expect(page).to have_content("Sorry, your account could not be created.")
@@ -68,11 +68,11 @@ feature 'Accounts' do
     scenario "Subdomain with invalid name" do
       visit subengine.root_path
       click_link "Sign Up Today"
-      fill_in "Name", :with => "Test"
+      fill_in "Account Name", :with => "Test"
       fill_in "Subdomain", :with => "<admin>"
       fill_in "Email", :with => "subengine@example.com"
       fill_in "Password", :with => "password"
-      fill_in "Password confirmation", :with => "password"
+      fill_in "Confirm Password", :with => "password"
       click_button "Create Account"
       expect(page.current_url).to eq("http://example.com/accounts")
       expect(page).to have_content("Sorry, your account could not be created.")
