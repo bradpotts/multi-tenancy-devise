@@ -8,7 +8,7 @@
 Multi-Tenancy engine with devise authentication is easy to incorporate into any project. Documentation is in progress.
 
 #### Step 1 - Add Subengine to your gemfile
-    gem 'subengine', '~> 1.0.0'
+    gem 'subengine', '~> 1.1.0'
     bundle exec install
 
 #### Step 2 - Add and migrate subengine database tables
