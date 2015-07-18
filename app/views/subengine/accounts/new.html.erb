@@ -6,14 +6,14 @@
 					<div class="panel-title">Create Account</div>
 				</div>     
 				<div style="padding-top:30px" class="panel-body" >
-					<%= simple_form_for @account, html: {class: 'form-horizontal multiple_tags', role: 'form'}, defaults: { label_html: { class: 'col-lg-4' }, input_html: { class: 'form-control'} } do |account| %>
+					<%= simple_form_for @account, html: {class: 'form-horizontal multiple_tags', role: 'form'} do |account| %>
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
 							<%= account.input_field :name, required: true, autofocus: true, :class => "form-control", :placeholder => "Account Name" %>
 						</div>
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
-              <%= account.input :subdomain, label: false, :placeholder => "Subdomain" %>
+              <%= account.input :subdomain, label: false, :class => "form-control", :placeholder => "Subdomain" %>
 						</div>
 						<div style="margin-top:10px" class="form-group">
 							<div class="col-lg-offset-4 col-lg-8"><%= account.submit class: 'btn btn-default block-center' %></div>
@@ -31,7 +31,7 @@
 					<div class="panel-title">Create Account</div>
 				</div>     
 				<div style="padding-top:30px" class="panel-body" >
-					<%= simple_form_for @account, html: {class: 'form-horizontal multiple_tags', role: 'form'}, defaults: { label_html: { class: 'col-lg-4' }, input_html: { class: 'form-control'} } do |account| %>
+					<%= simple_form_for @account, html: {class: 'form-horizontal multiple_tags', role: 'form'} do |account| %>
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
 							<%= account.input_field :name, label: 'Account Name', :class => "form-control", :placeholder => "Account Name"  %>
@@ -43,7 +43,7 @@
 					<% end %>
         <div style="margin-bottom: 25px" class="input-group">
 					<span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
-          <%= account.input :subdomain, label: false, :placeholder => "Subdomain" %>
+          <%= account.input :subdomain, label: false, :class => "form-control", :placeholder => "Subdomain" %>
         </div>
 				<div style="margin-top:10px" class="form-group">
 					<div class="col-lg-offset-4 col-lg-8"><%= account.submit class: 'btn btn-default block-center' %></div>
