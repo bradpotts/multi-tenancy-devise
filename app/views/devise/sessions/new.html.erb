@@ -5,7 +5,7 @@
 				<div class="panel-title">User Sign-In</div>
 			</div>     
 			<div style="padding-top:30px" class="panel-body">
-				<%= simple_form_for resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-horizontal multiple_tags', role: 'form'}, wrapper: :horizontal_form, wrapper_mappings: { check_boxes: :horizontal_radio_and_checkboxes, radio_buttons: :horizontal_radio_and_checkboxes, file: :horizontal_file_input, boolean: :horizontal_boolean } do |f| %>
+				<%= simple_form_for resource, as: resource_name, url: session_path(resource_name) do |f| %>
           <%= f.error_notification %>
 					<div style="margin-bottom: 25px" class="input-group">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>

@@ -34,8 +34,6 @@
 				<div style="padding-top:30px" class="panel-body" >
 					<%= simple_form_for @account do |account| %>
             <%= account.error :subdomain %>
-
-          
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
 							<%= account.input_field :name, label: 'Account Name', :class => "form-control", :placeholder => "Account Name"  %>
