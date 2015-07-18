@@ -1,6 +1,7 @@
 module Subengine
 	module ApplicationHelper
 
+    # Bootstrap Notification System
     def bootstrap_class_for(flash_type)
       case flash_type
       when :success

@@ -7,14 +7,15 @@
 				</div>     
 				<div style="padding-top:30px" class="panel-body" >
 					<%= simple_form_for @account do |account| %>
+          <%= account.error :subdomain %>
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
 							<%= account.input_field :name, required: true, autofocus: true, :class => "form-control", :placeholder => "Account Name" %>
 						</div>
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
-              <%= account.input :subdomain, label: false, :class => "form-control", :placeholder => "Subdomain" %>
-						</div>
+              <%= account.input_field :subdomain, required: true, :class => "form-control", :placeholder => "Subdomain" %>
+          </div>
 						<div style="margin-top:10px" class="form-group">
 							<div class="col-lg-offset-4 col-lg-8"><%= account.submit class: 'btn btn-default block-center' %></div>
 						</div>
@@ -32,6 +33,7 @@
 				</div>     
 				<div style="padding-top:30px" class="panel-body" >
 					<%= simple_form_for @account do |account| %>
+            <%= account.error :subdomain %>
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
 							<%= account.input_field :name, label: 'Account Name', :class => "form-control", :placeholder => "Account Name"  %>
@@ -43,7 +45,7 @@
 					<% end %>
         <div style="margin-bottom: 25px" class="input-group">
 					<span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
-          <%= account.input :subdomain, label: false, :class => "form-control", :placeholder => "Subdomain" %>
+          <%= account.input_field :subdomain, required: true, :class => "form-control", :placeholder => "Subdomain" %>
         </div>
 				<div style="margin-top:10px" class="form-group">
 					<div class="col-lg-offset-4 col-lg-8"><%= account.submit class: 'btn btn-default block-center' %></div>
