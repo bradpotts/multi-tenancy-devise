@@ -9,7 +9,7 @@
 CoastDigitalGroup subengine gem adds multi-tenancy and additional user account management features to rails devise authentication system. Users can now have multiple accounts, features subdomain data scoping, a master app login page and sub-domain login pages.
 
 #### Step 1 - Add Subengine to your gemfile
-    gem 'subengine', '~> 1.1.0'
+    gem 'subengine', '~> 1.2.2'
     bundle exec install
 
 #### Step 2 - Add and migrate subengine database tables
