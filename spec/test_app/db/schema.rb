@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150604101617) do
+ActiveRecord::Schema.define(version: 20150719125100) do
 
   create_table "subengine_accounts", force: :cascade do |t|
     t.string   "name"
@@ -59,8 +59,10 @@ ActiveRecord::Schema.define(version: 20150604101617) do
     t.string   "confirmation_token"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
+    t.string   "authentication_token"
   end
 
+  add_index "subengine_users", ["authentication_token"], name: "index_subengine_users_on_authentication_token"
   add_index "subengine_users", ["email"], name: "index_subengine_users_on_email", unique: true
   add_index "subengine_users", ["reset_password_token"], name: "index_subengine_users_on_reset_password_token", unique: true
 

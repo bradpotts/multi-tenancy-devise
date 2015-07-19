@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    subengine (1.1.2)
+    subengine (1.1.3)
       bootstrap-sass
       devise
       houser
@@ -229,6 +229,10 @@ GEM
     simple_form (3.1.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
+    simple_token_authentication (1.10.0)
+      actionmailer (>= 3.2.6, < 5)
+      actionpack (>= 3.2.6, < 5)
+      devise (~> 3.2)
     simplecov (0.10.0)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -280,6 +284,7 @@ DEPENDENCIES
   minitest
   rspec-rails
   shoulda-matchers
+  simple_token_authentication (~> 1.0)
   simplecov
   sqlite3
   subengine!

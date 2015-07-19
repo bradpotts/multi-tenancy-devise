@@ -2,6 +2,9 @@ require_dependency "subengine/application_controller"
 
 module Subengine
   class Account::UsersController < ApplicationController
+    
+    acts_as_token_authentication_handler_for User
+    
     def new
       @user = Subengine::User.new
     end
