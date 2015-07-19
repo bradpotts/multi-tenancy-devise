@@ -1,21 +1,17 @@
 module Subengine
 	module ApplicationHelper
 
-    # Bootstrap Notification System
-    def bootstrap_class_for(flash_type)
-      case flash_type
-      when :success
-        "alert-success alert-dismissible"
-      when :error
-        "alert-error alert-dismissible"
-      when :alert
-        "alert-block alert-dismissible"
-      when :notice
-        "alert-info alert-dismissible"
-      else
-        flash_type.to_s
-      end
-    end
+		# Bootstrap Notification System
+		def bootstrap_class_for(flash_type)
+			case flash_type
+				when :notice then "alert alert-info"
+				when :success then "alert alert-success"
+				when :error then "alert alert-danger"
+				when :alert then "alert alert-warning"
+			else
+				flash_type.to_s
+			end
+		end
 
 	end
 end
