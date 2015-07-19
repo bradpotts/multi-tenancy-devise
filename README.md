@@ -2,10 +2,11 @@
 [![Code Climate](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine/badges/gpa.svg)](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine)
 [![Coverage Status](https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine/badge.svg?branch=master&service=github)](https://coveralls.io/github/CoastDigitalGroup/cdg-subengine?branch=master)
 [![Build Status](https://travis-ci.org/CoastDigitalGroup/cdg-subengine.svg?branch=master)](https://travis-ci.org/CoastDigitalGroup/cdg-subengine)
-
+##### Latest release v1.2 requires rake railties:install:migrations and rake db:migrate in order to copy additional api tokens column to you main app.
+  
 ### CDG Subengine Documentation
 
-Multi-Tenancy engine with devise authentication is easy to incorporate into any project. Documentation is in progress.
+CoastDigitalGroup subengine gem adds multi-tenancy and additional user account management features to rails devise authentication system. Users can now have multiple accounts, features subdomain data scoping, a master app login page and sub-domain login pages.
 
 #### Step 1 - Add Subengine to your gemfile
     gem 'subengine', '~> 1.1.0'
