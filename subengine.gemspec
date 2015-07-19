@@ -23,11 +23,14 @@ Gem::Specification.new do |s|
   s.add_dependency 'devise'
   s.add_dependency 'houser'
   s.add_dependency 'simple_form'
+  s.add_dependency 'simple_token_authentication'
+
   s.add_dependency 'omniauth-facebook'
   s.add_dependency 'omniauth-google-oauth2'
   s.add_dependency 'omniauth-twitter'
   s.add_dependency 'omniauth-instagram'
   s.add_dependency 'omniauth-github'
+  
   s.add_dependency 'bootstrap-sass'
   s.add_dependency 'sass-rails'
   s.add_dependency 'rolify'

@@ -8,5 +8,3 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
-
-gem 'simple_token_authentication', '~> 1.0'

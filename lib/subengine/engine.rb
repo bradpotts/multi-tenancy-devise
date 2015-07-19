@@ -9,6 +9,7 @@ require 'jquery-rails'
 require 'sass-rails'
 require 'bootstrap-sass'
 require 'rolify'
+require 'simple_token_authentication'
 
 module Subengine
   class Engine < ::Rails::Engine
