@@ -8,6 +8,7 @@ require 'simple_form'
 require 'jquery-rails'
 require 'sass-rails'
 require 'bootstrap-sass'
+require 'font-awesome-rails'
 require 'rolify'
 require 'simple_token_authentication'
 
