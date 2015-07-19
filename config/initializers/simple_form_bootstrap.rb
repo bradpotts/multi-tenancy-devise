@@ -26,8 +26,8 @@ SimpleForm.setup do |config|
     b.use :label, class: 'control-label'
 
     b.use :input
-    b.use :error, wrap_with: { tag: 'span', class: 'help-block' }
-    b.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
+    b.use :error, wrap_with: { tag: 'span', class: 'help-block has-error' }
+    b.use :hint,  wrap_with: { tag: 'p', class: 'help-block has-warning' }
   end
 
   config.wrappers :vertical_boolean, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|
@@ -38,8 +38,8 @@ SimpleForm.setup do |config|
       ba.use :label_input
     end
 
-    b.use :error, wrap_with: { tag: 'span', class: 'help-block' }
-    b.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
+    b.use :error, wrap_with: { tag: 'span', class: 'help-block has-error' }
+    b.use :hint,  wrap_with: { tag: 'p', class: 'help-block has-warning' }
   end
 
   config.wrappers :vertical_radio_and_checkboxes, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|
@@ -47,7 +47,7 @@ SimpleForm.setup do |config|
     b.optional :readonly
     b.use :label, class: 'control-label'
     b.use :input
-    b.use :error, wrap_with: { tag: 'span', class: 'help-block' }
+    b.use :error, wrap_with: { tag: 'span', class: 'help-block has-error' }
     b.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
   end
 
@@ -62,8 +62,8 @@ SimpleForm.setup do |config|
 
     b.wrapper tag: 'div', class: 'col-sm-9' do |ba|
       ba.use :input, class: 'form-control'
-      ba.use :error, wrap_with: { tag: 'span', class: 'help-block' }
-      ba.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
+      ba.use :error, wrap_with: { tag: 'span', class: 'help-block has-error' }
+      ba.use :hint,  wrap_with: { tag: 'p', class: 'help-block has-warning' }
     end
   end
 
@@ -76,8 +76,8 @@ SimpleForm.setup do |config|
 
     b.wrapper tag: 'div', class: 'col-sm-9' do |ba|
       ba.use :input
-      ba.use :error, wrap_with: { tag: 'span', class: 'help-block' }
-      ba.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
+      ba.use :error, wrap_with: { tag: 'span', class: 'help-block has-error' }
+      ba.use :hint,  wrap_with: { tag: 'p', class: 'help-block has-warning' }
     end
   end
 
@@ -90,8 +90,8 @@ SimpleForm.setup do |config|
         ba.use :label_input, class: 'col-sm-9'
       end
 
-      wr.use :error, wrap_with: { tag: 'span', class: 'help-block' }
-      wr.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
+      wr.use :error, wrap_with: { tag: 'span', class: 'help-block has-error' }
+      wr.use :hint,  wrap_with: { tag: 'p', class: 'help-block has-warning' }
     end
   end
 
@@ -103,8 +103,8 @@ SimpleForm.setup do |config|
 
     b.wrapper tag: 'div', class: 'col-sm-9' do |ba|
       ba.use :input
-      ba.use :error, wrap_with: { tag: 'span', class: 'help-block' }
-      ba.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
+      ba.use :error, wrap_with: { tag: 'span', class: 'help-block has-error' }
+      ba.use :hint,  wrap_with: { tag: 'p', class: 'help-block has-warning' }
     end
   end
 
@@ -118,8 +118,8 @@ SimpleForm.setup do |config|
     b.use :label, class: 'sr-only'
 
     b.use :input, class: 'form-control'
-    b.use :error, wrap_with: { tag: 'span', class: 'help-block' }
-    b.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
+    b.use :error, wrap_with: { tag: 'span', class: 'help-block has-error' }
+    b.use :hint,  wrap_with: { tag: 'p', class: 'help-block has-warning' }
   end
 
   # Wrappers for forms and inputs using the Bootstrap toolkit.
