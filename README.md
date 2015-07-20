@@ -2,7 +2,11 @@
 [![Code Climate](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine/badges/gpa.svg)](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine)
 [![Coverage Status](https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine/badge.svg?branch=master&service=github)](https://coveralls.io/github/CoastDigitalGroup/cdg-subengine?branch=master)
 [![Build Status](https://travis-ci.org/CoastDigitalGroup/cdg-subengine.svg?branch=master)](https://travis-ci.org/CoastDigitalGroup/cdg-subengine)
-##### Latest release v1.2 requires rake railties:install:migrations and rake db:migrate in order to copy additional api tokens column to you main app.
+##### For exisiting isntallations release v1.2+ may cause issues and requires an additional db migrations file, mainapp requires rake railties:install:migrations
+
+
+requires additional migrations to be copied over for api tokens. 
+and rake db:migrate in order to copy additional api tokens column to you main app.
   
 ### CDG Subengine Documentation
 
