@@ -4,7 +4,7 @@ feature 'Accounts creation' do
   before(:each) do
     @account = create :account
     sign_in @account.owner, attributes_for(:user)[:password]
-    click_on 'Create a new Account'
+    click_on 'Create a New Account'
     expect(page).to have_text 'Create Account'
   end
   scenario 'creating an account' do
