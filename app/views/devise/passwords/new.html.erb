@@ -12,7 +12,7 @@
 						<%= f.input_field :email, required: true,  autofocus: true, :class => "form-control", :placeholder => "Email" %>
 					</div>
 					<div style="margin-top:10px" class="form-group">
-						<%= f.button :submit, "Send me Reset Password Instructions" %>
+						<%= f.button :submit, "Send me Reset Password Instructions", :class => "btn btn-primary" %>
 					</div>
 					<div id="loginborder">
 						<%= render "devise/shared/links" %>

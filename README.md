@@ -62,5 +62,5 @@ Once installed views can be generated and customized to your apps needs.
 
 #### Having troubles ?
 Example substarter app - <https://github.com/CoastDigitalGroup/cdg-substarter>  
-Documentation (Wiki) - <https://github.com/CoastDigitalGroup/cdg-subengine/wiki>
-Issues and Bug Reports - <https://github.com/CoastDigitalGroup/cdg-subengine/issues>
+Documentation (Wiki) - <https://github.com/CoastDigitalGroup/cdg-subengine/wiki>  
+Issues and Bug Reports - <https://github.com/CoastDigitalGroup/cdg-subengine/issues>  

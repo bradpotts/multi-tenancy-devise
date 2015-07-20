@@ -19,7 +19,7 @@
 						<%= f.input_field :remember_me, as: :boolean, inline_label: 'Remember me' if devise_mapping.rememberable? %>
 					</div>					
 					<div style="margin-top:10px" class="form-group">
-            <%= f.button :submit, "Sign-In", :class => "btn btn-default" %>
+            <%= f.button :submit, "Sign-In", :class => "btn btn-primary" %>
           </div>
 					<div id="loginborder" >
 						<%= render "devise/shared/links" %>
