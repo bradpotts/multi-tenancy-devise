@@ -1,5 +1,5 @@
 <h2>Sign Up</h2>
 <%= form_for(@user, :url => do_user_sign_up_url) do |user| %>
   <%= render "subengine/account/users/form", :user => user %>
-  <%= user.submit "Sign Up", :class => "btn btn-primary" %>
+  <%= user.submit "Sign Up" %>
 <% end %>
