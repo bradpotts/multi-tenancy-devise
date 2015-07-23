@@ -7,7 +7,7 @@
 				</div>     
 				<div style="padding-top:30px" class="panel-body" >
 					<%= simple_form_for @account, :validate => true, html: {class: 'form-horizontal multiple_tags', role: 'form'} do |account| %>
-					<%= f.error_notification %>
+					<%= account.error_notification %>
           <div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="fa fa-users"></i></span>
               <%= account.error :name %>
@@ -35,7 +35,7 @@
 				</div>     
 				<div style="padding-top:30px" class="panel-body" >
 					<%= simple_form_for @account, html: {class: 'form-horizontal multiple_tags', role: 'form'} do |account| %>
-						<%= f.error_notification %>
+						<%= account.error_notification %>
             <div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="fa fa-users"></i></span>
               <%= account.error :name %>
@@ -44,6 +44,9 @@
 						<div style="margin-bottom: 25px" class="input-group">
 							<%= account.simple_fields_for :owner do |owner| %>
 						</div>
+            <%= account.error :email %>
+            <%= account.error :password %>
+            <%= account.error :password_confirmation %>
 						<%= render 'subengine/account/users/form', :user => owner %>
 					<% end %>
         <div style="margin-bottom: 25px" class="input-group">
