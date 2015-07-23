@@ -25,7 +25,6 @@
 module Subengine
   class User < ::User
     
-    include Subengine::UserStorage
     rolify role_join_table_name: 'subengine_users_subengine_roles', role_cname: 'Subengine::Role'
     acts_as_token_authenticatable
     has_many :accounts, :class_name => "Subengine::Account", :foreign_key => "owner_id"
