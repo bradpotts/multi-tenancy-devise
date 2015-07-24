@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    subengine (1.2.10)
+    subengine (1.2.11)
       bootstrap-sass
       devise
       font-awesome-rails
