@@ -8,16 +8,26 @@
 				<div style="padding-top:30px" class="panel-body" >
 					<%= simple_form_for @account, :validate => true, html: {class: 'form-horizontal multiple_tags', role: 'form'} do |account| %>
 					<%= account.error_notification %>
-          <div style="margin-bottom: 25px" class="input-group">
-              <label class="control-label" for="inputError1"><%= account.error :name %></label>
-							<span class="input-group-addon"><i class="fa fa-users"></i></span>
-							<%= account.input_field :name, required: true, autofocus: true, :class => "form-control", :placeholder => "Account Name" %>
+					<div class="control-group error">
+						<div class="controls">
+							<input type="text" id="inputError">
+							<span class="help-inline"><%= account.error :name %></span>
 						</div>
-						<div style="margin-bottom: 25px" class="input-group">
-							<span class="input-group-addon"><i class="fa fa-link"></i></span>
-              <label class="control-label" for="inputError1"><%= account.error :subdomain %></label>
-              <%= account.input_field :subdomain, required: true, :class => "form-control", :placeholder => "Subdomain" %>
-            </div>
+					</div>
+					<div style="margin-bottom: 25px" class="input-group">
+						<span class="input-group-addon"><i class="fa fa-users"></i></span>
+						<%= account.input_field :name, required: true, autofocus: true, :class => "form-control", :placeholder => "Account Name" %>
+					</div>
+					<div class="control-group error">
+						<div class="controls">
+							<input type="text" id="inputError">
+							<span class="help-inline"><%= account.error :subdomain %></span>
+						</div>
+					</div>
+					<div style="margin-bottom: 25px" class="input-group">
+						<span class="input-group-addon"><i class="fa fa-link"></i></span>
+						<%= account.input_field :subdomain, required: true, :class => "form-control", :placeholder => "Subdomain" %>
+					</div>
 						<div style="margin-top:10px" class="form-group">
 							<div class="col-lg-offset-4 col-lg-8"><%= account.submit :class => "btn btn-primary" %></div>
 						</div>
@@ -36,28 +46,51 @@
 				<div style="padding-top:30px" class="panel-body" >
 					<%= simple_form_for @account, html: {class: 'form-horizontal multiple_tags', role: 'form'} do |account| %>
 						<%= account.error_notification %>
-            <div style="margin-bottom: 25px" class="input-group">
+						<div class="control-group error">
+							<div class="controls">
+								<input type="text" id="inputError">
+								<span class="help-inline"><%= account.error :name %></span>
+							</div>
+						</div>
+						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="fa fa-users"></i></span>
-              <label class="control-label" for="inputError1"><%= account.error :name %></label>
 							<%= account.input_field :name, label: 'Account Name', :class => "form-control", :placeholder => "Account Name"  %>
 						</div>
 						<div style="margin-bottom: 25px" class="input-group">
 							<%= account.simple_fields_for :owner do |owner| %>
+								<div class="control-group error">
+									<div class="controls">
+										<input type="text" id="inputError">
+										<span class="help-inline"><%= account.error :email %></span>
+									</div>
+									<div class="controls">
+										<input type="text" id="inputError">
+										<span class="help-inline"><%= account.error :password %></span>
+									</div>
+									<div class="controls">
+										<input type="text" id="inputError">
+										<span class="help-inline"><%= account.error :password_confirmation %></span>
+									</div>
+								</div>
+								<%= render 'subengine/account/users/form', :user => owner %>
+							<% end %>
 						</div>
-            <label class="control-label" for="inputError1"><%= account.error :email %></label>
-            <label class="control-label" for="inputError1"><%= account.error :password %></label>
-            <label class="control-label" for="inputError1"><%= account.error :password_confirmation %></label>
-						<%= render 'subengine/account/users/form', :user => owner %>
+						<div class="control-group error">
+							<div class="controls">
+								<input type="text" id="inputError">
+								<span class="help-inline"><%= account.error :subdomain %></span>
+							</div>
+						</div>
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="fa fa-link"></i></span>
+							<%= account.input_field :subdomain, required: true, :class => "form-control", :placeholder => "Subdomain" %>
+						</div>
+						<div style="margin-top:10px" class="form-group">
+							<div class="col-lg-offset-4 col-lg-8"><%= account.submit class: 'btn btn-default block-center' %></div>
+						</div>
 					<% end %>
-        <div style="margin-bottom: 25px" class="input-group">
-					<span class="input-group-addon"><i class="fa fa-link"></i></span>
-          <label class="control-label" for="inputError1"><%= account.error :subdomain %></label>
-          <%= account.input_field :subdomain, required: true, :class => "form-control", :placeholder => "Subdomain" %>
-        </div>
-				<div style="margin-top:10px" class="form-group">
-					<div class="col-lg-offset-4 col-lg-8"><%= account.submit class: 'btn btn-default block-center' %></div>
 				</div>
-			<% end %>
+			</div>
 		</div>
 	</div>
 <% end %>
