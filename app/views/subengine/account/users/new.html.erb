@@ -1,5 +1,5 @@
 <h2>Sign Up</h2>
-<%= form_for(@user, :url => do_user_sign_up_url) do |user| %>
+<%= form_for(@user, :url => do_user_sign_up_url), html: {class: 'form-vertical multiple_tags', role: 'form'} do |user| %>
   <%= render "subengine/account/users/form", :user => user %>
   <%= user.submit "Sign Up" %>
 <% end %>
