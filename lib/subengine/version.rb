@@ -1,3 +1,3 @@
 module Subengine
-  VERSION = '1.2.12rc'
+  VERSION = '1.2.13'
 end
