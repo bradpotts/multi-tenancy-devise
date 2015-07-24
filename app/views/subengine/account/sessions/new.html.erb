@@ -1,6 +1,7 @@
 <%= link_to "New User?", subengine.user_sign_up_url %>
 <h2>Sign In</h2>
 <%= form_for @user, :url => sessions_url do, html: {class: 'form-vertical multiple_tags', role: 'form'} |f| %>
+	<%= render 'shared/validation', object: f.object %>
   <p>
     <%= f.label :email %><br>
     <%= f.email_field :email%>
