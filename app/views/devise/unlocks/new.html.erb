@@ -1,14 +1,14 @@
-<div class="container">    
-	<div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+<div class="container">
+	<div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<div class="panel-title">Send Unlock Instructions</div>
-			</div>     
+			</div>
 			<div style="padding-top:30px" class="panel-body" >
 				<%= simple_form_for(resource, as: resource_name, url: unlock_path(resource_name), , html: { method: :put, class: 'form-vertical multiple_tags', role: 'form'}) do |f| %>
-					<%= render 'shared/validation', object: f.object %>	
 					<%= f.error_notification %>
-					<%= f.full_error :unlock_token %>
+          <%= f.full_error :unlock_token %>
+					<%= render 'shared/validation', object: f.object %>
 					<div style="margin-bottom: 25px" class="input-group">
 						<label class="control-label" for="inputError1"><%= f.error :email %></label>
 						<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
@@ -21,7 +21,7 @@
 					</div>
 					<div id="loginborder">
 						<%= render "devise/shared/links" %>
-					</div>    
+					</div>
 				<% end %>
 			</div>
 		</div>
