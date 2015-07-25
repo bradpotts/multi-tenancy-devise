@@ -1,3 +1,3 @@
 module Subengine
-  VERSION = '1.3.0rc'
+  VERSION = '1.3.0'
 end
