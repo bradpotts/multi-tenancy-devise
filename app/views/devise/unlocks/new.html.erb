@@ -10,7 +10,6 @@
           <%= f.full_error :unlock_token %>
 					<%= render 'shared/validation', object: f.object %>
 					<div style="margin-bottom: 25px" class="input-group">
-						<label class="control-label" for="inputError1"><%= f.error :email %></label>
 						<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
 						<%= f.input_field :email, required: true, autofocus: true, :class => "form-control", :placeholder => "Email" %>
 					</div>
