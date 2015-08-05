@@ -2,13 +2,13 @@
 [![Code Climate](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine/badges/gpa.svg)](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine)
 [![Coverage Status](https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine/badge.svg?branch=master&service=github)](https://coveralls.io/github/CoastDigitalGroup/cdg-subengine?branch=master)
 [![Build Status](https://travis-ci.org/CoastDigitalGroup/cdg-subengine.svg?branch=master)](https://travis-ci.org/CoastDigitalGroup/cdg-subengine)
-##### For exisiting isntallations release v1.2+ has an additional db migration file. Next version 1.3.0 will have major revisions to views, notification system and validation errors to preview download version 1.2.13
+##### For exisiting isntallations release v1.2+ has an additional db migration file. v1.3+ views have been modified.
 
 ### CDG Subengine Documentation
 CoastDigitalGroup subengine gem adds multi-tenancy and additional user account management features to rails devise authentication system. Users can now have multiple accounts, features subdomain data scoping, a master app login page and sub-domain login pages.
 
 #### Step 1 - Add Subengine to your gemfile
-    gem 'subengine', '~> 1.3.0'
+    gem 'subengine'
     bundle exec install
 
 #### Step 2 - Add and migrate subengine database tables
@@ -31,19 +31,22 @@ All the routes you want to have multi-tenacy login functions goes inbetween the 
       # Routes Requiring Security & Multi-Tenancy Routes    
     end  
   
-#### Step 6 - Add subengine extention to models
+#### Step 6 - Modifications to MainApp Controllers & Database  
+Your app needs modification to controllers and corresponding database tables must have an accounts_id column.
+
+#### Step 7 - Add subengine extention to models
 Add the subengine extension to the top of all models for the routes configured in the previous step.
   
     extend Subengine::ScopedTo
 
-#### Step 7 - Add user model to your app
+#### Step 8 - Add user model to your app
 Generate a user.rb file and add the code blew 
 
     rails g model User  
 
     include Subengine::UserStorage
 
-#### Step 8 - Configure scopes in your controller
+#### Step 9 - Configure scopes in your controller
 Scope your controllers. Examples on github wiki or cdg-substarter app.
 
     .scoped_to(current_account)  
