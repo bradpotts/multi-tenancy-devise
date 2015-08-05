@@ -32,13 +32,15 @@ All the routes you want to have multi-tenacy login functions goes inbetween the 
     end  
   
 #### Step 6 - Modifications to MainApp Controllers & Database  
-Your app needs modification to controllers and corresponding database tables must have an accounts_id column.
-
-#### Step 7 - Add subengine extention to models
-Add the subengine extension to the top of all models for the routes configured in the previous step.
+Your app needs modification to [controllers (example)](https://github.com/CoastDigitalGroup/cdg-subengine/wiki/Scoped-Controller-Example) and corresponding tables must have an accounts_id column.  
   
-    extend Subengine::ScopedTo
-
+    accounts_id  
+  
+#### Step 7 - Add subengine extention to models  
+Add the subengine extension to the top of all models for the routes configured in the previous step.  
+  
+    extend Subengine::ScopedTo  
+  
 #### Step 8 - Add user model to your app
 Generate a user.rb file and add the code blew 
 
