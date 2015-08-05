@@ -34,10 +34,6 @@ module Subengine
       self.subdomain = subdomain.to_s.downcase
     end
 
-    def create_schema
-      Apartment::Database.create(subdomain)
-    end
-
     def self.create_with_owner(params={})
       account = new(params)
       if account.save

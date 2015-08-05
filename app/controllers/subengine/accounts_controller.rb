@@ -2,7 +2,6 @@ require_dependency "subengine/application_controller"
 
 module Subengine
   class AccountsController < ApplicationController
-
     before_action :redirect_if_coming_form_sign_up, only: :new
     before_action :authenticate_user!, except: [:new, :create]
 
@@ -40,7 +39,7 @@ module Subengine
         render :new
       end
     end
-
+  
   private
 
     def redirect_if_coming_form_sign_up
@@ -52,6 +51,6 @@ module Subengine
         :email, :password, :password_confirmation
       ]})
     end
-
+  
   end
 end
