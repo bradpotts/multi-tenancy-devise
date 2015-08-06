@@ -11,6 +11,7 @@ require 'bootstrap-sass'
 require 'font-awesome-rails'
 require 'rolify'
 require 'simple_token_authentication'
+require 'gravtastic'
 
 module Subengine
   class Engine < ::Rails::Engine

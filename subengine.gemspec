@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'font-awesome-rails'
   s.add_dependency 'sass-rails'
   s.add_dependency 'rolify'
+  s.add_dependency 'gravtastic'
 
   # s.add_dependency 'pry'
   # s.add_dependency 'pry-nav'

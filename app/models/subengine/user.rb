@@ -24,9 +24,11 @@
 
 module Subengine
   class User < ::User
+    include Gravtastic
     
     rolify role_join_table_name: 'subengine_users_subengine_roles', role_cname: 'Subengine::Role'
     acts_as_token_authenticatable
+    gravtastic
     has_many :accounts, :class_name => "Subengine::Account", :foreign_key => "owner_id"
     devise :database_authenticatable, :registerable,
       :recoverable, :rememberable, :trackable, :validatable, :confirmable, :omniauthable
