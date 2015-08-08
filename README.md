@@ -6,48 +6,48 @@
 
 ### CDG Subengine Documentation
 CoastDigitalGroup subengine gem adds multi-tenancy and additional user account management features to rails devise authentication system. Users can now have multiple accounts, features subdomain data scoping, a master app login page and sub-domain login pages.
+  
+#### Step 1 - Add user model to your app
+Generate a user.rb file in your mainapp and add the code below 
 
-#### Step 1 - Add Subengine to your gemfile
+    rails g model User  
+
+    include Subengine::UserStorage
+  
+#### Step 2 - Add Subengine to your gemfile
     gem 'subengine'
     bundle exec install
 
-#### Step 2 - Add and migrate subengine database tables
+#### Step 3 - Add and migrate subengine database tables
     rake railties:install:migrations  
     rake db:migrate
 
-#### Step 3 - Configure ActionMailer
+#### Step 4 - Configure ActionMailer
 + Mailer functions are required in order for subengine to operate.
 + Mailer is used for confirmation and password reset functions.
 
-#### Step 4 - Mount the Engine in your Routes File
+#### Step 5 - Mount the Engine in your Routes File
 Add this line at the end of the routes file.  
   
     mount Subengine::Engine, :at => '/'
 
-#### Step 5 - Constrain the routs you want secured
+#### Step 6 - Constrain the routs you want secured
 All the routes you want to have multi-tenacy login functions goes inbetween the constrainsts block.
 
     constraints(Subengine::Constraints::SubdomainRequired) do  
       # Routes Requiring Security & Multi-Tenancy Routes    
     end  
   
-#### Step 6 - Modifications to MainApp Controllers & Database  
+#### Step 7 - Modifications to MainApp Controllers & Database  
 Your app needs modification to [controllers (example)](https://github.com/CoastDigitalGroup/cdg-subengine/wiki/Scoped-Controller-Example) and corresponding tables must have an accounts_id column.  
   
     accounts_id  
   
-#### Step 7 - Add subengine extention to models  
+#### Step 8 - Add subengine extention to models  
 Add the subengine extension to the top of all models for the routes configured in the previous step.  
   
     extend Subengine::ScopedTo  
   
-#### Step 8 - Add user model to your app
-Generate a user.rb file and add the code blew 
-
-    rails g model User  
-
-    include Subengine::UserStorage
-
 #### Step 9 - Configure scopes in your controller
 Scope your controllers. Examples on github wiki or cdg-substarter app.
 
