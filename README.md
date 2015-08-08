@@ -2,7 +2,7 @@
 [![Code Climate](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine/badges/gpa.svg)](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine)
 [![Coverage Status](https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine/badge.svg?branch=master&service=github)](https://coveralls.io/github/CoastDigitalGroup/cdg-subengine?branch=master)
 [![Build Status](https://travis-ci.org/CoastDigitalGroup/cdg-subengine.svg?branch=master)](https://travis-ci.org/CoastDigitalGroup/cdg-subengine)
-##### For exisiting isntallations release v1.2+ has an additional db migration file. v1.3+ views have been modified.
+##### For existing installations release v1.2+ has an additional db migration file. v1.3+ views have been modified.
 
 ### CDG Subengine Documentation
 CoastDigitalGroup subengine gem adds multi-tenancy and additional user account management features to rails devise authentication system. Users can now have multiple accounts, features subdomain data scoping, a master app login page and sub-domain login pages.
@@ -32,7 +32,7 @@ Add this line at the end of the routes file.
     mount Subengine::Engine, :at => '/'
 
 #### Step 6 - Constrain the routs you want secured
-All the routes you want to have multi-tenacy login functions goes inbetween the constrainsts block.
+All the routes you want to have multi-tenacy login functions goes in between the constraints block.
 
     constraints(Subengine::Constraints::SubdomainRequired) do  
       # Routes Requiring Security & Multi-Tenancy Routes    
@@ -43,7 +43,7 @@ Your app needs modification to [controllers (example)](https://github.com/CoastD
   
     accounts_id  
   
-#### Step 8 - Add subengine extention to models  
+#### Step 8 - Add subengine extension to models  
 Add the subengine extension to the top of all models for the routes configured in the previous step.  
   
     extend Subengine::ScopedTo  
@@ -52,15 +52,16 @@ Add the subengine extension to the top of all models for the routes configured i
 Scope your controllers. Examples on github wiki or cdg-substarter app.
 
     .scoped_to(current_account)  
-
-### Additional Information
-
-#### Views - Subengine Views Can be Customized
-Once installed views can be generated and customized to your apps needs.
-
-    rails generate subengine:views
-
-#### Having troubles ?
-Example substarter app - <https://github.com/CoastDigitalGroup/cdg-substarter>  
-Documentation (Wiki) - <https://github.com/CoastDigitalGroup/cdg-subengine/wiki>  
-Issues and Bug Reports - <https://github.com/CoastDigitalGroup/cdg-subengine/issues>  
+  
+### Additional Information  
+  
+#### Views - Subengine Views Can be Customized  
+Once installed views can be generated and customized to your apps needs.  
+  
+    rails generate subengine:views  
+  
+#### Having troubles ?  
+[Multi-Tenant Starter App](https://github.com/CoastDigitalGroup/cdg-substarter)  
+[Documentation (Github Wiki)](https://github.com/CoastDigitalGroup/cdg-subengine/wiki)  
+[Issues & Bug Reports](https://github.com/CoastDigitalGroup/cdg-subengine/issues)  
+[Managed by CoastDigitalGroup](http://coastdigitalgroup.com/)  
