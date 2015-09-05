@@ -2,7 +2,6 @@
 [![Code Climate](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine/badges/gpa.svg)](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine)
 [![Coverage Status](https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine/badge.svg?branch=master&service=github)](https://coveralls.io/github/CoastDigitalGroup/cdg-subengine?branch=master)
 [![Build Status](https://travis-ci.org/CoastDigitalGroup/cdg-subengine.svg?branch=master)](https://travis-ci.org/CoastDigitalGroup/cdg-subengine)
-##### For existing installations release v1.2+ has an additional db migration file. v1.3+ views have been modified.
 
 ### CDG Subengine Documentation
 CoastDigitalGroup subengine gem adds multi-tenancy and additional user account management features to rails devise authentication system. Users can now have multiple accounts, features subdomain data scoping, a master app login page and sub-domain login pages.
