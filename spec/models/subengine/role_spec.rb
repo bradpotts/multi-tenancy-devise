@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
 module Subengine
   RSpec.describe Role, type: :model do
