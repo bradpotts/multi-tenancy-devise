@@ -12,7 +12,7 @@ Subengine multi-tenant gem for ruby on rails devise authentication system.
 * Central login screen for all tenants (users) or logins through subdomain.  
 * Compatible with postgre, mysql and sqlite (for deve environments)  
 
-#### Step 1 - Add user model to your app (Has to be Done First!!)
+#### Step 1 - Add user model to your app (Must be Done First!!)
 Generate a user.rb file in your mainapp and add the code below 
 
     rails g model User  
@@ -20,7 +20,7 @@ Generate a user.rb file in your mainapp and add the code below
     include Subengine::UserStorage
   
 #### Step 2 - Add Subengine to your gemfile
-    gem 'subengine'
+    gem 'subengine-devise', '~> 1.3.9'  
     bundle exec install
 
 #### Step 3 - Add and migrate subengine database tables
