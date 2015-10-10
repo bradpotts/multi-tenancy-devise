@@ -4,10 +4,11 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../test_app/config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
-require 'shoulda-matchers'
+require 'shoulda/matchers'
 require 'capybara/rspec'
 require "factory_girl"
 require "database_cleaner"
+
 
 if ENV["RAILS_ENV"] == 'test'
   unless ENV["SKIP_COV"]
@@ -82,3 +83,11 @@ RSpec.configure do |config|
 end
 
 Capybara.app_host = "http://example.com"
+
+# Fix to load shoulda matches
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end

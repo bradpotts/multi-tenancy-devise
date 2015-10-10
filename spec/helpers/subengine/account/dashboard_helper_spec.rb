@@ -10,8 +10,8 @@ require 'spec_helper'
 #     end
 #   end
 # end
-module Subengine
-  describe Account::DashboardHelper do
-    pending "add some examples to (or delete) #{__FILE__}"
-  end
-end
+# module Subengine
+#  describe Account::DashboardHelper do
+#    pending "add some examples to (or delete) #{__FILE__}"
+# end
+# end

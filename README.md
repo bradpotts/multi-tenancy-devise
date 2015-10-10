@@ -1,12 +1,18 @@
-[![security](https://hakiri.io/github/CoastDigitalGroup/cdg-subengine/master.svg)](https://hakiri.io/github/CoastDigitalGroup/cdg-subengine/master)
-[![Code Climate](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine/badges/gpa.svg)](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine)
-[![Coverage Status](https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine/badge.svg?branch=master&service=github)](https://coveralls.io/github/CoastDigitalGroup/cdg-subengine?branch=master)
-[![Build Status](https://travis-ci.org/CoastDigitalGroup/cdg-subengine.svg?branch=master)](https://travis-ci.org/CoastDigitalGroup/cdg-subengine)
+[![security](https://hakiri.io/github/CoastDigitalGroup/cdg-subengine-devise/master.svg)](https://hakiri.io/github/CoastDigitalGroup/cdg-subengine-devise/master)
+[![Code Climate](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine-devise/badges/gpa.svg)](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine-devise)
+[![Coverage Status](https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine-devise/badge.svg?branch=master&service=github)](https://coveralls.io/github/CoastDigitalGroup/cdg-subengine-devise?branch=master)
+[![Build Status](https://travis-ci.org/CoastDigitalGroup/cdg-subengine-devise.svg?branch=master)](https://travis-ci.org/CoastDigitalGroup/cdg-subengine-devise)
 
 ### CDG Subengine Documentation
-CoastDigitalGroup subengine gem adds multi-tenancy and additional user account management features to rails devise authentication system. Users can now have multiple accounts, features subdomain data scoping, a master app login page and sub-domain login pages.
-  
-#### Step 1 - Add user model to your app
+Subengine multi-tenant gem for ruby on rails devise authentication system.
+
+* Multi-tenancy using subdomain scoping and account_id column.
+* Adds basecamp style logins to devise authetication gem.  
+* Highly customizable views and layouts using standard bootstrap 3 code.  
+* Central login screen for all tenants (users) or logins through subdomain.  
+* Compatible with postgre, mysql and sqlite (for deve environments)  
+
+#### Step 1 - Add user model to your app (Has to be Done First!!)
 Generate a user.rb file in your mainapp and add the code below 
 
     rails g model User  
