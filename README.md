@@ -2,6 +2,7 @@
 [![Code Climate](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine-devise/badges/gpa.svg)](https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine-devise)
 [![Coverage Status](https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine-devise/badge.svg?branch=master&service=github)](https://coveralls.io/github/CoastDigitalGroup/cdg-subengine-devise?branch=master)
 [![Build Status](https://travis-ci.org/CoastDigitalGroup/cdg-subengine-devise.svg?branch=master)](https://travis-ci.org/CoastDigitalGroup/cdg-subengine-devise)
+[![Gem Version](https://badge.fury.io/rb/subengine-devise.svg)](https://badge.fury.io/rb/subengine-devise)  
 
 ### CDG Subengine Documentation
 Subengine multi-tenant gem for ruby on rails devise authentication system.
