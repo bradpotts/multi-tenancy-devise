@@ -5,7 +5,7 @@
 [![Gem Version](https://badge.fury.io/rb/subengine-devise.svg)](https://badge.fury.io/rb/subengine-devise)  
 
 ### CDG Subengine Documentation
-Subengine multi-tenant gem for ruby on rails devise authentication system.
+CDG subengine-devise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
 
 * Multi-tenancy using subdomain scoping and account_id column.
 * Adds basecamp style logins to devise authetication gem.  

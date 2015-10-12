@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["bradley.j.potts@gmail.com"]
   s.homepage    = "http://www.coastdigitalgroup.com"
   s.summary     = "Multi-Tenant Rails Engine Using Devise."
-  s.description = "Subengine multi-tenant gem for ruby on rails devise authentication system."
+  s.description = "CDG subengine-devise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
