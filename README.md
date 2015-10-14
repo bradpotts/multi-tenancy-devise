@@ -52,7 +52,9 @@ Your app needs modification to [controllers (example)](https://github.com/CoastD
 #### Step 8 - Add subengine extension to models  
 Add the subengine extension to the top of all models for the routes configured in the previous step.  
   
-    extend Subengine::ScopedTo  
+    def self.scoped_to(account)  
+       where(:account_id => account.id)  
+    end  
   
 #### Step 9 - Configure scopes in your controller
 Scope your controllers. Examples on github wiki or cdg-substarter app.
