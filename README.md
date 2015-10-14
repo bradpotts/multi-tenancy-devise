@@ -21,7 +21,7 @@ Generate a user.rb file in your mainapp and add the code below
     include Subengine::UserStorage
   
 #### Step 2 - Add Subengine to your gemfile
-    gem 'subengine-devise', '~> 1.4.0', require: 'subengine' 
+    gem 'subengine-devise', '~> 1.4.1', require: 'subengine' 
     bundle exec install
 
 #### Step 3 - Add and migrate subengine database tables
