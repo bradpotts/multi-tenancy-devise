@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  include Subengine::UserStorage
+	include Mtdevise::UserStorage
 end

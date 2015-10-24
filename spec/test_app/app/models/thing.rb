@@ -1,3 +1,3 @@
 class Thing < ActiveRecord::Base
-  extend Subengine::ScopedTo
+	extend Mtdevise::ScopedTo
 end

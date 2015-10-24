@@ -1,0 +1,12 @@
+<div style="margin-bottom: 25px" class="input-group">
+	<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+	<%= user.input_field :email, required: true, :class => "form-control", :placeholder => "Email" %>
+</div>
+<div style="margin-bottom: 25px" class="input-group">
+	<span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
+	<%= user.input_field :password, required: true, :class => "form-control", :placeholder => "Password" %>
+</div>
+<div style="margin-bottom: 25px" class="input-group">
+	<span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
+	<%= user.input_field :password_confirmation, required: true, :class => "form-control", :placeholder => "Confirm Password" %>
+</div>

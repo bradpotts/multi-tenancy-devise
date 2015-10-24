@@ -1,10 +1,10 @@
 FactoryGirl.define do
-  factory :account, :class => Subengine::Account do
-    sequence(:name) { |n| "Test Account ##{n}" }
-    sequence(:subdomain) { |n| "test#{n}" }
-    association :owner, :factory => :user
-    after(:create) do |account|
-      account.users << account.owner
-    end
-  end
+	factory :account, :class => Mtdevise::Account do
+		sequence(:name) { |n| "Test Account ##{n}" }
+		sequence(:subdomain) { |n| "test#{n}" }
+		association :owner, :factory => :user
+		after(:create) do |account|
+			account.users << account.owner
+		end
+	end
 end

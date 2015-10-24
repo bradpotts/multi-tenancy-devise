@@ -1,0 +1,31 @@
+<div class="container">
+	<div style="padding-top:30px" class="row">
+	<div class="mainbox col-lg-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title">Your Accounts</div>
+			</div>     
+			<div style="padding-top:30px" class="panel-body" >
+				<table class="table table-stripped table-hover">
+					<thead>
+						<tr>
+							<th>Account Name</th>
+							<th>Subdomain</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% @accounts.each do |account| %>
+							<tr>
+								<th scope="row"><%= account.name %></th>
+								<th scope="row"><%= link_to account.subdomain, "http://#{account.subdomain}.#{request.domain}" %></th>
+							</tr>
+						<% end %>
+					</tbody>
+				</table>
+			</div>
+			<div class="panel-footer clearfix">
+				<div class="pull-right"><%= link_to 'Create a New Account', mtdevise.new_account_path, :class => "btn btn-primary" %></div>
+			</div>
+		</div>
+	</div>
+</div>

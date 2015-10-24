@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    subengine-devise (1.4.1)
+    mtdevise-devise (1.4.1)
       bootstrap-sass
       devise
       font-awesome-rails
@@ -296,7 +296,7 @@ DEPENDENCIES
   shoulda-matchers
   simplecov
   sqlite3
-  subengine-devise!
+  mtdevise-devise!
 
 BUNDLED WITH
    1.10.6
