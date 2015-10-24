@@ -44,7 +44,7 @@ All the routes you want to have multi-tenacy login functions goes in between the
 	end  
   
 #### Step 7 - Modifications to MainApp Controllers & Database  
-Your app needs modification to [controllers (example)](https://github.com/PHCNetworks/cdg-mtdevise/wiki/Scoped-Controller-Example) and corresponding database tables must have an accounts_id column.  
+Your app needs modification to [controllers (example)](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/Scoped-Controller-Example) and corresponding database tables must have an accounts_id column.  
   
 	accounts_id  
   
@@ -69,6 +69,6 @@ Once installed views can be generated and customized to your apps needs.
   
 #### Having troubles ?  
 [Multi-Tenant Starter App](https://github.com/PHCNetworks/multi-tenancy-starter-devise)  
-[Documentation (Github Wiki)](https://github.com/PHCNetworks/mtdevise/wiki)  
+[Documentation (Github Wiki)](https://github.com/PHCNetworks/multi-tenancy-devise/wiki)  
 [Issues & Bug Reports](https://github.com/PHCNetworks/multi-tenancy-devise/issues)  
 [Managed by PHCNetworks](http://phcnetworks.net)  
