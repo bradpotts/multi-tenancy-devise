@@ -8,7 +8,7 @@
 PHC mtdevise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
 
 * Multi-tenancy using subdomain scoping and account_id column.
-* Adds basecamp style logins to devise authetication gem.  
+* Adds basecamp style logins to devise authentication gem.  
 * Highly customizable views and layouts using standard bootstrap 3 code.  
 * Central login screen for all tenants (users) or logins through subdomain.  
 * Compatible with postgre, mysql and sqlite (for deve environments)  
