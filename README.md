@@ -2,6 +2,7 @@
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise)
 [![Coverage Status](https://coveralls.io/repos/PHCNetworks/multi-tenancy-devise/badge.svg?branch=master&service=github)](https://coveralls.io/github/PHCNetworks/multi-tenancy-devise?branch=master)
 [![Build Status](https://travis-ci.org/PHCNetworks/multi-tenancy-devise.svg?branch=master)](https://travis-ci.org/PHCNetworks/multi-tenancy-devise)
+[![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
 
 ### Mtdevise (MultiTenancyDevise) Documentation
 PHC mtdevise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
@@ -16,17 +17,16 @@ PHC mtdevise gem adds multi-tenant and account management features to rails Devi
 Generate a user.rb file in your mainapp and add the code below 
 
 	rails g model User  
-
-	include Mtdevise::UserStorage
+	include Mtdevise::UserStorage  
   
 #### Step 2 - Add Mtdevise to your gemfile
-	gem 'mtdevise', '~> 1.5'
-	bundle exec install
+	gem 'mtdevise', '~> 1.5'  
+	bundle exec install  
 
 #### Step 3 - Add and migrate mtdevise database tables
 	rake railties:install:migrations  
-	rake db:migrate
-
+	rake db:migrate  
+  
 #### Step 4 - Configure ActionMailer
 + Mailer functions are required in order for mtdevise to operate.
 + Mailer is used for confirmation and password reset functions.
