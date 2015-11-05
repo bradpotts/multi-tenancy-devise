@@ -9,7 +9,6 @@ spec/test_app/db/*.sqlite3
 spec/test_app/db/*.sqlite3-journal
 spec/test_app/log/*.log
 spec/test_app/tmp/
-spec/test_app/tmp/cache/assets/test/sprockets/v3.0/
 spec/test_app/.sass-cache
 
 *.gem
