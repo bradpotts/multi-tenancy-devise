@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (1.5.1)
+    mtdevise (1.5.2)
       bootstrap-sass
       devise
       font-awesome-rails
@@ -60,7 +60,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.8)
     arel (6.0.3)
-    autoprefixer-rails (6.0.3)
+    autoprefixer-rails (6.1.0.1)
       execjs
       json
     bcrypt (3.1.10)
@@ -153,7 +153,7 @@ GEM
     omniauth-github (1.1.2)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.1)
-    omniauth-google-oauth2 (0.2.9)
+    omniauth-google-oauth2 (0.2.10)
       addressable (~> 2.3)
       jwt (~> 1.0)
       multi_json (~> 1.3)
