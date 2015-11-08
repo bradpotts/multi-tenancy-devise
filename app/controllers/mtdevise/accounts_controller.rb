@@ -57,5 +57,14 @@ module Mtdevise
 				params.require(:account).permit(:name, :subdomain, { :owner_attributes => [:email, :password, :password_confirmation]})
 		end
 
+		def subdomainvalidator
+			accounts = Account.where(subdomain: request.subdomain)
+			if accounts.count > 0
+				@account = accounts.first
+			elsif request.subdomain != 'www'
+				redirect_to root_url(subdomain: 'www')
+			end
+		end
+
 	end
 end

@@ -2,7 +2,6 @@ module Mtdevise
 
 # class ApplicationController < ActionController::Base
 	class ApplicationController < ::ApplicationController
-		around_filter :catch_not_found
 		protect_from_forgery with: :null_session
 
 		def after_sign_in_path_for(resource)
@@ -23,12 +22,6 @@ module Mtdevise
 		helper_method :current_account 
 
 		private
-
-		def catch_not_found
-			yield
-			rescue ActiveRecord::RecordNotFound
-      redirect_to mtdevise.root_url, :flash => { :error => "Account Not Found Please Register." }
-		end
 
 		def redirect_logged_in_users_to_account_page
 			redirect_to mtdevise.accounts_path if user_signed_in?
