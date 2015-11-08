@@ -4,7 +4,7 @@ module Mtdevise
 	class AccountsController < ApplicationController
 
 		layout "mtdevise/accounts"
-    before_filter :subdomainvalidator
+
 		before_action :redirect_if_coming_form_sign_up, only: :new
 		before_action :authenticate_user!, except: [:new, :create]
 
@@ -58,14 +58,7 @@ module Mtdevise
 				params.require(:account).permit(:name, :subdomain, { :owner_attributes => [:email, :password, :password_confirmation]})
 		end
 
-		def subdomainvalidator
-			accounts = Account.where(subdomain: request.subdomain)
-			if accounts.count > 0
-				@account = accounts.first
-			elsif request.subdomain != 'www'
-				redirect_to root_url(subdomain: 'www')
-			end
-		end
+
 
 	end
 end
