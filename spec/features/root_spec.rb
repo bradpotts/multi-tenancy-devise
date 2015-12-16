@@ -19,6 +19,11 @@ feature 'Root page' do
 			visit mtdevise.root_path
 			click_link 'Sign In To Manage Your Accounts'
 		end
+		scenario 'visit non-existing subdomain' do
+			visit mtdevise.root_url(subdomain: 'nonexisting')
+			expect(page.current_url).to match(/#{mtdevise.root_path}/)
+			expect(page).to have_content("Subdomain Doesn't Exist. Would you like to Register.")
+		end
 	end
 
 end
