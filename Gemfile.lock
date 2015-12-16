@@ -177,6 +177,8 @@ GEM
       omniauth-oauth (~> 1.1)
     orm_adapter (0.5.0)
     pg (0.18.4)
+    quiet_assets (1.1.0)
+      railties (>= 3.1, < 5.0)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -305,6 +307,7 @@ DEPENDENCIES
   mailcatcher
   minitest
   mtdevise!
+  quiet_assets
   rspec-rails
   shoulda-matchers
   simplecov
