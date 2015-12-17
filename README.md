@@ -1,6 +1,5 @@
 [![security](https://hakiri.io/github/PHCNetworks/multi-tenancy-devise/master.svg)](https://hakiri.io/github/PHCNetworks/multi-tenancy-devise/master)
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise)
-[![Coverage Status](https://coveralls.io/repos/PHCNetworks/multi-tenancy-devise/badge.svg?branch=master&service=github)](https://coveralls.io/github/PHCNetworks/multi-tenancy-devise?branch=master)
 [![Build Status](https://travis-ci.org/PHCNetworks/multi-tenancy-devise.svg?branch=master)](https://travis-ci.org/PHCNetworks/multi-tenancy-devise)
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
 
