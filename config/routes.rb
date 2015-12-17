@@ -12,9 +12,9 @@ Mtdevise::Engine.routes.draw do
 		end
 	end
 
-	root 'welcome#index'
 	devise_for :users, class_name: 'Mtdevise::User', module: :devise
 	get '/sign_up', :to => 'accounts#new', :as => :sign_up
 	resources :accounts, only: [:create, :index, :new]
+	root 'welcome#index'
 
 end
