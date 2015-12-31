@@ -11,11 +11,17 @@ feature 'Accounts creation' do
 	scenario 'creating an account' do
 		fill_in 'Account Name', :with => 'Test'
 		fill_in "Subdomain", :with => "test"
+		fill_in 'First Name', :with => 'Test'
+		fill_in 'Last Name', :with => 'Test'
+		fill_in 'User Name', :with => 'Test'
 		click_button 'Create Account'
 		expect(page).to have_text('Your account has been successfully created.')
 	end
 	scenario "Ensure subdomain uniqueness" do
 		fill_in 'Account Name', :with => 'Test'
+		fill_in 'First Name', :with => 'Test'
+		fill_in 'Last Name', :with => 'Test'
+		fill_in 'User Name', :with => 'Test'
 		fill_in "Subdomain", :with => @account.subdomain
 		click_button 'Create Account'
 		expect(page).to have_text("Sorry, your account could not be created.")
@@ -23,6 +29,9 @@ feature 'Accounts creation' do
 	end
 	scenario "Subdomain with restricted name" do
 		fill_in 'Account Name', :with => 'Test'
+		fill_in 'First Name', :with => 'Test'
+		fill_in 'Last Name', :with => 'Test'
+		fill_in 'User Name', :with => 'Test'
 		fill_in "Subdomain", :with => "admin"
 		click_button 'Create Account'
 		expect(page).to have_text("Sorry, your account could not be created.")
@@ -30,6 +39,9 @@ feature 'Accounts creation' do
 	end
 	scenario "Subdomain with invalid name" do
 		fill_in 'Account Name', :with => 'Test'
+		fill_in 'First Name', :with => 'Test'
+		fill_in 'Last Name', :with => 'Test'
+		fill_in 'User Name', :with => 'Test'
 		fill_in "Subdomain", :with => "<admin>"
 		click_button 'Create Account'
 		expect(page).to have_text("Sorry, your account could not be created.")

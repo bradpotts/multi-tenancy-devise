@@ -55,7 +55,7 @@ module Mtdevise
 		end
 
 		def account_params
-				params.require(:account).permit(:name, :subdomain, { :owner_attributes => [:email, :password, :password_confirmation]})
+      params.require(:account).permit(:name, :firstname, :lastname, :username, :subdomain, { :owner_attributes => [:email, :password, :password_confirmation]})
 		end
 
 

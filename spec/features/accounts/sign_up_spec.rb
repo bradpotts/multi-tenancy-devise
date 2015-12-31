@@ -13,6 +13,9 @@ feature 'Accounts' do
 			visit mtdevise.root_path
 			click_link 'Sign Up Today'
 			fill_in 'Account Name', :with => 'Test'
+			fill_in 'First Name', :with => 'Test'
+			fill_in 'Last Name', :with => 'Test'
+			fill_in 'User Name', :with => 'Test'
 			fill_in "Subdomain", :with => "test"
 			fill_in 'Email', :with => 'mtdevise@example.com'
 			fill_in 'Password', :with => 'password', :exact => true

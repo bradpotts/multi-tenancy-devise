@@ -15,6 +15,18 @@
 						</div>
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="fa fa-link"></i></span>
+							<%= account.input_field :firstname, required: true, :class => "form-control", :placeholder => "First Name" %>
+						</div>
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="fa fa-link"></i></span>
+							<%= account.input_field :lastname, required: true, :class => "form-control", :placeholder => "Last Name" %>
+						</div>
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="fa fa-link"></i></span>
+							<%= account.input_field :username, required: true, :class => "form-control", :placeholder => "User Name" %>
+						</div>
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="fa fa-link"></i></span>
 							<%= account.input_field :subdomain, required: true, :class => "form-control", :placeholder => "Subdomain" %>
 						</div>
 						<div style="margin-top:10px" class="form-group">
@@ -39,6 +51,18 @@
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="fa fa-users"></i></span>
 							<%= account.input_field :name, label: 'Account Name', :class => "form-control", :placeholder => "Account Name"  %>
+						</div>
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="fa fa-link"></i></span>
+							<%= account.input_field :firstname, required: true, :class => "form-control", :placeholder => "First Name" %>
+						</div>
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="fa fa-link"></i></span>
+							<%= account.input_field :lastname, required: true, :class => "form-control", :placeholder => "Last Name" %>
+						</div>
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="fa fa-link"></i></span>
+							<%= account.input_field :username, required: true, :class => "form-control", :placeholder => "User Name" %>
 						</div>
 						<div style="margin-bottom: 25px" class="input-group">
 							<%= account.simple_fields_for :owner do |owner| %>
