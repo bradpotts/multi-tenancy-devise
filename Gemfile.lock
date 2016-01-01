@@ -64,6 +64,7 @@ GEM
       execjs
       json
     bcrypt (3.1.10)
+    bcrypt (3.1.10-x64-mingw32)
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -184,6 +185,7 @@ GEM
       omniauth-oauth (~> 1.1)
     orm_adapter (0.5.0)
     pg (0.18.4)
+    pg (0.18.4-x64-mingw32)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
