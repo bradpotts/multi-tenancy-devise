@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150719125100) do
+ActiveRecord::Schema.define(version: 20151231043439) do
 
   create_table "mtdevise_accounts", force: :cascade do |t|
     t.string   "name"
@@ -19,6 +19,9 @@ ActiveRecord::Schema.define(version: 20150719125100) do
     t.datetime "updated_at"
     t.integer  "owner_id"
     t.string   "subdomain"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "username"
   end
 
   add_index "mtdevise_accounts", ["subdomain"], name: "index_mtdevise_accounts_on_subdomain"

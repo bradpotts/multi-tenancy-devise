@@ -1,20 +1,20 @@
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
-		<div class="navbar-header"><%= link_to 'mtdevise', account_root_path, class: 'navbar-brand' %></div>
-			<div class="collapse navbar-collapse">
-				<ul class="dropdown-menu nav navbar-nav navbar-right">
-					<li>
-						<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Settings<span class="caret"></span></a>
-						<%- if user_signed_in? %>
-							<ul class="dropdown-menu" role="menu">
-								<li>Signed in as <%= current_user.email %></li>
-								<li class="divider"></li>
-								<li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
-							</ul>
-						<% end %>
-					</li>
-				</ul>
-			</div>
+		<div class="navbar-header"><%= link_to 'mtdevise', account_root_path, class: 'navbar-brand' %>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="dropdown-menu nav navbar-nav navbar-right">
+				<li>
+					<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Settings<span class="caret"></span></a>
+					<%- if user_signed_in? %>
+						<ul class="dropdown-menu" role="menu">
+							<li>Signed in as <%= current_user.email %></li>
+							<li class="divider"></li>
+							<li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
+						</ul>
+					<% end %>
+				</li>
+			</ul>
 		</div>
 	</div>
 </nav>

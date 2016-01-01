@@ -6,6 +6,5 @@ module Mtdevise
 
 		def index
 		end
-
 	end
 end

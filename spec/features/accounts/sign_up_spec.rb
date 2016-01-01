@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 feature 'Accounts' do
+
 	context 'signed in users' do
 		scenario 'should redirect to accounts page' do
 			sign_in
@@ -8,11 +9,15 @@ feature 'Accounts' do
 			expect(page.current_url).to match(/#{mtdevise.accounts_path}/)
 		end
 	end
+
 	context 'signed out users' do
 		scenario 'creating an account' do
 			visit mtdevise.root_path
 			click_link 'Sign Up Today'
 			fill_in 'Account Name', :with => 'Test'
+			fill_in 'First Name', :with => 'Test'
+			fill_in 'Last Name', :with => 'Test'
+			fill_in 'User Name', :with => 'Test'
 			fill_in "Subdomain", :with => "test"
 			fill_in 'Email', :with => 'mtdevise@example.com'
 			fill_in 'Password', :with => 'password', :exact => true
@@ -30,6 +35,9 @@ feature 'Accounts' do
 			visit mtdevise.root_path
 			click_link "Sign Up Today"
 			fill_in "Account Name", :with => "another name"
+			fill_in 'First Name', :with => 'Test'
+			fill_in 'Last Name', :with => 'Test'
+			fill_in 'User Name', :with => 'Test'
 			fill_in "Subdomain", :with => "anothersubdomain"
 			fill_in "Email", :with => owner.email
 			fill_in "Password", :with => "password", :exact => true
@@ -41,11 +49,14 @@ feature 'Accounts' do
 		end
 
 		scenario "Ensure subdomain uniqueness" do
-			Mtdevise::Account.create!(:subdomain => "test", :name => "Test")
+      Mtdevise::Account.create!(:subdomain => "test", :name => "Test", :firstname => "Test")
 			visit mtdevise.root_path
 			click_link "Sign Up Today"
 			fill_in "Account Name", :with => "Test"
 			fill_in "Subdomain", :with => "test"
+			fill_in 'First Name', :with => 'Test'
+			fill_in 'Last Name', :with => 'Test'
+			fill_in 'User Name', :with => 'Test'
 			fill_in "Email", :with => "mtdevise@example.com"
 			fill_in "Password", :with => "password", :exact => true
 			fill_in "Confirm Password", :with => 'password'
@@ -59,6 +70,9 @@ feature 'Accounts' do
 			visit mtdevise.root_path
 			click_link "Sign Up Today"
 			fill_in "Account Name", :with => "Test"
+			fill_in 'First Name', :with => 'Test'
+			fill_in 'Last Name', :with => 'Test'
+			fill_in 'User Name', :with => 'Test'
 			fill_in "Subdomain", :with => "admin"
 			fill_in "Email", :with => "mtdevise@example.com"
 			fill_in "Password", :with => "password"
@@ -73,6 +87,9 @@ feature 'Accounts' do
 			visit mtdevise.root_path
 			click_link "Sign Up Today"
 			fill_in "Account Name", :with => "Test"
+			fill_in 'First Name', :with => 'Test'
+			fill_in 'Last Name', :with => 'Test'
+			fill_in 'User Name', :with => 'Test'
 			fill_in "Subdomain", :with => "<admin>"
 			fill_in "Email", :with => "mtdevise@example.com"
 			fill_in "Password", :with => "password"

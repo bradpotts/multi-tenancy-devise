@@ -17,8 +17,19 @@ module Mtdevise
 			presence: true,
 			uniqueness: {scope: :owner_id}
 
+		validates :firstname,
+			presence: true
+
+		validates :lastname,
+			presence: true
+
+		validates :username,
+			presence: true,
+			uniqueness: true
+
 		before_validation do
 			self.subdomain = subdomain.to_s.downcase
+			self.username = username.to_s.downcase
 		end
 
 		def self.create_with_owner(params={})

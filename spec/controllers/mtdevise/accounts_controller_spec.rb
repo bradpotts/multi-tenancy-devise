@@ -12,7 +12,7 @@ describe Mtdevise::AccountsController do
 		#   controller.stub(:force_authentication!)
 		# end
 		let(:params) do
-			{:account => {name: 'something', subdomain: 'something', owner_attributes: {email: 'bb@gmail.com', password: 'password', password_confirmation: 'password'}}}
+			{:account => {name: 'something', firstname: 'something', lastname: 'something', username: 'something', subdomain: 'something', owner_attributes: {email: 'bb@gmail.com', password: 'password', password_confirmation: 'password'}}}
 		end
 
 		context "the user is already signed in" do

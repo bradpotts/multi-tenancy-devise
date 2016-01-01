@@ -1,5 +1,3 @@
-# #TODO This should be a modularized feature
-
 # require "spec_helper"
 
 # feature "User signup" do
