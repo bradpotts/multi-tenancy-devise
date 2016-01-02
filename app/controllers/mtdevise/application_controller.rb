@@ -14,13 +14,11 @@ module Mtdevise
 		def current_user?(user)
 			user == current_user
 		end
-
 		helper_method :current_user
 
 		def current_account?(account)
 			account == current_account
 		end
-
 		helper_method :current_account 
 
 		private
