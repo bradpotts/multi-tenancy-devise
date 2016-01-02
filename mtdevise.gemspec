@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
 	s.email       = ["bradley.j.potts@gmail.com"]
 	s.homepage    = "http://www.phcnetworks.net"
 	s.summary     = "Multi-Tenant Rails Engine Using Devise."
-  s.description = "mtdevise gem adds multi-tenant and account management features to rails Devise gem. v1.6.0 comes with addtitional registration fields and requires additional migration files rake railties:install:migrations"
+  s.description = "TESTING CHANGES: mtdevise gem adds multi-tenant and account management features to rails Devise gem. v1.6.0 comes with addtitional registration fields and requires additional migration files rake railties:install:migrations"
 
 	s.license     = "MIT"
 	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]

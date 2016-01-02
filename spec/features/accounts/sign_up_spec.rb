@@ -49,7 +49,7 @@ feature 'Accounts' do
 		end
 
 		scenario "Ensure subdomain uniqueness" do
-      Mtdevise::Account.create!(:subdomain => "test", :name => "Test", :firstname => "Test")
+			Mtdevise::Account.create!(:subdomain => "test", :name => "Test", :firstname => "Test", :lastname => "Test", :username => "test")
 			visit mtdevise.root_path
 			click_link "Sign Up Today"
 			fill_in "Account Name", :with => "Test"
