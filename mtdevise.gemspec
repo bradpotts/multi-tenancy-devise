@@ -32,8 +32,8 @@ Gem::Specification.new do |s|
 	s.add_dependency 'omniauth-instagram'
 	s.add_dependency 'omniauth-github'
 
-	s.add_dependency 'bootstrap-sass'
-	s.add_dependency 'font-awesome-rails'
+	s.add_dependency 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+	s.add_dependency 'font-awesome-rails', '~> 4.5'
 	s.add_dependency 'sass-rails'
 	s.add_dependency 'rolify'
 	s.add_dependency 'gravtastic'
@@ -42,8 +42,8 @@ Gem::Specification.new do |s|
 	# s.add_dependency 'pry-nav'
 
 	s.add_development_dependency 'minitest'
-	s.add_development_dependency 'simplecov'
-	s.add_development_dependency 'coveralls'
+	s.add_development_dependency 'simplecov', '~> 0.10.0'
+	s.add_development_dependency 'coveralls', '~> 0.8.9'
 
 	s.add_development_dependency 'mailcatcher'
 	s.add_development_dependency 'sqlite3'
