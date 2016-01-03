@@ -9,10 +9,10 @@ Gem::Specification.new do |s|
 	s.name        = "mtdevise"
 	s.version     = Mtdevise::VERSION
 	s.authors     = ["BradPotts"]
-	s.email       = ["bradley.j.potts@gmail.com"]
+  s.email       = ["brad.potts@phcnetworks.net"]
 	s.homepage    = "http://www.phcnetworks.net"
 	s.summary     = "Multi-Tenant Rails Engine Using Devise."
-	s.description = "mtdevise gem adds multi-tenant and account management features to rails Devise gem. v1.6.0 requries an additional db migration file. Please see https://github.com/PHCNetworks/multi-tenancy-devise for additional information."
+	s.description = "mtdevise gem adds multi-tenant and account management features to rails Devise gem. For documentation see our Github Wiki - https://github.com/PHCNetworks/multi-tenancy-devise/wiki"
 
 	s.license     = "MIT"
 	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
