@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (1.6.2)
+    mtdevise (1.6.3)
       bootstrap-sass (~> 3.3, >= 3.3.6)
       devise
       font-awesome-rails (~> 4.5)
@@ -297,7 +297,7 @@ GEM
       rack (>= 1.0.0)
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.1)
+    tilt (2.0.2)
     tins (1.6.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -320,7 +320,7 @@ DEPENDENCIES
   database_cleaner
   factory_girl
   letter_opener
-  mailcatcher
+  mailcatcher (~> 0.6.2)
   minitest
   mtdevise!
   pry

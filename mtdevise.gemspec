@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email       = ["brad.potts@phcnetworks.net"]
 	s.homepage    = "http://www.phcnetworks.net"
 	s.summary     = "Multi-Tenant Rails Engine Using Devise."
-	s.description = "mtdevise gem adds multi-tenant and account management features to rails Devise gem. For documentation see our Github Wiki - https://github.com/PHCNetworks/multi-tenancy-devise/wiki"
+  s.description = "mtdevise adds a multi-tenancy authetication system to your ruby on rails app. For documentation and information see our Github page - https://github.com/PHCNetworks/multi-tenancy-devise/"
 
 	s.license     = "MIT"
 	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
 	s.add_development_dependency 'simplecov', '~> 0.10.0'
 	s.add_development_dependency 'coveralls', '~> 0.8.9'
 
-	s.add_development_dependency 'mailcatcher'
+	s.add_development_dependency 'mailcatcher', '~> 0.6.2'
 	s.add_development_dependency 'sqlite3'
 	s.add_development_dependency 'database_cleaner'
 	s.add_development_dependency 'shoulda-matchers'
