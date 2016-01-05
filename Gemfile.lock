@@ -13,7 +13,7 @@ PATH
       omniauth-google-oauth2
       omniauth-instagram
       omniauth-twitter
-      pg (~> 0.18.4)
+      pg
       rails
       rolify (~> 5.0)
       sass-rails (~> 5.0, >= 5.0.4)
@@ -308,14 +308,14 @@ DEPENDENCIES
   factory_girl
   letter_opener
   mailcatcher (~> 0.6.2)
-  minitest (~> 5.8, >= 5.8.3)
+  minitest
   mtdevise!
   pry
   quiet_assets
   rspec-rails
   shoulda-matchers
   simplecov (~> 0.10.0)
-  sqlite3 (~> 1.3, >= 1.3.11)
+  sqlite3
 
 BUNDLED WITH
    1.11.2
