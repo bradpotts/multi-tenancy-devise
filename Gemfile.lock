@@ -8,17 +8,17 @@ PATH
       gravtastic (~> 3.2, >= 3.2.6)
       houser (~> 2.0)
       jquery-rails (~> 4.0, >= 4.0.5)
-      omniauth-facebook
-      omniauth-github
-      omniauth-google-oauth2
-      omniauth-instagram
-      omniauth-twitter
-      pg
+      omniauth-facebook (~> 3.0)
+      omniauth-github (~> 1.1, >= 1.1.2)
+      omniauth-google-oauth2 (~> 0.2.10)
+      omniauth-instagram (~> 1.0, >= 1.0.2)
+      omniauth-twitter (~> 1.2, >= 1.2.1)
+      pg (~> 0.18.4)
       rails
       rolify (~> 5.0)
       sass-rails (~> 5.0, >= 5.0.4)
       simple_form (~> 3.2, >= 3.2.1)
-      simple_token_authentication (~> 1.11)
+      simple_token_authentication (~> 1.12)
 
 GEM
   remote: https://rubygems.org/
@@ -253,7 +253,7 @@ GEM
     simple_form (3.2.1)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
-    simple_token_authentication (1.11.0)
+    simple_token_authentication (1.12.0)
       actionmailer (>= 3.2.6, < 5)
       actionpack (>= 3.2.6, < 5)
       devise (~> 3.2)
