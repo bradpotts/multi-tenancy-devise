@@ -4,6 +4,8 @@
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
 
 ##### Note: As of 1.6 - 1 new db migration and a few default views have been adjusted. [Please see notes for help.](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/1.6-Series-Notes)  
+##### Note: As of 1.7 - 1 new layout view has been created. [Please see notes for help.](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/1.7-Series-Notes)  
+
 
 ### Mtdevise (MultiTenancyDevise) Documentation
 PHC mtdevise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
