@@ -3,20 +3,23 @@ require_dependency "mtdevise/application_controller"
 module Mtdevise
 	class AccountsController < ApplicationController
 
-		layout :resolve_accounts_layout
-
+		# Layouts and Filters
+		layout :layouts_rsolver
 		before_action :redirect_if_coming_form_sign_up, only: :new
 		before_action :authenticate_user!, except: [:new, :create]
 
+		# Accounts Index
 		def index
 			@accounts = current_user.accounts
 		end
 
+		# Accounts Registration
 		def new
 			@account = Mtdevise::Account.new
 			@account.build_owner unless user_signed_in?
 		end
 
+		# Accounts Create action
 		def create
 			account = if user_signed_in?
 			Mtdevise::Account.create(account_params)
@@ -52,15 +55,6 @@ module Mtdevise
 
 		def redirect_if_coming_form_sign_up
 			redirect_to accounts_path if request.url =~ /#{sign_up_path}/ && user_signed_in?
-		end
-
-		def resolve_accounts_layout
-			case action_name
-				when "index"
-					"mtdevise/accountsindex"
-				else
-					"mtdevise/accounts"
-			end
 		end
 
 		def account_params

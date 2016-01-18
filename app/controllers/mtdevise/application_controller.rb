@@ -3,7 +3,6 @@ module Mtdevise
 # class ApplicationController < ActionController::Base
 	class ApplicationController < ::ApplicationController
 		protect_from_forgery with: :null_session
-
 		before_action :check_subdomain
 
 		def after_sign_in_path_for(resource)
@@ -30,6 +29,17 @@ module Mtdevise
 		def check_subdomain
 			if request.subdomain.present? && Account.where(subdomain: request.subdomain).blank?
 				redirect_to mtdevise.root_url(subdomain: false), notice: "Subdomain Doesn't Exist. Would you like to Register."
+			end
+		end
+
+		def layouts_rsolver
+			case action_name
+				when "index"
+					"mtdevise/accountsindex"
+				when devise_controller? && resource_name == :user && action_name == "edit"
+					"mtdevise/accountsedit"
+				else
+					"mtdevise/accounts"
 			end
 		end
 
