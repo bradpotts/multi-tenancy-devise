@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
 	s.add_dependency 'pg', '~> 0.18.4'
 	s.add_dependency 'rails'
 
-	s.add_dependency 'devise', '~> 3.5', '>= 3.5.3'
+	s.add_dependency 'devise', '~> 3.5', '>= 3.5.4'
 	s.add_dependency 'houser', '~> 2.0'
 	s.add_dependency 'simple_form', '~> 3.2', '>= 3.2.1'
 	s.add_dependency 'simple_token_authentication', '~> 1.12'

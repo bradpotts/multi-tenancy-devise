@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    mtdevise (1.7.1)
+    mtdevise (1.7.5)
       bootstrap-sass (~> 3.3, >= 3.3.6)
-      devise (~> 3.5, >= 3.5.3)
+      devise (~> 3.5, >= 3.5.4)
       font-awesome-rails (~> 4.5)
       gravtastic (~> 3.2, >= 3.2.6)
       houser (~> 2.0)
@@ -86,7 +86,7 @@ GEM
       tins (~> 1.6.0)
     daemons (1.2.3)
     database_cleaner (1.5.1)
-    devise (3.5.3)
+    devise (3.5.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -145,7 +145,7 @@ GEM
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     netrc (0.11.0)
-    nokogiri (1.6.7.1)
+    nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     oauth (0.4.7)
     oauth2 (1.0.0)
