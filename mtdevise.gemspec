@@ -45,8 +45,8 @@ Gem::Specification.new do |s|
 	# s.add_dependency 'pry-nav'
 
 	s.add_development_dependency 'minitest'
-	s.add_development_dependency 'simplecov', '~> 0.10.0'
-	s.add_development_dependency 'coveralls', '~> 0.8.9'
+	s.add_development_dependency 'simplecov', '~> 0.11.0'
+	s.add_development_dependency 'coveralls', '~> 0.8.10'
 
 	s.add_development_dependency 'mailcatcher', '~> 0.6.2'
 	s.add_development_dependency 'sqlite3'
