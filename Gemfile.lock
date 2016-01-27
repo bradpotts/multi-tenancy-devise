@@ -303,7 +303,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara (~> 2.6, >= 2.6.1)
+  capybara
   coveralls (~> 0.8.10)
   database_cleaner (~> 1.5, >= 1.5.1)
   factory_girl (~> 4.5)
