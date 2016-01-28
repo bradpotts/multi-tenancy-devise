@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (1.7.6)
+    mtdevise (1.7.7)
       bootstrap-sass (~> 3.3, >= 3.3.6)
       devise (~> 3.5, >= 3.5.4)
       font-awesome-rails (~> 4.5)
@@ -313,7 +313,7 @@ DEPENDENCIES
   mtdevise!
   pry
   quiet_assets
-  rspec-rails
+  rspec-rails (~> 3.4, >= 3.4.1)
   shoulda-matchers
   simplecov
   sqlite3
