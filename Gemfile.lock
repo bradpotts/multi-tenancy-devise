@@ -309,7 +309,7 @@ DEPENDENCIES
   factory_girl
   letter_opener
   mailcatcher
-  minitest (~> 5.8, >= 5.8.4)
+  minitest
   mtdevise!
   pry
   quiet_assets

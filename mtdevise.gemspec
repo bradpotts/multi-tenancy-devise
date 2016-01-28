@@ -44,7 +44,7 @@ Gem::Specification.new do |s|
 	# s.add_dependency 'pry'
 	# s.add_dependency 'pry-nav'
 
-	s.add_development_dependency 'minitest', '~> 5.8', '>= 5.8.4'
+	s.add_development_dependency 'minitest'
 	s.add_development_dependency 'simplecov'
 	s.add_development_dependency 'coveralls'
 
