@@ -45,19 +45,19 @@ Gem::Specification.new do |s|
 	# s.add_dependency 'pry-nav'
 
 	s.add_development_dependency 'minitest', '~> 5.8', '>= 5.8.4'
-	s.add_development_dependency 'simplecov', '~> 0.11.0'
-	s.add_development_dependency 'coveralls', '~> 0.8.10'
+	s.add_development_dependency 'simplecov'
+	s.add_development_dependency 'coveralls'
 
-	s.add_development_dependency 'mailcatcher', '~> 0.6.3'
-	s.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.11'
-	s.add_development_dependency 'database_cleaner', '~> 1.5', '>= 1.5.1'
-	s.add_development_dependency 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
-	s.add_development_dependency 'factory_girl', '~> 4.5'
-	s.add_development_dependency 'rspec-rails', '~> 3.4', '>= 3.4.1'
+	s.add_development_dependency 'mailcatcher'
+	s.add_development_dependency 'sqlite3'
+	s.add_development_dependency 'database_cleaner'
+	s.add_development_dependency 'shoulda-matchers'
+	s.add_development_dependency 'factory_girl'
+	s.add_development_dependency 'rspec-rails'
 	s.add_development_dependency 'capybara'
 
-	s.add_development_dependency 'quiet_assets', '~> 1.1'
-	s.add_development_dependency 'letter_opener', '~> 1.4', '>= 1.4.1'
-	s.add_development_dependency 'pry', '~> 0.10.3'
+	s.add_development_dependency 'quiet_assets'
+	s.add_development_dependency 'letter_opener'
+	s.add_development_dependency 'pry'
 
 end
