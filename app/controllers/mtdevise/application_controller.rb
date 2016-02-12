@@ -20,16 +20,7 @@ module Mtdevise
 		def current_account?(account)
 			account == current_account
 		end
-		helper_method :current_account 
-
-		# Devise Custom Layouts
-		config.to_prepare do
-			Devise::SessionsController.layout "mtdevise/accounts"
-			Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "mtdevise/accountsedit" }
-			Devise::ConfirmationsController.layout "mtdevise/accounts"
-			Devise::UnlocksController.layout "mtdevise/accounts"
-			Devise::PasswordsController.layout "mtdevise/accounts"
-		end
+		helper_method :current_account
 
 		private
 
