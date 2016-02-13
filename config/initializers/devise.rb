@@ -267,4 +267,13 @@ Devise.setup do |config|
 	# so you need to do it manually. For the users scope, it would be:
 	# config.omniauth_path_prefix = '/my_engine/users/auth'
 
+	# Devise Custom Layouts
+	Rails.application.config.to_prepare do
+		Devise::SessionsController.layout proc{ |controller| action_name == 'new' ? "layouts/mtdevise/signin"   : "layouts/mtdevise/accounts" }
+		Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "layouts/mtdevise/useredit" : "layouts/mtdevise/accounts" }
+		Devise::ConfirmationsController.layout "layouts/mtdevise/accounts"
+		Devise::UnlocksController.layout "layouts/mtdevise/accounts"
+		Devise::PasswordsController.layout "layouts/mtdevise/accounts"
+	end
+
 end

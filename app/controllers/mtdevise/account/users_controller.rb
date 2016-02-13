@@ -2,7 +2,10 @@ require_dependency "mtdevise/application_controller"
 
 module Mtdevise
 	class Account::UsersController < ApplicationController
-	acts_as_token_authentication_handler_for User
+
+		# Layouts and Filters
+		layout :layouts_resolver_accounts
+		acts_as_token_authentication_handler_for User
 
 		def new
 			@user = Mtdevise::User.new

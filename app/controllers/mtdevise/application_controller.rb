@@ -47,13 +47,12 @@ module Mtdevise
 			end
 		end
 
-		# Resolve Layouts for Devise Actions
-		config.to_prepare do
-			Devise::SessionsController.layout proc{ |controller| action_name == 'new' ? "layouts/mtdevise/signin"   : "layouts/mtdevise/accounts" }
-			Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "layouts/mtdevise/useredit" : "layouts/mtdevise/accounts" }
-			Devise::ConfirmationsController.layout "layouts/mtdevise/accounts"
-			Devise::UnlocksController.layout "layouts/mtdevise/accounts"
-			Devise::PasswordsController.layout "layouts/mtdevise/accounts"
+		# Resolve Layouts for Custom User Actions
+		def layouts_resolver_users
+			case action_name
+				when "new"
+					"layouts/mtdevise/signup"
+			end
 		end
 
 	end
