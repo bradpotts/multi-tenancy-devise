@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (1.7.9)
+    mtdevise (1.7.10)
       bootstrap-sass (~> 3.3, >= 3.3.6)
       devise (~> 3.5, >= 3.5.4)
       font-awesome-rails (~> 4.5)
@@ -60,7 +60,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (6.0.3)
-    autoprefixer-rails (6.3.2)
+    autoprefixer-rails (6.3.3)
       execjs
       json
     bcrypt (3.1.10)

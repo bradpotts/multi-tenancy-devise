@@ -3,8 +3,6 @@
 [![Build Status](https://travis-ci.org/PHCNetworks/multi-tenancy-devise.svg?branch=master)](https://travis-ci.org/PHCNetworks/multi-tenancy-devise)
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
 
-##### Please Update to Latest Version: 1.7.8 ships with a critical security patches. [Please see security notes for help.](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/Critical-Security-Updates)  
-
 ### Mtdevise (MultiTenancyDevise) Documentation
 PHC mtdevise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
 
@@ -72,4 +70,5 @@ Once installed views can be generated and customized to your apps needs.
 [Multi-Tenant Starter App](https://github.com/PHCNetworks/multi-tenancy-starter-devise)  
 [Documentation (Github Wiki)](https://github.com/PHCNetworks/multi-tenancy-devise/wiki)  
 [Issues & Bug Reports](https://github.com/PHCNetworks/multi-tenancy-devise/issues)  
+[Past Security Patch Notes](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/Critical-Security-Updates)  
 [Managed by PHCNetworks](http://phcnetworks.net)  
