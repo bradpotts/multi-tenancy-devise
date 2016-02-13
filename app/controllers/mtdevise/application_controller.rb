@@ -17,6 +17,7 @@ module Mtdevise
 			user == current_user
 		end
 		helper_method :current_user
+
 		def current_account?(account)
 			account == current_account
 		end
@@ -36,11 +37,11 @@ module Mtdevise
 			end
 		end
 
-		# Resolve Layouts
+		# Resolve Layouts Devise & Application Controller
 		def layouts_rsolver
 			case action_name
 				when "index"
-					"mtdevise/accountsindex"
+					"mtdevise/accounts/index"
 				else
 					"mtdevise/accounts"
 			end

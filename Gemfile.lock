@@ -317,6 +317,3 @@ DEPENDENCIES
   shoulda-matchers
   simplecov
   sqlite3
-
-BUNDLED WITH
-   1.11.2
