@@ -49,9 +49,8 @@ module Mtdevise
 
 		# Resolve Layouts for Devise Actions
 		config.to_prepare do
-			Devise::SessionsController.layout "layouts/mtdevise/accounts"
+			Devise::SessionsController.layout.layout proc{ |controller| action_name == 'new' ? "devise"   : "layouts/mtdevise/signin" }
 			Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "layouts/mtdevise/useredit" }
-			Devise::RegistrationsController.layout "layouts/mtdevise/registration"
 			Devise::ConfirmationsController.layout "layouts/mtdevise/accounts"
 			Devise::UnlocksController.layout "layouts/mtdevise/accounts"
 			Devise::PasswordsController.layout "layouts/mtdevise/accounts"
