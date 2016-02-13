@@ -41,9 +41,9 @@ module Mtdevise
 		def layouts_rsolver
 			case action_name
 				when "index"
-					"mtdevise/accounts/accountsindex"
+					"layouts/mtdevise/accountsindex"
 				else
-					"mtdevise/accounts"
+					"layouts/mtdevise/accounts"
 			end
 		end
 
