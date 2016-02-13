@@ -47,6 +47,14 @@ module Mtdevise
 			end
 		end
 
+		config.to_prepare do
+			Devise::SessionsController.layout "layouts/mtdevise/accounts"
+			Devise::RegistrationsController.layout "layouts/mtdevise/accountsedit"
+			Devise::ConfirmationsController.layout "layouts/mtdevise/accounts"
+			Devise::UnlocksController.layout "layouts/mtdevise/accounts"
+			Devise::PasswordsController.layout "layouts/mtdevise/accounts"
+		end
+
 	end
 
 end
