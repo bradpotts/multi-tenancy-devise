@@ -38,7 +38,7 @@ module Mtdevise
 		end
 
 		# Resolve Layouts for Custom Account Actions
-		def layouts_rsolver
+		def layouts_resolver_accounts
 			case action_name
 				when "index"
 					"layouts/mtdevise/accountsindex"
@@ -49,8 +49,8 @@ module Mtdevise
 
 		# Resolve Layouts for Devise Actions
 		config.to_prepare do
-			Devise::SessionsController.layout.layout proc{ |controller| action_name == 'new' ? "devise"   : "layouts/mtdevise/signin" }
-			Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "layouts/mtdevise/useredit" }
+			Devise::SessionsController.layout proc{ |controller| action_name == 'new' ? "layouts/mtdevise/signin"   : "layouts/mtdevise/accounts" }
+			Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "layouts/mtdevise/useredit" : "layouts/mtdevise/accounts" }
 			Devise::ConfirmationsController.layout "layouts/mtdevise/accounts"
 			Devise::UnlocksController.layout "layouts/mtdevise/accounts"
 			Devise::PasswordsController.layout "layouts/mtdevise/accounts"

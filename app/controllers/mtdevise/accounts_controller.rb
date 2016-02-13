@@ -4,7 +4,7 @@ module Mtdevise
 	class AccountsController < ApplicationController
 
 		# Layouts and Filters
-		layout :layouts_rsolver
+		layout :layouts_resolver_accounts
 		before_action :redirect_if_coming_form_sign_up, only: :new
 		before_action :authenticate_user!, except: [:new, :create]
 
