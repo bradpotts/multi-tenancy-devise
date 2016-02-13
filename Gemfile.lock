@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (1.7.12a)
+    mtdevise (1.7.12b)
       bootstrap-sass (~> 3.3, >= 3.3.6)
       devise (~> 3.5, >= 3.5.4)
       font-awesome-rails (~> 4.5)
@@ -317,3 +317,6 @@ DEPENDENCIES
   shoulda-matchers
   simplecov
   sqlite3
+
+BUNDLED WITH
+   1.11.2
