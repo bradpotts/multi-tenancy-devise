@@ -19,7 +19,7 @@ Generate a user.rb file in your mainapp and add the code below
 	include Mtdevise::UserStorage  
   
 #### Step 2 - Add Mtdevise to your gemfile
-	gem 'mtdevise', '~> 1.7', '>= 1.7.8'
+	gem 'mtdevise', '~> 1.7', '>= 1.7.11'
 	bundle exec install  
 
 #### Step 3 - Add and migrate mtdevise database tables
