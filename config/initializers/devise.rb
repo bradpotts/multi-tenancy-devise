@@ -269,11 +269,11 @@ Devise.setup do |config|
 
 	# Additional Custom Layouts Settings for Devise Actions
 	Rails.application.config.to_prepare do
-		Devise::SessionsController.layout "mtdevise/accounts"
-		Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "mtdevise/accountsedit" }
-		Devise::ConfirmationsController.layout "mtdevise/accounts"
-		Devise::UnlocksController.layout "mtdevise/accounts"
-		Devise::PasswordsController.layout "mtdevise/accounts"	
+		Devise::SessionsController.layout "layouts/mtdevise/accounts"
+		Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "layouts/mtdevise/accountsedit" }
+		Devise::ConfirmationsController.layout "layouts/mtdevise/accounts"
+		Devise::UnlocksController.layout "layouts/mtdevise/accounts"
+		Devise::PasswordsController.layout "layouts/mtdevise/accounts"	
 	end
 
 end
