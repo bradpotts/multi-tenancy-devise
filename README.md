@@ -64,6 +64,8 @@ Scope your controllers. Examples on github wiki or multi-tenant starter app.
 Once installed views can be generated and customized to your apps needs.  
   
     rails generate mtdevise:views  
+    rake assets:clobber  
+    rake assets:precompile  
   
 #### Having troubles ?  
 [Multi-Tenant Starter App](https://github.com/PHCNetworks/multi-tenancy-starter-devise)  
@@ -72,5 +74,5 @@ Once installed views can be generated and customized to your apps needs.
 [Past Security Patch Notes](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/Critical-Security-Updates)  
 [Managed by PHCNetworks](http://phcnetworks.net)  
   
-Project Status - [![Circle CI](https://circleci.com/gh/PHCNetworks/multi-tenancy-devise/tree/master.svg?style=svg)](https://circleci.com/gh/PHCNetworks/multi-tenancy-devise/tree/master)
+[![Circle CI](https://circleci.com/gh/PHCNetworks/multi-tenancy-devise/tree/master.svg?style=svg)](https://circleci.com/gh/PHCNetworks/multi-tenancy-devise/tree/master)
 
