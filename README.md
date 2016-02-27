@@ -18,7 +18,7 @@ Generate a user.rb file in your mainapp and add the code below
 	include Mtdevise::UserStorage  
   
 #### Step 2 - Add Mtdevise to your gemfile
-	gem 'mtdevise', '~> 1.8'
+	gem 'mtdevise', '~> 1.8', '>= 1.8.5'
 	bundle exec install  
 
 #### Step 3 - Add and migrate mtdevise database tables
@@ -75,4 +75,3 @@ Once installed views can be generated and customized to your apps needs.
 [Managed by PHCNetworks](http://phcnetworks.net)  
   
 [![Circle CI](https://circleci.com/gh/PHCNetworks/multi-tenancy-devise/tree/master.svg?style=svg)](https://circleci.com/gh/PHCNetworks/multi-tenancy-devise/tree/master)
-
