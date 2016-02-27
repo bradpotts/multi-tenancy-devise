@@ -12,10 +12,10 @@ Gem::Specification.new do |s|
 	s.email       = ["brad.potts@phcnetworks.net"]
 	s.homepage    = "http://www.phcnetworks.net"
 	s.summary     = "Multi-Tenant Rails Engine Using Devise."
-  s.description = "mtdevise adds basecamp style user logins (multi-tenant authetication to devise gem) to your ruby on rails application."
+  	s.description = "mtdevise adds basecamp style user logins (multi-tenant authetication to devise gem) to your ruby on rails application."
+  	s.license     = "GPL-3.0"
 
-	s.license     = "MIT"
-	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+	s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
 	s.test_files = Dir["spec/**/*"]
 
 	s.add_dependency 'pg', '~> 0.18.4'
@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
 	s.add_dependency 'simple_form', '~> 3.2', '>= 3.2.1'
 	s.add_dependency 'simple_token_authentication', '~> 1.12'
 
-	# Omniauth Authtication 
+	# Omniauth Authtication
 	s.add_dependency 'omniauth-facebook', '~> 3.0'
 	s.add_dependency 'omniauth-google-oauth2', '~> 0.3.0'
 	s.add_dependency 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
@@ -44,20 +44,20 @@ Gem::Specification.new do |s|
 	# s.add_dependency 'pry'
 	# s.add_dependency 'pry-nav'
 
-	s.add_development_dependency 'minitest'
-	s.add_development_dependency 'simplecov'
-	s.add_development_dependency 'coveralls'
+	s.add_development_dependency 'minitest', '~> 5.8', '>= 5.8.4'
+	s.add_development_dependency 'simplecov', '~> 0.11.2'
+	s.add_development_dependency 'coveralls', '~> 0.8.12'
 
-	s.add_development_dependency 'mailcatcher'
-	s.add_development_dependency 'sqlite3'
-	s.add_development_dependency 'database_cleaner'
-	s.add_development_dependency 'shoulda-matchers'
-	s.add_development_dependency 'factory_girl'
-	s.add_development_dependency 'rspec-rails'
-	s.add_development_dependency 'capybara'
+	s.add_development_dependency 'mailcatcher', '~> 0.6.4'
+	s.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.11'
+	s.add_development_dependency 'database_cleaner', '~> 1.5', '>= 1.5.1'
+	s.add_development_dependency 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
+	s.add_development_dependency 'factory_girl', '~> 4.5'
+	s.add_development_dependency 'rspec-rails', '~> 3.4', '>= 3.4.2'
+	s.add_development_dependency 'capybara', '~> 2.6', '>= 2.6.2'
 
-	s.add_development_dependency 'quiet_assets'
-	s.add_development_dependency 'letter_opener'
-	s.add_development_dependency 'pry'
+	s.add_development_dependency 'quiet_assets', '~> 1.1'
+	s.add_development_dependency 'letter_opener', '~> 1.4', '>= 1.4.1'
+	s.add_development_dependency 'pry', '~> 0.10.3'
 
 end
