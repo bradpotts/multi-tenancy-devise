@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 	s.test_files = Dir["spec/**/*"]
 
 	s.add_dependency 'pg', '~> 0.18.4'
-	s.add_dependency 'rails', '~> 4.2', '>= 4.2.5.1'
+	s.add_dependency 'rails', '~> 4.2', '>= 4.2.5.2'
 
 	s.add_dependency 'devise', '~> 3.5', '>= 3.5.4'
 	s.add_dependency 'houser', '~> 2.0'
