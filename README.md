@@ -9,7 +9,7 @@ PHC mtdevise gem adds multi-tenant and account management features to rails Devi
 * Adds basecamp style logins to devise authentication gem.  
 * Highly customizable views and layouts using standard bootstrap 3 code.  
 * Central login screen for all tenants (users) or logins through subdomain.  
-* Compatible with postgre, mysql and sqlite (for deve environments)  
+* Compatible with postgre, mysql and sqlite (for dev environments)  
 
 #### Step 1 - Add user model to your app (Must be Done First!!)
 Generate a user.rb file in your mainapp and add the code below 
@@ -18,7 +18,7 @@ Generate a user.rb file in your mainapp and add the code below
 	include Mtdevise::UserStorage  
   
 #### Step 2 - Add Mtdevise to your gemfile
-	gem 'mtdevise', '~> 1.8', '>= 1.8.5'
+	gem 'mtdevise', '~> 1.8', '>= 1.8.6'
 	bundle exec install  
 
 #### Step 3 - Add and migrate mtdevise database tables
@@ -42,7 +42,8 @@ All the routes you want to have multi-tenacy login functions goes in between the
 	end  
   
 #### Step 7 - Modifications to MainApp Controllers & Database  
-Your app needs modification to [controllers (example)](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/Scoped-Controller-Example) and corresponding database tables must have an accounts_id column.  
+Your app needs modification to [controllers (example)](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/Scoped-Controller-Example)  
+Any corresponding db database tables must have an accounts_id column
   
 	accounts_id  
   
