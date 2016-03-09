@@ -4,7 +4,6 @@ module Mtdevise
 		has_many :members, :class_name => "Mtdevise::Member"
 		has_many :users, :through => :members
 
-		resourcify :mtdevise_roles, role_cname: 'Mtdevise::Role'
 		accepts_nested_attributes_for :owner
 
 		validates :subdomain,

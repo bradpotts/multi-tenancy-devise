@@ -19,23 +19,11 @@ describe Mtdevise::AccountsController do
 			before do
 				allow(subject).to receive(:user_signed_in).and_return(true)
 			end
-			it 'adds the admin role for this account' do
-				post :create, params
-				account = Mtdevise::Account.first
-				user = account.owner
-				expect(user.has_role? :admin, account).to be_truthy
-			end
 		end
 
 		context "the user is not signed in" do
 			before do
 				allow(subject).to receive(:user_signed_in).and_return(false)
-			end
-			it 'adds the admin role for this account' do
-				post :create, params
-				account = Mtdevise::Account.first
-				user = account.owner
-				expect(user.has_role? :admin, account).to be_truthy
 			end
 		end
 	end
