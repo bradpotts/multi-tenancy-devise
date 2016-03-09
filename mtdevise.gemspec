@@ -38,11 +38,7 @@ Gem::Specification.new do |s|
 	s.add_dependency 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 	s.add_dependency 'font-awesome-rails', '~> 4.5'
 	s.add_dependency 'sass-rails', '~> 5.0', '>= 5.0.4'
-	s.add_dependency 'rolify', '~> 5.0'
 	s.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
-
-	# s.add_dependency 'pry'
-	# s.add_dependency 'pry-nav'
 
 	s.add_development_dependency 'minitest', '~> 5.8', '>= 5.8.4'
 	s.add_development_dependency 'simplecov', '~> 0.11.2'

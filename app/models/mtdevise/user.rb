@@ -26,7 +26,6 @@ module Mtdevise
 	class User < ::User
 		include Gravtastic
 
-		rolify role_join_table_name: 'mtdevise_users_mtdevise_roles', role_cname: 'Mtdevise::Role'
 		acts_as_token_authenticatable
 		gravtastic
 		has_many :accounts, :class_name => "Mtdevise::Account", :foreign_key => "owner_id"

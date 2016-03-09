@@ -1,17 +1,18 @@
-# require 'pry'
-# require 'pry-nav'
 require 'mtdevise/active_record_extensions'
 require 'mtdevise/scoped_to'
+
 require 'devise'
 require 'houser'
 require 'simple_form'
+
 require 'jquery-rails'
 require 'sass-rails'
 require 'bootstrap-sass'
 require 'font-awesome-rails'
-require 'rolify'
-require 'simple_token_authentication'
 require 'gravtastic'
+
+require 'simple_token_authentication'
+
 
 module Mtdevise
 	class Engine < ::Rails::Engine
