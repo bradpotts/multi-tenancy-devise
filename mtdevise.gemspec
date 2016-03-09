@@ -42,7 +42,6 @@ Gem::Specification.new do |s|
 
 	s.add_development_dependency 'minitest', '~> 5.8', '>= 5.8.4'
 	s.add_development_dependency 'simplecov', '~> 0.11.2'
-	s.add_development_dependency 'coveralls', '~> 0.8.12'
 
 	s.add_development_dependency 'mailcatcher', '~> 0.6.4'
 	s.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.11'

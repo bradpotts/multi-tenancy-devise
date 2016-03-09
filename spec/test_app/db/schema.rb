@@ -33,17 +33,6 @@ ActiveRecord::Schema.define(version: 20151231043439) do
     t.datetime "updated_at"
   end
 
-  create_table "mtdevise_roles", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "resource_id"
-    t.string   "resource_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "mtdevise_roles", ["name", "resource_type", "resource_id"], name: "index_mtdevise_roles_on_name_and_resource_type_and_resourc"
-  add_index "mtdevise_roles", ["name"], name: "index_mtdevise_roles_on_name"
-
   create_table "mtdevise_users", force: :cascade do |t|
     t.string   "email"
     t.string   "password_digest"
@@ -68,13 +57,6 @@ ActiveRecord::Schema.define(version: 20151231043439) do
   add_index "mtdevise_users", ["authentication_token"], name: "index_mtdevise_users_on_authentication_token"
   add_index "mtdevise_users", ["email"], name: "index_mtdevise_users_on_email", unique: true
   add_index "mtdevise_users", ["reset_password_token"], name: "index_mtdevise_users_on_reset_password_token", unique: true
-
-  create_table "mtdevise_users_mtdevise_roles", id: false, force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "role_id"
-  end
-
-  add_index "mtdevise_users_mtdevise_roles", ["user_id", "role_id"], name: "index_mtdevise_users_mtdevise_roles_on_user_id_and_role_id"
 
   create_table "things", force: :cascade do |t|
     t.string   "name"
