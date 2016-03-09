@@ -35,11 +35,9 @@ module Mtdevise
 				account.owner = current_user
 				account.users << current_user
 				account.save
-				account.owner.add_role :admin, account
 				redirect_to mtdevise.accounts_path
 
 			else
-				account.owner.add_role :admin, account
 				sign_in account.owner
 				redirect_to mtdevise.root_url(:subdomain => account.subdomain)
 			end
