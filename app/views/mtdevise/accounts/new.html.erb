@@ -8,7 +8,6 @@
 				<div style="padding-top:30px" class="panel-body" >
 					<%= simple_form_for @account, html: {class: 'form-horizontal multiple_tags', role: 'form'} do |account| %>
 						<%= account.error_notification %>
-						<%= render 'shared/validation', object: account.object %>
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="fa fa-users"></i></span>
 							<%= account.input_field :name, required: true, autofocus: true, :class => "form-control", :placeholder => "Account Name" %>
@@ -47,7 +46,6 @@
 				<div style="padding-top:30px" class="panel-body" >
 					<%= simple_form_for @account, html: {class: 'form-horizontal multiple_tags', role: 'form'} do |account| %>
 						<%= account.error_notification %>
-						<%= render 'shared/validation', object: account.object %>
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="fa fa-users"></i></span>
 							<%= account.input_field :name, label: 'Account Name', :class => "form-control", :placeholder => "Account Name"  %>
