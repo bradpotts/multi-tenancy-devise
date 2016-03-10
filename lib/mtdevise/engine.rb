@@ -33,6 +33,11 @@ module Mtdevise
 				Rails.configuration.cache_classes ? require(file) : load(file)
 			end
 		end
+		
+		# Load Helper Files
+		config.to_prepare do
+			ApplicationController.helper(ApplicationHelper)
+		end
 
 	end
 end
