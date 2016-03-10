@@ -18,9 +18,11 @@ Gem::Specification.new do |s|
 	s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
 	s.test_files = Dir["spec/**/*"]
 
+	# Main Framework
 	s.add_dependency 'pg', '~> 0.18.4'
 	s.add_dependency 'rails', '~> 4.2', '>= 4.2.5.2'
 
+	# Security & Forms
 	s.add_dependency 'devise', '~> 3.5', '>= 3.5.4'
 	s.add_dependency 'houser', '~> 2.0'
 	s.add_dependency 'simple_form', '~> 3.2', '>= 3.2.1'
@@ -40,6 +42,7 @@ Gem::Specification.new do |s|
 	s.add_dependency 'sass-rails', '~> 5.0', '>= 5.0.4'
 	s.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
 
+	# Dev and Testing Environment
 	s.add_development_dependency 'minitest', '~> 5.8', '>= 5.8.4'
 	s.add_development_dependency 'simplecov', '~> 0.11.2'
 
