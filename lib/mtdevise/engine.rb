@@ -38,9 +38,6 @@ module Mtdevise
 		config.to_prepare do
 			ApplicationController.helper(ApplicationHelper)
 		end
-		
-		# Load library paths.
-		config.autoload_paths << Rails.root.join('lib/mtdevise')
 
 	end
 end
