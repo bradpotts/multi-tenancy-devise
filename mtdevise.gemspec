@@ -25,8 +25,7 @@ Gem::Specification.new do |s|
 	# Security & Forms
 	s.add_dependency 'devise', '~> 3.5', '>= 3.5.4'
 	s.add_dependency 'houser', '~> 2.0'
-	s.add_dependency 'phcnotifi', '~> 0.2.1'
-	
+
 	s.add_dependency 'simple_form', '~> 3.2', '>= 3.2.1'
 	s.add_dependency 'simple_token_authentication', '~> 1.12'
 

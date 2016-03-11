@@ -10,7 +10,6 @@ require 'sass-rails'
 require 'bootstrap-sass'
 require 'font-awesome-rails'
 require 'gravtastic'
-require 'phcnotifi'
 
 require 'simple_token_authentication'
 

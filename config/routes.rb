@@ -17,5 +17,4 @@ Mtdevise::Engine.routes.draw do
 	resources :accounts, only: [:create, :index, :new]
 	root 'welcome#index'
 	
-	mount Phcnotifi::Engine, :at => '/'
 end
