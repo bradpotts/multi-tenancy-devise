@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>MTDEVISE Multi-Tenant Accounts System</title>
+		<title>Accounts Index - Multi-Tenant Accounts System</title>
 		<%= stylesheet_link_tag    "mtdevise/application", media: "all" %>
 		<%= stylesheet_link_tag    "mtdevise/non-responsive", media: "all" %>
 		<%= javascript_include_tag "mtdevise/application" %>
@@ -9,6 +9,7 @@
 	</head>
 	<body data-no-turbolink="true">
 		<div class="container">
+			<%= render 'layouts/phcnotifi/components/notifications' %>
 			<%= yield %>
 		</div>
 	</body>

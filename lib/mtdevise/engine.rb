@@ -10,9 +10,9 @@ require 'sass-rails'
 require 'bootstrap-sass'
 require 'font-awesome-rails'
 require 'gravtastic'
+require 'phcnotifi'
 
 require 'simple_token_authentication'
-
 
 module Mtdevise
 	class Engine < ::Rails::Engine
@@ -32,11 +32,6 @@ module Mtdevise
 			Dir.glob(extenders_path) do |file|
 				Rails.configuration.cache_classes ? require(file) : load(file)
 			end
-		end
-		
-		# Load Helper Files
-		config.to_prepare do
-			ApplicationController.helper(ApplicationHelper)
 		end
 
 	end

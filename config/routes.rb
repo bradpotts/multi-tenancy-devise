@@ -16,5 +16,6 @@ Mtdevise::Engine.routes.draw do
 	get '/sign_up', :to => 'accounts#new', :as => :sign_up
 	resources :accounts, only: [:create, :index, :new]
 	root 'welcome#index'
-
+	
+	mount Phcnotifi::Engine, :at => '/'
 end

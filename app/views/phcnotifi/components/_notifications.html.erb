@@ -1,0 +1,13 @@
+<div class="row">
+	<div class=".col-md-12">
+		<div class="alert alert-dismissible alert-warning hidden alert-please-update" role="alert">
+			<button aria-label="Close" class="close" data-dismiss="alert" type="button"><span aria-hidden="true"> ×</span></button><strong>Please update</strong>Despite the fact that the record doens't show on your screen you must save it to delete it!
+		</div>
+		<% flash.each do |key, value| %>
+			<div class="<%= flash_class(key) %> fade in">
+				<a href="#" data-dismiss="alert" class="close">×</a>
+				<%= value %>
+			</div>
+		<% end %>
+	</div>
+</div>
