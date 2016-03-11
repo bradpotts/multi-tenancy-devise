@@ -4,6 +4,7 @@ module Mtdevise
 	class Account::UsersController < ApplicationController
 
 		# Layouts and Filters
+		before_action :authenticate_user!
 		layout :layouts_resolver_accounts
 		acts_as_token_authentication_handler_for User
 

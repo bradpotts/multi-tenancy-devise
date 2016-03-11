@@ -2,13 +2,15 @@
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise)
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
 
-### Mtdevise (MultiTenancyDevise) Documentation
-PHC mtdevise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
+### Mtdevise 2.0 (MultiTenancyDevise) Documentation  
+PHC mtdevise(2) gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
 
 * Multi-tenancy using subdomain scoping and account_id column.
 * Adds basecamp style logins to devise authentication gem.  
+* Welcome, Dashboard with custom Devise screens included  
 * Highly customizable views and layouts using standard bootstrap 3 code.  
-* Central login screen for all tenants (users) or logins through subdomain.  
+* Central login screen for all tenants (users) or logins through subdomain. 
+* Mis-Spelling and redirect to welcome screen if subdomain none-existent.
 * Compatible with postgre, mysql and sqlite (for dev environments)  
 
 #### Step 1 - Add user model to your app (Must be Done First!!)
@@ -18,7 +20,7 @@ Generate a user.rb file in your mainapp and add the code below
 	include Mtdevise::UserStorage  
   
 #### Step 2 - Add Mtdevise to your gemfile
-	gem 'mtdevise', '~> 1.8', '>= 1.8.6'
+	gem 'mtdevise', '~> 2.0', '>= 2.0.5'
 	bundle exec install  
 
 #### Step 3 - Add and migrate mtdevise database tables
