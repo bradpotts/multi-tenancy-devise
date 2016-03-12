@@ -1,8 +1,10 @@
 [![security](https://hakiri.io/github/PHCNetworks/multi-tenancy-devise/master.svg)](https://hakiri.io/github/PHCNetworks/multi-tenancy-devise/master)
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise)
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
-
-### Mtdevise 2.0 (MultiTenancyDevise) Documentation  
+  
+### Note: MTDevise(2) version 2.5 - New Environment Variable - See [Environment Variables](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/ENV---Environment-Variables) for additional information.  
+  
+### Mtdevise(2) 2.5 (MultiTenancyDevise) Documentation  
 PHC mtdevise(2) gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
 
 * Multi-tenancy using subdomain scoping and account_id column.
@@ -73,6 +75,7 @@ Once installed views can be generated and customized to your apps needs.
 #### Having troubles ?  
 [Multi-Tenant Starter App](https://github.com/PHCNetworks/multi-tenancy-starter-devise)  
 [Documentation (Github Wiki)](https://github.com/PHCNetworks/multi-tenancy-devise/wiki)  
+[Environment Variables](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/ENV---Environment-Variables)  
 [Issues & Bug Reports](https://github.com/PHCNetworks/multi-tenancy-devise/issues)  
 [Past Security Patch Notes](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/Critical-Security-Updates)  
 [Managed by PHCNetworks](http://phcnetworks.net)  
