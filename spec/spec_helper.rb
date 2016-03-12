@@ -1,6 +1,6 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
-ENV['PHC_MTDEVISE_SENDER']="no-reply@phcnetworks.net"
+ENV["PHC_MTDEVISE_SENDER"] ||= 'no-reply@phcnetworks.net'
 
 require File.expand_path("../test_app/config/environment", __FILE__)
 require 'rspec/rails'
