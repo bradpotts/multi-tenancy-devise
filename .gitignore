@@ -39,3 +39,6 @@ build/
 ## Environment
 /.bundle/
 /lib/bundler/man/
+
+# Ignore application configuration
+/config/application.yml

@@ -25,6 +25,9 @@ Gem::Specification.new do |s|
 	# Security & Forms
 	s.add_dependency 'devise', '~> 3.5', '>= 3.5.4'
 	s.add_dependency 'houser', '~> 2.0'
+	
+	# Configuration
+	s.add_dependency 'figaro', '~> 1.1', '>= 1.1.1'
 
 	s.add_dependency 'simple_form', '~> 3.2', '>= 3.2.1'
 	s.add_dependency 'simple_token_authentication', '~> 1.12'
