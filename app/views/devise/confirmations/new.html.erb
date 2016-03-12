@@ -5,17 +5,17 @@
 				<div class="panel-title">Send Confirmation Token</div>
 			</div>
 			<div style="padding-top:30px" class="panel-body" >
-				<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+				<%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post, role: "form" }) do |f| %>
 					<%= devise_error_messages! %>
 					<div style="margin-bottom: 25px" class="input-group">
 						<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-						<%= f.email_field :email, required: true, autofocus: true, :class => "form-control", :placeholder => "Email" %>
+						<%= f.email_field :email, required: true, autofocus: true, class: "form-control", :placeholder => "Email" %>
 					</div>
 					<div style="margin-top:10px" class="form-group">
 						<%= f.submit "Resend Token" %>
 					</div>
 					<div id="loginborder">
-						<%= render "devise/shared/links" %>
+						<%= render "devise/shared/links", class: "btn btn-primary" %>
 					</div>
 				<% end %>
 			</div>

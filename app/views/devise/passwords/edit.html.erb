@@ -5,19 +5,19 @@
 				<div class="panel-title">Change Your Password</div>
 			</div>
 			<div style="padding-top:30px" class="panel-body">
-				<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+				<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put, role: "form" }) do |f| %>
 					<%= devise_error_messages! %>
 					<%= f.input :reset_password_token, as: :hidden %>
 					<div style="margin-bottom: 25px" class="input-group">
 						<span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
-						<%= f.password_field :password, label: "New password", required: true, autofocus: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), :class => "form-control", :placeholder => "New Password" %>
+						<%= f.password_field :password, label: "New password", required: true, autofocus: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), class: "form-control", :placeholder => "New Password" %>
 					</div>
 					<div style="margin-bottom: 25px" class="input-group">
 						<span class="input-group-addon"><i class="fa fa-asterisk"></i></span>
-						<%= f.password_field :password_confirmation, label: "Confirm your new password", required: true, :class => "form-control", :placeholder => "Confirm Password" %>
+						<%= f.password_field :password_confirmation, label: "Confirm your new password", required: true, class: "form-control", :placeholder => "Confirm Password" %>
 					</div>
 					<div style="margin-top:10px" class="form-group">
-							<%= f.submit "Change my password", :class => "btn btn-primary" %>
+							<%= f.submit "Change my password", class: "btn btn-primary" %>
 					</div>
 					<div id="loginborder">
 						<%= render "devise/shared/links" %>
