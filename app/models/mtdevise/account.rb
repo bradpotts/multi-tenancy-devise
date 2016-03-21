@@ -1,11 +1,14 @@
 module Mtdevise
 	class Account < ActiveRecord::Base
+	
+		# Relationships
 		belongs_to :owner, :class_name => "Mtdevise::User"
 		has_many :members, :class_name => "Mtdevise::Member"
 		has_many :users, :through => :members
 
 		accepts_nested_attributes_for :owner
 
+		# Form Validations
 		validates :subdomain,
 			presence: true,
 			uniqueness: true,
@@ -31,6 +34,7 @@ module Mtdevise
 			self.username = username.to_s.downcase
 		end
 
+		# Define Account/Owner for User
 		def self.create_with_owner(params={})
 			account = new(params)
 			if account.save
