@@ -18,16 +18,17 @@ PHC mtdevise(2) gem adds multi-tenant and account management features to rails D
 #### Step 1 - Add user model to your app (Must be Done First!!)
 Generate a user.rb file in your mainapp and add the code below 
 
-	rails g model User  
-	include Mtdevise::UserStorage  
+	rails g model User
+	include Mtdevise::UserStorage
   
 #### Step 2 - Add Mtdevise to your gemfile
-	gem 'mtdevise', '~> 2.5'
-	bundle exec install  
+  
+	gem 'mtdevise', '~> 2.5', '>= 2.5.2'
+	bundle exec install
 
 #### Step 3 - Add and migrate mtdevise database tables
-	rake railties:install:migrations  
-	rake db:migrate  
+	rake railties:install:migrations
+	rake db:migrate
   
 #### Step 4 - Configure ActionMailer
 + Mailer functions are required in order for mtdevise to operate.
@@ -41,36 +42,36 @@ Add this line at the end of the routes file.
 #### Step 6 - Constrain the routs you want secured
 All the routes you want to have multi-tenacy login functions goes in between the constraints block.
 
-	constraints(Mtdevise::Constraints::SubdomainRequired) do  
-		# Routes Requiring Security & Multi-Tenancy Routes    
-	end  
+	constraints(Mtdevise::Constraints::SubdomainRequired) do
+		# Routes Requiring Security & Multi-Tenancy Routes  
+	end
   
 #### Step 7 - Modifications to MainApp Controllers & Database  
 Your app needs modification to [controllers (example)](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/Scoped-Controller-Example)  
 Any corresponding db database tables must have an accounts_id column
   
-	accounts_id  
+	accounts_id
   
 #### Step 8 - Add mtdevise extension to models  
 Add the mtdevise extension to the top of all models for the routes configured in the previous step.  
   
-	def self.scoped_to(account)  
-		where(:account_id => account.id)  
-	end  
+	def self.scoped_to(account)
+		where(:account_id => account.id)
+	end
   
 #### Step 9 - Configure scopes in your controller
 Scope your controllers. Examples on github wiki or multi-tenant starter app.
 
-	.scoped_to(current_account)  
+	.scoped_to(current_account)
   
 ### Additional Information  
   
 #### Views - Mtdevise Views Can be Customized  
 Once installed views can be generated and customized to your apps needs.  
   
-    rails generate mtdevise:views  
-    rake assets:clobber  
-    rake assets:precompile  
+    rails generate mtdevise:views
+    rake assets:clobber
+    rake assets:precompile
   
 #### Having troubles ?  
 [Multi-Tenant Starter App](https://github.com/PHCNetworks/multi-tenancy-starter-devise)  
