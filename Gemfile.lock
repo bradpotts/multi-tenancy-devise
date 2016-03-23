@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (2.5.6)
+    mtdevise (2.5.7)
       bootstrap-sass (~> 3.3, >= 3.3.6)
       devise (~> 3.5, >= 3.5.4)
       figaro (~> 1.1, >= 1.1.1)
@@ -15,7 +15,6 @@ PATH
       omniauth-instagram (~> 1.0, >= 1.0.2)
       omniauth-twitter (~> 1.2, >= 1.2.1)
       pg (~> 0.18.4)
-      phctitler (~> 1.7)
       rails (~> 4.2, >= 4.2.6)
       sass-rails (~> 5.0, >= 5.0.4)
       simple_form (~> 3.2, >= 3.2.1)
@@ -172,13 +171,6 @@ GEM
       omniauth-oauth (~> 1.1)
     orm_adapter (0.5.0)
     pg (0.18.4)
-    phctitler (1.7.0)
-      bootstrap-sass (~> 3.3, >= 3.3.6)
-      figaro (~> 1.1, >= 1.1.1)
-      font-awesome-rails (~> 4.5)
-      jquery-rails (~> 4.0, >= 4.0.5)
-      rails (~> 4.2, >= 4.2.6)
-      sass-rails (~> 5.0, >= 5.0.4)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)

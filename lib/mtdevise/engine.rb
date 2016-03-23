@@ -2,9 +2,6 @@
 require 'mtdevise/active_record_extensions'
 require 'mtdevise/scoped_to'
 
-# Load Helper for Titles
-require 'phctitler'
-
 # Data and Accounts
 require 'devise'
 require 'houser'
