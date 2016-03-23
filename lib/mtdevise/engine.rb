@@ -1,20 +1,26 @@
-require 'mtdevise/active_record_extensions'
-require 'mtdevise/scoped_to'
-
-require 'devise'
-require 'houser'
-require 'simple_form'
-
-require 'jquery-rails'
-require 'sass-rails'
-require 'bootstrap-sass'
-require 'font-awesome-rails'
-require 'gravtastic'
-
-require 'simple_token_authentication'
-
 module Mtdevise
 	class Engine < ::Rails::Engine
+
+		# Load Required Dependencies
+		require 'mtdevise/active_record_extensions'
+		require 'mtdevise/scoped_to'
+
+		# Load Helper for Titles
+		require 'phctitler'
+
+		# Data and Accounts
+		require 'devise'
+		require 'houser'
+		require 'simple_token_authentication'
+		require 'simple_form'
+
+		# Frontend & UI
+		require 'jquery-rails'
+		require 'sass-rails'
+		require 'bootstrap-sass'
+		require 'font-awesome-rails'
+		require 'gravtastic'
+
 		isolate_namespace Mtdevise
 
 		initializer 'mtdevise.middleware.houser' do

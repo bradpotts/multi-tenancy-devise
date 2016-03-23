@@ -28,9 +28,10 @@ Gem::Specification.new do |spec|
 	
 	# Configuration
 	spec.add_dependency 'figaro', '~> 1.1', '>= 1.1.1'
+	spec.add_dependency 'simple_token_authentication', '~> 1.12'
+	spec.add_dependency 'phctitler', '~> 1.7'
 
 	spec.add_dependency 'simple_form', '~> 3.2', '>= 3.2.1'
-	spec.add_dependency 'simple_token_authentication', '~> 1.12'
 
 	# Omniauth Authtication
 	spec.add_dependency 'omniauth-facebook', '~> 3.0'
