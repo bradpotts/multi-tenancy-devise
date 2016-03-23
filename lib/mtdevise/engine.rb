@@ -21,15 +21,15 @@ require 'gravtastic'
 module Mtdevise
 	class Engine < ::Rails::Engine
 
-    #Isolate Name
+    	#Isolate Name
 		isolate_namespace Mtdevise
 
-    # Houser Gem
+    	# Houser Gem
 		initializer 'mtdevise.middleware.houser' do
 			Rails.application.config.middleware.use Houser::Middleware, :class_name => 'Mtdevise::Account'
 		end
 
-    # Testing and Rspec
+    	# Testing and Rspec
 		config.generators do |g|
 			g.test_framework :rspec, :view_specs => false
 		end

@@ -3,7 +3,10 @@ module Mtdevise
   # class ApplicationController < ActionController::Base
 	class ApplicationController < ::ApplicationController
 
-    # Secirity and Filters
+		# Load Helpers
+		helper Phctitler::Engine.helpers
+	
+    	# Secirity and Filters
 		protect_from_forgery with: :null_session
 		before_action :check_subdomain
 
