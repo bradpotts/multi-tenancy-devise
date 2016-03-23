@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (2.5.2)
+    mtdevise (2.5.5)
       bootstrap-sass (~> 3.3, >= 3.3.6)
       devise (~> 3.5, >= 3.5.4)
       figaro (~> 1.1, >= 1.1.1)
@@ -16,7 +16,7 @@ PATH
       omniauth-twitter (~> 1.2, >= 1.2.1)
       pg (~> 0.18.4)
       phctitler (~> 1.7)
-      rails (~> 4.2, >= 4.2.5.2)
+      rails (~> 4.2, >= 4.2.6)
       sass-rails (~> 5.0, >= 5.0.4)
       simple_form (~> 3.2, >= 3.2.1)
       simple_token_authentication (~> 1.12)

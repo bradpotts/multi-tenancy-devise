@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
 	# Main Framework
 	spec.add_dependency 'pg', '~> 0.18.4'
-	spec.add_dependency 'rails', '~> 4.2', '>= 4.2.5.2'
+	spec.add_dependency 'rails', '~> 4.2', '>= 4.2.6'
 
 	# Security & Forms
 	spec.add_dependency 'devise', '~> 3.5', '>= 3.5.4'

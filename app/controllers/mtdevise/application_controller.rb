@@ -1,11 +1,9 @@
 module Mtdevise
 
-# class ApplicationController < ActionController::Base
+  # class ApplicationController < ActionController::Base
 	class ApplicationController < ::ApplicationController
-    # Load PHCTitler
-    helper Phctitler::Engine.helpers
 
-		# Secirity and Filters
+    # Secirity and Filters
 		protect_from_forgery with: :null_session
 		before_action :check_subdomain
 
