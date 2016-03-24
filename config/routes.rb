@@ -16,5 +16,8 @@ Mtdevise::Engine.routes.draw do
 	get '/sign_up', :to => 'accounts#new', :as => :sign_up
 	resources :accounts, only: [:create, :index, :new]
 	root 'welcome#index'
+  devise_scope :user do
+    match "sign_out", :to => "sessions#destroy", via: [:delete]
+  end
 	
 end
