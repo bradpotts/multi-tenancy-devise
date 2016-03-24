@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (2.6.2)
+    mtdevise (2.6.3)
       bootstrap-sass (~> 3.3, >= 3.3.6)
       devise (~> 3.5, >= 3.5.4)
       figaro (~> 1.1, >= 1.1.1)

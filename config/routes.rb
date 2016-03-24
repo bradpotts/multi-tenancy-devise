@@ -14,8 +14,8 @@ Mtdevise::Engine.routes.draw do
 
 	devise_for :users, class_name: 'Mtdevise::User', module: :devise
 	get '/sign_up', :to => 'accounts#new', :as => :sign_up
+  match '/sign_out', to: 'sessions#destroy', via: 'delete'
 	resources :accounts, only: [:create, :index, :new]
-  delete '/sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session
 	root 'welcome#index'
 	
 end
