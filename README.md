@@ -2,8 +2,6 @@
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise)
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
   
-### Note: MTDevise(2) version 2.5 - New Environment Variable - See [Environment Variables](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/ENV---Environment-Variables) for additional information.  
-  
 ### Mtdevise(2) 2.5 (MultiTenancyDevise) Documentation  
 PHC mtdevise(2) gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
 
