@@ -29,8 +29,8 @@ Generate a user.rb file in your mainapp and add the code below
 	rake db:migrate
   
 #### Step 4 - Configure ActionMailer
-+ Mailer functions are required in order for mtdevise to operate.
-+ Mailer is used for confirmation and password reset functions.
+* Mailer functions are required in order for mtdevise to operate.
+* Mailer is used for confirmation and password reset functions.
 
 #### Step 5 - Mount the Engine in your Routes File
 Add this line at the end of the routes file.  

@@ -2,6 +2,7 @@ require 'mtdevise/constraints/subdomain_required'
 
 Mtdevise::Engine.routes.draw do
 
+	# Backend User Routes
 	constraints(Mtdevise::Constraints::SubdomainRequired) do
 		scope :module => "account" do
 			root :to => "dashboard#index", :as => :account_root
@@ -12,9 +13,10 @@ Mtdevise::Engine.routes.draw do
 		end
 	end
 
+	# FrontEnd User Routes
 	devise_for :users, class_name: 'Mtdevise::User', module: :devise
 	get '/sign_up', :to => 'accounts#new', :as => :sign_up
-  match '/sign_out', to: 'sessions#destroy', via: 'delete'
+	match '/sign_out', to: 'sessions#destroy', via: 'delete'
 	resources :accounts, only: [:create, :index, :new]
 	root 'welcome#index'
 	
