@@ -9,7 +9,7 @@ Mtdevise::Engine.routes.draw do
 			# post "/sign_in", :to => "sessions#create", :as => :sessions
 			get "/sign_up", :to => "users#new", :as => :user_sign_up
 			post "/sign_up", :to => "users#create", :as => :do_user_sign_up
-      post 'users/sign_out' => "devise/sessions#destroy"
+      delete 'logout' => 'sessions#destroy', :as => :destroy_user_session
 		end
 	end
 
