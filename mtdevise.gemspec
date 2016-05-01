@@ -25,12 +25,10 @@ Gem::Specification.new do |spec|
 	# Security & Forms
 	spec.add_dependency 'devise', '~> 3.5', '>= 3.5.4'
 	spec.add_dependency 'houser', '~> 2.0'
-	
-	# Configuration
-	spec.add_dependency 'figaro', '~> 1.1', '>= 1.1.1'
 	spec.add_dependency 'simple_token_authentication', '~> 1.12'
 
-	spec.add_dependency 'simple_form', '~> 3.2', '>= 3.2.1'
+	# Configuration
+
 
 	# Omniauth Authtication
 	spec.add_dependency 'omniauth-facebook', '~> 3.0'

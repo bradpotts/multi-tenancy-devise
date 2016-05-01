@@ -6,7 +6,6 @@ require 'mtdevise/scoped_to'
 require 'devise'
 require 'houser'
 require 'simple_token_authentication'
-require 'simple_form'
 
 # Frontend & UI
 require 'jquery-rails'
