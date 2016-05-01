@@ -2,8 +2,8 @@
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise)
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
   
-### Mtdevise(2) 2.8 (MultiTenancyDevise) Documentation  
-PHC mtdevise(2) gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
+### Mtdevise(3) 3.0 (MultiTenancyDevise) Documentation  
+PHC mtdevise(3) gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
 
 * Multi-tenancy using subdomain scoping and account_id column.
 * Adds basecamp style logins to devise authentication gem.  
@@ -21,7 +21,7 @@ Generate a user.rb file in your mainapp and add the code below
   
 #### Step 2 - Add Mtdevise to your gemfile
   
-	gem 'mtdevise', '~> 2.8'
+	gem 'mtdevise', '~> 3.0'
 	bundle exec install
 
 #### Step 3 - Add and migrate mtdevise database tables
