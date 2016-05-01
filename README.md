@@ -21,7 +21,7 @@ Generate a user.rb file in your mainapp and add the code below
   
 #### Step 2 - Add Mtdevise to your gemfile
   
-	gem 'mtdevise', '~> 2.5', '>= 2.5.2'
+	gem 'mtdevise', '~> 2.8'
 	bundle exec install
 
 #### Step 3 - Add and migrate mtdevise database tables
@@ -61,6 +61,11 @@ Add the mtdevise extension to the top of all models for the routes configured in
 Scope your controllers. Examples on github wiki or multi-tenant starter app.
 
 	.scoped_to(current_account)
+  
+#### Step 10 - Environment (ENV) Variables
+Set a sent from email address for confirmation and password reset emails [more info here.](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/ENV---Environment-Variables)  .  
+  
+	PHC_MTDEVISE_SENDER = no_reply@example.com
   
 ### Additional Information  
   
