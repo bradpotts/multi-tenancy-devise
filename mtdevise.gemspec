@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'pg', '~> 0.18.4'
 
 	# Security & Forms
-	spec.add_dependency 'devise', '~> 4.0', '>= 4.0.1'
+	spec.add_dependency 'devise', '~> 4.1'
 	spec.add_dependency 'houser', '~> 2.0'
 	spec.add_dependency 'simple_token_authentication', '~> 1.13'
 
