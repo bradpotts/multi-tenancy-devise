@@ -21,7 +21,7 @@ Generate a user.rb file in your mainapp and add the code below
   
 #### Step 2 - Add Mtdevise to your gemfile
   
-	gem 'mtdevise', '~> 3.0'
+	gem 'mtdevise', '~> 3.5', '>= 3.5.1'
 	bundle exec install
 
 #### Step 3 - Add and migrate mtdevise database tables
