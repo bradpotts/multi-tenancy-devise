@@ -2,7 +2,11 @@ module Mtdevise
 
   # class ApplicationController < ActionController::Base
 	class ApplicationController < ::ApplicationController
-	
+
+		# Load Helpers
+		helper Phctitleseo::Engine.helpers
+		helper Phcnotifi::Engine.helpers
+
     	# Secirity and Filters
 		protect_from_forgery with: :null_session
 		before_action :check_subdomain

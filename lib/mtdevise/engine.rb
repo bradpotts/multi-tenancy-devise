@@ -13,7 +13,9 @@ require 'sass-rails'
 require 'bootstrap-sass'
 require 'font-awesome-rails'
 require 'gravtastic'
-
+require 'phctitleseo'
+require 'phcnotifi'
+		
 module Mtdevise
 	class Engine < ::Rails::Engine
 
@@ -36,6 +38,13 @@ module Mtdevise
 			Dir.glob(extenders_path) do |file|
 				Rails.configuration.cache_classes ? require(file) : load(file)
 			end
+		end
+
+		# Load Helper Files
+		config.to_prepare do
+			ApplicationController.helper(ApplicationHelper)
+			Phcnotifi::ApplicationController.helper(ApplicationHelper)
+			Phctitleseo::ApplicationController.helper(ApplicationHelper)
 		end
 
 	end

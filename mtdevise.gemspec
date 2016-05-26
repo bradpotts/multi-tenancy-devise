@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 	spec.version     = Mtdevise::VERSION
 	spec.authors     = ["BradPotts"]
 	spec.email       = ["info@phcnetworks.net"]
-	spec.homepage    = "https://www.phcnetworks.net/engine-yard"
+	spec.homepage    = "https://www.phcnetworks.net/"
 	spec.summary     = "Multi-Tenant Rails Engine Using Devise."
 	spec.description = "mtdevise(3) adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
 	spec.license     = "GPL-3.0"
@@ -20,12 +20,12 @@ Gem::Specification.new do |spec|
 
 	# Main Dependencies
 	spec.add_dependency 'rails', '~> 4.2', '>= 4.2.6'
-	spec.add_dependency 'phcnotifi', '~> 2.6', '>= 2.6.8'
-	spec.add_dependency 'phctitler', '~> 1.8', '>= 1.8.8'
+	spec.add_dependency 'phcnotifi', '~> 2.6', '>= 2.6.5'
+	spec.add_dependency 'phctitleseo', '~> 2.0'
 	spec.add_dependency 'pg', '~> 0.18.4'
 
 	# Security & Forms
-	spec.add_dependency 'devise', '~> 4.0'
+	spec.add_dependency 'devise', '~> 4.1', '>= 4.1.1'
 	spec.add_dependency 'houser', '~> 2.0'
 	spec.add_dependency 'simple_token_authentication', '~> 1.13'
 
