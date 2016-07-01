@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (3.5.1)
+    mtdevise (3.5.5)
       bootstrap-sass (~> 3.3, >= 3.3.6)
       devise (~> 4.2)
       font-awesome-rails (~> 4.6, >= 4.6.3.1)
