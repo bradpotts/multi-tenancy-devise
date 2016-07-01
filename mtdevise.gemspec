@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
 	spec.name        = "mtdevise"
 	spec.version     = Mtdevise::VERSION
 	spec.authors     = ["BradPotts"]
-	spec.email       = ["info@phcnetworks.net"]
+	spec.email       = ["developers@phcnetworks.net"]
 	spec.homepage    = "https://www.phcnetworks.net/"
 	spec.summary     = "Multi-Tenant Rails Engine Using Devise."
 	spec.description = "mtdevise(3) adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
