@@ -2,7 +2,7 @@
 ENV["RAILS_ENV"] ||= 'test'
 ENV["PHC_MTDEVISE_SENDER"] ||= 'no-reply@phcnetworks.net'
 
-require File.expand_path("../test_app/config/environment", __FILE__)
+require File.expand_path("../testapp/config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
 require 'shoulda/matchers'

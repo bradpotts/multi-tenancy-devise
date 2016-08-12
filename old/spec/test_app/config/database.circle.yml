@@ -1,4 +1,0 @@
-test:
-  host: localhost
-  database: circle_ruby_test
-  adapter: postgresql

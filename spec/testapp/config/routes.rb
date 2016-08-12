@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  mount Mtdevise::Engine => "/mtdevise"
+
+	get 'things' => 'things#index', as: :things
+	get 'account_root' => 'things#index', as: :account_root
+
+	mount Mtdevise::Engine => "/mtdevise"
+
 end

@@ -47,7 +47,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
 
 	# Development & Testing Dependencies
-
+	spec.add_development_dependency 'rspec-rails', '~> 3.5', '>= 3.5.1'
 	spec.add_development_dependency 'factory_girl_rails', '~> 4.7'
 	spec.add_development_dependency 'capybara', '~> 2.7', '>= 2.7.1'
 	spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.5'
@@ -59,4 +59,6 @@ Gem::Specification.new do |spec|
 	spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
 	spec.add_development_dependency 'selenium-webdriver', '~> 2.53', '>= 2.53.4'
 
+	# Extra Development & Testing Dependencies
+	spec.add_development_dependency 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
 end
