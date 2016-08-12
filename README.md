@@ -2,7 +2,7 @@
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise)
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
   
-### Mtdevise(3) 3.0 (MultiTenancyDevise) Documentation  
+### Mtdevise(4) (MultiTenancyDevise) Documentation  
 PHC mtdevise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
 
 * Multi-tenancy using subdomain scoping and account_id column.
