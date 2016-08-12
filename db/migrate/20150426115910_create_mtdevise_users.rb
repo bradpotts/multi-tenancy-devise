@@ -1,4 +1,4 @@
-class CreateMtdeviseUsers < ActiveRecord::Migration
+class CreateMtdeviseUsers < ActiveRecord::Migration[5.0]
 	def change
 		create_table :mtdevise_users do |t|
 			t.string :email

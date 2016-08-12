@@ -1,4 +1,4 @@
-class AddDeviseToMtdeviseUsers < ActiveRecord::Migration
+class AddDeviseToMtdeviseUsers < ActiveRecord::Migration[5.0]
 	def self.up
 		change_table(:mtdevise_users) do |t|
 			## Database authenticatable
