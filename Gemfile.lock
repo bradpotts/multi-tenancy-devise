@@ -1,13 +1,13 @@
 PATH
   remote: .
   specs:
-    mtdevise (3.5.5)
+    mtdevise (3.5.6)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       devise (~> 4.2)
       font-awesome-rails (~> 4.6, >= 4.6.3.1)
       gravtastic (~> 3.2, >= 3.2.6)
       houser (~> 2.0)
-      jquery-rails (~> 4.1, >= 4.1.1)
+      jquery-rails (~> 4.2, >= 4.2.1)
       jquery-ui-rails (~> 5.0, >= 5.0.5)
       omniauth-facebook (~> 4.0)
       omniauth-github (~> 1.1, >= 1.1.2)
@@ -18,7 +18,7 @@ PATH
       phcnotifi (~> 3.3)
       phctitleseo (~> 3.3)
       rails (~> 5.0, >= 5.0.0.1)
-      responders (~> 2.2)
+      responders (~> 2.3)
       sass-rails (~> 5.0, >= 5.0.6)
       simple_token_authentication (~> 1.13)
 

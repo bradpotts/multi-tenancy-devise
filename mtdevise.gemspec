@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
 	# PHC Engines
 	spec.add_dependency 'phctitleseo', '~> 3.3'
 	spec.add_dependency 'phcnotifi', '~> 3.3'
-	spec.add_dependency 'responders', '~> 2.2'
+	spec.add_dependency 'responders', '~> 2.3'
 
 	# Security & Forms
 	spec.add_dependency 'devise', '~> 4.2'
@@ -39,7 +39,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'omniauth-github', '~> 1.1', '>= 1.1.2'
 
 	# UI & Frontend Elements
-	spec.add_dependency 'jquery-rails', '~> 4.1', '>= 4.1.1'
+	spec.add_dependency 'jquery-rails', '~> 4.2', '>= 4.2.1'
 	spec.add_dependency 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 	spec.add_dependency 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 	spec.add_dependency 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
@@ -62,7 +62,6 @@ Gem::Specification.new do |spec|
 	# Extra Development & Testing Dependencies
 	spec.add_development_dependency 'minitest', '~> 5.9'
 	spec.add_development_dependency 'simplecov', '~> 0.12.0'
-
 
 	spec.add_development_dependency 'letter_opener', '~> 1.4', '>= 1.4.1'
 	spec.add_development_dependency 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
