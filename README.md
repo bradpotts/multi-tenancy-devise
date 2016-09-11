@@ -1,5 +1,6 @@
 [![security](https://hakiri.io/github/PHCNetworks/multi-tenancy-devise/master.svg)](https://hakiri.io/github/PHCNetworks/multi-tenancy-devise/master)
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise)
+[![Dependency Status](https://gemnasium.com/badges/github.com/PHCNetworks/multi-tenancy-devise.svg)](https://gemnasium.com/github.com/PHCNetworks/multi-tenancy-devise)
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
   
 ### Mtdevise(4) (MultiTenancyDevise) Documentation  
