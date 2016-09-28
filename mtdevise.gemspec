@@ -60,7 +60,7 @@ Gem::Specification.new do |spec|
 	spec.add_development_dependency 'selenium-webdriver', '~> 2.53', '>= 2.53.4'
 
 	# Extra Development & Testing Dependencies
-	spec.add_development_dependency 'minitest', '~> 5.9'
+	spec.add_development_dependency 'minitest', '~> 5.9', '>= 5.9.1'
 	spec.add_development_dependency 'simplecov', '~> 0.12.0'
 	spec.add_development_dependency 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
 

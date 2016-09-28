@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (3.5.8)
+    mtdevise (3.5.9)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       devise (~> 4.2)
       font-awesome-rails (~> 4.6, >= 4.6.3.1)
@@ -64,7 +64,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (7.1.2)
-    autoprefixer-rails (6.4.1.1)
+    autoprefixer-rails (6.5.0)
       execjs
     bcrypt (3.1.11)
     bootstrap-sass (3.3.7)
@@ -141,7 +141,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
-    minitest (5.9.0)
+    minitest (5.9.1)
     multi_json (1.12.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -309,7 +309,7 @@ DEPENDENCIES
   faker (~> 1.6, >= 1.6.6)
   launchy (~> 2.4, >= 2.4.3)
   letter_opener (~> 1.4, >= 1.4.1)
-  minitest (~> 5.9)
+  minitest (~> 5.9, >= 5.9.1)
   mtdevise!
   rspec-rails (~> 3.5, >= 3.5.2)
   selenium-webdriver (~> 2.53, >= 2.53.4)
