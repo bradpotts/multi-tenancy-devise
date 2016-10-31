@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 	spec.version     = Mtdevise::VERSION
 	spec.authors     = ["BradPotts"]
 	spec.email       = ["developers@phcnetworks.net"]
-	spec.homepage    = "https://www.phcnetworks.net/"
+	spec.homepage    = "https://webdev.phcmembers.com/"
 	spec.summary     = "Multi-Tenant Rails Engine Using Devise."
 	spec.description = "mtdevise(4) adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
 	spec.license     = "MIT"
@@ -42,22 +42,23 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'jquery-rails', '~> 4.2', '>= 4.2.1'
 	spec.add_dependency 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 	spec.add_dependency 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
-	spec.add_dependency 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+	spec.add_dependency 'font-awesome-rails', '~> 4.7'
 	spec.add_dependency 'sass-rails', '~> 5.0', '>= 5.0.6'
+	spec.add_dependency 'country_select', '~> 2.5', '>= 2.5.2'
 	spec.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
 
 	# Development & Testing Dependencies
 	spec.add_development_dependency 'rspec-rails', '~> 3.5', '>= 3.5.2'
 	spec.add_development_dependency 'factory_girl_rails', '~> 4.7'
-	spec.add_development_dependency 'capybara', '~> 2.9', '>= 2.9.1'
-	spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.5'
+	spec.add_development_dependency 'capybara', '~> 2.10', '>= 2.10.1'
+	spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.6'
 
-	spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.11'
+	spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.12'
 	spec.add_development_dependency 'database_cleaner', '~> 1.5', '>= 1.5.3'
 
 	spec.add_development_dependency 'faker', '~> 1.6', '>= 1.6.6'
 	spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
-	spec.add_development_dependency 'selenium-webdriver', '~> 2.53', '>= 2.53.4'
+	spec.add_development_dependency 'selenium-webdriver', '~> 3.0'
 
 	# Extra Development & Testing Dependencies
 	spec.add_development_dependency 'minitest', '~> 5.9', '>= 5.9.1'
