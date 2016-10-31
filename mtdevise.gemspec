@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 	spec.email       = ["developers@phcnetworks.net"]
 	spec.homepage    = "https://webdev.phcmembers.com/"
 	spec.summary     = "Multi-Tenant Rails Engine Using Devise."
-	spec.description = "mtdevise(4) adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
+	spec.description = "mtdevise(3) adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
 	spec.license     = "MIT"
 
 	spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
