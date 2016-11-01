@@ -22,8 +22,8 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'pg', '~> 0.19.0'
 
 	# PHC Engines
-	spec.add_dependency 'phctitleseo', '~> 3.3', '>= 3.3.4'
-	spec.add_dependency 'phcnotifi', '~> 3.3', '>= 3.3.4'
+	spec.add_dependency 'phctitleseo', '~> 3.3', '>= 3.3.5'
+	spec.add_dependency 'phcnotifi', '~> 3.3', '>= 3.3.5'
 	spec.add_dependency 'responders', '~> 2.3'
 
 	# Security & Forms

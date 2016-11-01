@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (3.5.10)
+    mtdevise (3.5.11)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       country_select (~> 2.5, >= 2.5.2)
       devise (~> 4.2)
@@ -16,8 +16,8 @@ PATH
       omniauth-instagram (~> 1.0, >= 1.0.2)
       omniauth-twitter (~> 1.2, >= 1.2.1)
       pg (~> 0.19.0)
-      phcnotifi (~> 3.3, >= 3.3.4)
-      phctitleseo (~> 3.3, >= 3.3.4)
+      phcnotifi (~> 3.3, >= 3.3.5)
+      phctitleseo (~> 3.3, >= 3.3.5)
       rails (~> 5.0, >= 5.0.0.1)
       responders (~> 2.3)
       sass-rails (~> 5.0, >= 5.0.6)
