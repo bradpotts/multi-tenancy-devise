@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (3.5.11)
+    mtdevise (3.5.10)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       country_select (~> 2.5, >= 2.5.2)
       devise (~> 4.2)
