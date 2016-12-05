@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (3.5.10)
+    mtdevise (3.5.11)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       carrierwave (~> 0.11.2)
       cloudinary (~> 1.2, >= 1.2.4)
