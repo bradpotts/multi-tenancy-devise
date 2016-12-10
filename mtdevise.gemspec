@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'paper_trail', '~> 6.0', '>= 6.0.1'
 
 	# PHCEngines & Theme Dependencies
-	spec.add_dependency 'phcadmin3', '~> 1.0'
+	spec.add_dependency 'phcadmin3', '~> 1.1', '>= 1.1.3'
 	spec.add_dependency 'phctitleseo', '~> 3.4', '>= 3.4.3'
 	spec.add_dependency 'phcnotifi', '~> 3.4', '>= 3.4.3'
 
