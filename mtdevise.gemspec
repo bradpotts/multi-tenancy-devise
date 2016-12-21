@@ -1,16 +1,15 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-# Maintain your gem's version:
+# Gem Versioning
 require "mtdevise/version"
 
-# Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
 
 	spec.name        = "mtdevise"
 	spec.version     = Mtdevise::VERSION
 	spec.authors     = ["BradPotts"]
-	spec.email       = ["developers@phcnetworks.net"]
-	spec.homepage    = "https://webdev.phcmembers.com/"
+	spec.email       = ["info@phcnetworks.net"]
+	spec.homepage    = "https://www.phcnetworks.net/"
 	spec.summary     = "Multi-Tenant Rails Engine Using Devise."
 	spec.description = "mtdevise(3) adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
 	spec.license     = "MIT"
@@ -18,20 +17,20 @@ Gem::Specification.new do |spec|
 	spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
 	# Main Dependencies
-	spec.add_dependency 'rails', '~> 5.0', '>= 5.0.0.1'
+	spec.add_dependency 'rails', '~> 5.0', '>= 5.0.1'
 	spec.add_dependency 'pg', '~> 0.19.0'
-	spec.add_dependency 'paper_trail', '~> 6.0', '>= 6.0.1'
+	spec.add_dependency 'paper_trail', '~> 6.0', '>= 6.0.2'
 
 	# PHCEngines & Theme Dependencies
-	spec.add_dependency 'phcadmin3', '~> 1.1', '>= 1.1.3'
-	spec.add_dependency 'phctitleseo', '~> 3.4', '>= 3.4.3'
-	spec.add_dependency 'phcnotifi', '~> 3.4', '>= 3.4.3'
+	spec.add_dependency 'phcadmin3', '~> 1.1', '>= 1.1.4'
+	spec.add_dependency 'phctitleseo', '~> 3.4', '>= 3.4.5'
+	spec.add_dependency 'phcnotifi', '~> 3.4', '>= 3.4.5'
 
 	# UI & Frontend Dependencies
 	spec.add_dependency 'jquery-rails', '~> 4.2', '>= 4.2.1'
 	spec.add_dependency 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 	spec.add_dependency 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
-	spec.add_dependency 'font-awesome-rails', '~> 4.7'
+	spec.add_dependency 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 	spec.add_dependency 'sass-rails', '~> 5.0', '>= 5.0.6'
 	spec.add_dependency 'country_select', '~> 3.0'
 	spec.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
@@ -64,7 +63,7 @@ Gem::Specification.new do |spec|
 
 	# Development & Testing Dependencies
 	spec.add_development_dependency 'rspec-rails', '~> 3.5', '>= 3.5.2'
-	spec.add_development_dependency 'factory_girl_rails', '~> 4.7'
+	spec.add_development_dependency 'factory_girl_rails', '~> 4.8'
 	spec.add_development_dependency 'capybara', '~> 2.11'
 	spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.6'
 
@@ -73,7 +72,7 @@ Gem::Specification.new do |spec|
 
 	spec.add_development_dependency 'faker', '~> 1.6', '>= 1.6.6'
 	spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
-	spec.add_development_dependency 'selenium-webdriver', '~> 3.0', '>= 3.0.3'
+	spec.add_development_dependency 'selenium-webdriver', '~> 3.0', '>= 3.0.4'
 
 	# Extra Development & Testing Dependencies
 	spec.add_development_dependency 'minitest', '~> 5.9', '>= 5.9.1'
