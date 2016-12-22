@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    mtdevise (3.6.1)
+    mtdevise (3.6.2)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       carrierwave (~> 0.11.2)
-      cloudinary (~> 1.2, >= 1.2.4)
+      cloudinary (~> 1.3)
       codemirror-rails (~> 5.16)
       country_select (~> 3.0)
       devise (~> 4.2)
@@ -99,7 +99,7 @@ GEM
       mimemagic (>= 0.3.0)
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
-    cloudinary (1.2.4)
+    cloudinary (1.3.0)
       aws_cf_signer
       rest-client
     codemirror-rails (5.16.0)

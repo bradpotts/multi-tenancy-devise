@@ -20,9 +20,9 @@ Generate a user.rb file in your mainapp and add the code below
 	rails g model User
 	include Mtdevise::UserStorage
   
-#### Step 2 - Add Mtdevise to your gemfile
+#### Step 2 - Add Mtdevise to your gemfile and run command  
   
-	gem 'mtdevise', '~> 3.6'
+	gem 'mtdevise'
 	bundle exec install
 
 #### Step 3 - Add and migrate mtdevise database tables

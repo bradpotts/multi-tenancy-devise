@@ -47,7 +47,7 @@ Gem::Specification.new do |spec|
 
 	# Upload & Media Dependencies
 	spec.add_dependency 'carrierwave', '~> 0.11.2'
-	spec.add_dependency 'cloudinary', '~> 1.2', '>= 1.2.4'
+	spec.add_dependency 'cloudinary', '~> 1.3'
 
 	# Extra Security Dependencies
 	spec.add_dependency 'devise', '~> 4.2'
