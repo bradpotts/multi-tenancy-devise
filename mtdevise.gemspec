@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
 	spec.version     = Mtdevise::VERSION
 	spec.authors     = ["BradPotts"]
 	spec.email       = ["info@phcnetworks.net"]
-	spec.homepage    = "https://www.phcnetworks.net/"
-	spec.summary     = "Multi-Tenant Rails Engine Using Devise."
+	spec.homepage    = "https://phcnetworks.net/"
+	spec.summary     = "Multi-Tenant Rails Engine Using Devise"
 	spec.description = "mtdevise(3) adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
 	spec.license     = "MIT"
 
@@ -22,12 +22,12 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'paper_trail', '~> 6.0', '>= 6.0.2'
 
 	# PHCEngines & Theme Dependencies
-	spec.add_dependency 'phcadmin3', '~> 1.1', '>= 1.1.4'
-	spec.add_dependency 'phctitleseo', '~> 3.4', '>= 3.4.5'
-	spec.add_dependency 'phcnotifi', '~> 3.4', '>= 3.4.5'
+	spec.add_dependency 'phcadmin3', '~> 1.2'
+	spec.add_dependency 'phctitleseo', '~> 3.5'
+	spec.add_dependency 'phcnotifi', '~> 3.5'
 
 	# UI & Frontend Dependencies
-	spec.add_dependency 'jquery-rails', '~> 4.2', '>= 4.2.1'
+	spec.add_dependency 'jquery-rails', '~> 4.2', '>= 4.2.2'
 	spec.add_dependency 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 	spec.add_dependency 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 	spec.add_dependency 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
@@ -46,7 +46,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'codemirror-rails', '~> 5.16'
 
 	# Upload & Media Dependencies
-	spec.add_dependency 'carrierwave', '~> 0.11.2'
+	spec.add_dependency 'carrierwave', '~> 1.0'
 	spec.add_dependency 'cloudinary', '~> 1.3'
 
 	# Extra Security Dependencies
@@ -70,9 +70,9 @@ Gem::Specification.new do |spec|
 	spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.12'
 	spec.add_development_dependency 'database_cleaner', '~> 1.5', '>= 1.5.3'
 
-	spec.add_development_dependency 'faker', '~> 1.6', '>= 1.6.6'
+	spec.add_development_dependency 'faker', '~> 1.7', '>= 1.7.1'
 	spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
-	spec.add_development_dependency 'selenium-webdriver', '~> 3.0', '>= 3.0.4'
+	spec.add_development_dependency 'selenium-webdriver', '~> 3.0', '>= 3.0.5'
 
 	# Extra Development & Testing Dependencies
 	spec.add_development_dependency 'minitest', '~> 5.9', '>= 5.9.1'
