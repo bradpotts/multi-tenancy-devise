@@ -29,7 +29,7 @@ PATH
       rails (~> 5.0, >= 5.0.1)
       responders (~> 2.3)
       sass-rails (~> 5.0, >= 5.0.6)
-      simple_token_authentication (~> 1.13)
+      simple_token_authentication (~> 1.15)
       summernote-rails (~> 0.8.2.0)
 
 GEM

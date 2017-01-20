@@ -54,7 +54,7 @@ Gem::Specification.new do |spec|
 	# Extra Security Dependencies
 	spec.add_dependency 'devise', '~> 4.2'
 	spec.add_dependency 'houser', '~> 2.0'
-	spec.add_dependency 'simple_token_authentication', '~> 1.13'
+	spec.add_dependency 'simple_token_authentication', '~> 1.15'
 
 	# Extra Omniauth Authtication
 	spec.add_dependency 'omniauth-facebook', '~> 4.0'
