@@ -25,8 +25,8 @@ Gem::Specification.new do |spec|
 
 	# PHCEngines & Theme Dependencies
 	spec.add_dependency 'phcadmin3', '~> 1.3'
-	spec.add_dependency 'phctitleseo', '~> 3.6'
-	spec.add_dependency 'phcnotifi', '~> 3.6'
+	spec.add_dependency 'phctitleseo', '~> 3.6', '>= 3.6.1'
+	spec.add_dependency 'phcnotifi', '~> 3.6', '>= 3.6.1'
 
 	# UI & Frontend Dependencies
 	spec.add_dependency 'jquery-rails', '~> 4.2', '>= 4.2.2'
@@ -49,7 +49,7 @@ Gem::Specification.new do |spec|
 
 	# Upload & Media Dependencies
 	spec.add_dependency 'carrierwave', '~> 1.0'
-	spec.add_dependency 'cloudinary', '~> 1.3'
+	spec.add_dependency 'cloudinary', '~> 1.4'
 
 	# Extra Security Dependencies
 	spec.add_dependency 'devise', '~> 4.2'
@@ -66,7 +66,7 @@ Gem::Specification.new do |spec|
 	# Development & Testing Dependencies
 	spec.add_development_dependency 'rspec-rails', '~> 3.5', '>= 3.5.2'
 	spec.add_development_dependency 'factory_girl_rails', '~> 4.8'
-	spec.add_development_dependency 'capybara', '~> 2.11'
+	spec.add_development_dependency 'capybara', '~> 2.12'
 	spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.6'
 
 	spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
@@ -78,7 +78,7 @@ Gem::Specification.new do |spec|
 
 	# Extra Development & Testing Dependencies
 	spec.add_development_dependency 'minitest', '~> 5.9', '>= 5.9.1'
-	spec.add_development_dependency 'simplecov', '~> 0.12.0'
+	spec.add_development_dependency 'simplecov', '~> 0.13.0'
 	spec.add_development_dependency 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
 	spec.add_development_dependency 'letter_opener', '~> 1.4', '>= 1.4.1'
 
