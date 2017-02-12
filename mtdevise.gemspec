@@ -24,9 +24,9 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'paper_trail', '~> 6.0', '>= 6.0.2'
 
 	# PHCEngines & Theme Dependencies
-	spec.add_dependency 'phcadmin3', '~> 1.3', '>= 1.3.2'
-	spec.add_dependency 'phctitleseo', '~> 3.6', '>= 3.6.2'
-	spec.add_dependency 'phcnotifi', '~> 3.6', '>= 3.6.2'
+	spec.add_dependency 'phcadmin3', '~> 1.3', '>= 1.3.4'
+	spec.add_dependency 'phctitleseo', '~> 3.6', '>= 3.6.3'
+	spec.add_dependency 'phcnotifi', '~> 3.6', '>= 3.6.3'
 
 	# UI & Frontend Dependencies
 	spec.add_dependency 'jquery-rails', '~> 4.2', '>= 4.2.2'
@@ -61,7 +61,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'omniauth-google-oauth2', '~> 0.4.1'
 	spec.add_dependency 'omniauth-twitter', '~> 1.4'
 	spec.add_dependency 'omniauth-instagram', '~> 1.0', '>= 1.0.2'
-	spec.add_dependency 'omniauth-github', '~> 1.2', '>= 1.2.1'
+	spec.add_dependency 'omniauth-github', '~> 1.2', '>= 1.2.2'
 
 	# Development & Testing Dependencies
 	spec.add_development_dependency 'rspec-rails', '~> 3.5', '>= 3.5.2'
@@ -74,7 +74,7 @@ Gem::Specification.new do |spec|
 
 	spec.add_development_dependency 'faker', '~> 1.7', '>= 1.7.3'
 	spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
-	spec.add_development_dependency 'selenium-webdriver', '~> 3.0', '>= 3.0.7'
+	spec.add_development_dependency 'selenium-webdriver', '~> 3.0', '>= 3.0.8'
 
 	# Extra Development & Testing Dependencies
 	spec.add_development_dependency 'minitest', '~> 5.9', '>= 5.9.1'
