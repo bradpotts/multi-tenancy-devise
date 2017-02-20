@@ -4,16 +4,16 @@
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
   
 ### Mtdevise(3) (MultiTenancyDevise) Documentation  
-PHC mtdevise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included.  
-
-* Multi-tenancy using subdomain scoping and account_id column.
+PHC mtdevise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Bootstrap Devise views included.  
+  
+* Multi-tenancy using subdomain scoping and account_id column.  
 * Adds basecamp style logins to devise authentication gem.  
-* Welcome, Dashboard with custom Devise screens included  
+* Welcome, Dashboard with custom Devise views included.  
 * Highly customizable views and layouts using standard bootstrap 3 code.  
-* Central login screen for all tenants (users) or logins through subdomain. 
-* Mis-Spelling and redirect to welcome screen if subdomain none-existent.
-* Compatible with postgre, mysql and sqlite (for dev environments)  
-
+* Central login screen for all tenants (users) or logins through a subdomain.  
+* Mis-Spelling and redirect to welcome screen if subdomain none-existent.  
+* Compatible with postgre, mysql and sqlite (for dev environments).  
+  
 #### Step 1 - Add user model to your app (Must be Done First!!)
 Generate a user.rb file in your mainapp and add the code below 
 
@@ -26,21 +26,22 @@ Generate a user.rb file in your mainapp and add the code below
 	bundle exec install
 
 #### Step 3 - Add and migrate mtdevise database tables
+  
 	rake railties:install:migrations
 	rake db:migrate
   
 #### Step 4 - Configure ActionMailer
 * Mailer functions are required in order for mtdevise to operate.
 * Mailer is used for confirmation and password reset functions.
-
+  
 #### Step 5 - Mount the Engine in your Routes File
 Add this line at the end of the routes file.  
   
 	mount Mtdevise::Engine, :at => '/'
-
+  
 #### Step 6 - Constrain the routs you want secured
 All the routes you want to have multi-tenacy login functions goes in between the constraints block.
-
+  
 	constraints(Mtdevise::Constraints::SubdomainRequired) do
 		# Routes Requiring Security & Multi-Tenancy Routes  
 	end
@@ -73,9 +74,9 @@ Set a sent from email address for confirmation and password reset emails [more i
 #### Views - Mtdevise Views Can be Customized  
 Once installed views can be generated and customized to your apps needs.  
   
-    rails generate mtdevise:views
-    rake assets:clobber
-    rake assets:precompile
+	rails generate mtdevise:views
+	rake assets:clobber
+	rake assets:precompile
   
 #### Having troubles ?  
 [Multi-Tenant Starter App](https://github.com/PHCNetworks/multi-tenancy-starter-devise)  
@@ -86,3 +87,4 @@ Once installed views can be generated and customized to your apps needs.
 [Managed by PHCNetworks](http://phcnetworks.net)  
   
 [![Circle CI](https://circleci.com/gh/PHCNetworks/multi-tenancy-devise/tree/master.svg?style=svg)](https://circleci.com/gh/PHCNetworks/multi-tenancy-devise/tree/master)
+
