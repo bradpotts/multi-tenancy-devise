@@ -24,9 +24,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'paper_trail', '~> 6.0', '>= 6.0.2'
   
   # PHCEngines & Theme Dependencies
-  spec.add_dependency 'phcadmin3', '~> 1.4'
-  spec.add_dependency 'phctitleseo', '~> 4.1'
-  spec.add_dependency 'phcnotifi', '~> 3.7'
+  spec.add_dependency 'phcadmin3', '~> 1.5'
+  spec.add_dependency 'phctitleseo', '~> 4.2'
+  spec.add_dependency 'phcnotifi', '~> 3.8'
   
   # UI & Frontend Dependencies
   spec.add_dependency 'jquery-rails', '~> 4.2', '>= 4.2.2'
