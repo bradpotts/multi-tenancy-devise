@@ -24,9 +24,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'paper_trail', '~> 6.0', '>= 6.0.2'
   
   # PHCEngines & Theme Dependencies
-  spec.add_dependency 'phcadmin3', '~> 1.5'
-  spec.add_dependency 'phctitleseo', '~> 4.2'
-  spec.add_dependency 'phcnotifi', '~> 3.8'
+  spec.add_dependency 'phcadmin3', '~> 1.6', '>= 1.6.1'
+  spec.add_dependency 'phctitleseo', '~> 4.2', '>= 4.2.1'
+  spec.add_dependency 'phcnotifi', '~> 3.8', '>= 3.8.1'
   
   # UI & Frontend Dependencies
   spec.add_dependency 'jquery-rails', '~> 4.2', '>= 4.2.2'
@@ -44,12 +44,11 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'responders', '~> 2.3'
   
   # WYSIWYG Editor Dependencies
-  spec.add_dependency 'summernote-rails', '~> 0.8.2.0'
-  spec.add_dependency 'codemirror-rails', '~> 5.16'
+  spec.add_dependency 'tinymce-rails', '~> 4.5', '>= 4.5.3'
   
   # Upload & Media Dependencies
   spec.add_dependency 'carrierwave', '~> 1.0'
-  spec.add_dependency 'cloudinary', '~> 1.4'
+  spec.add_dependency 'cloudinary', '~> 1.5', '>= 1.5.2'
   
   # Extra Security Dependencies
   spec.add_dependency 'devise', '~> 4.2'
@@ -74,7 +73,7 @@ Gem::Specification.new do |spec|
   
   spec.add_development_dependency 'faker', '~> 1.7', '>= 1.7.3'
   spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
-  spec.add_development_dependency 'selenium-webdriver', '~> 3.1'
+  spec.add_development_dependency 'selenium-webdriver', '~> 3.2', '>= 3.2.1'
   
   # Extra Development & Testing Dependencies
   spec.add_development_dependency 'minitest', '~> 5.9', '>= 5.9.1'
@@ -83,4 +82,3 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'letter_opener', '~> 1.4', '>= 1.4.1'
 
 end
-
