@@ -29,7 +29,7 @@ PATH
       responders (~> 2.3)
       sass-rails (~> 5.0, >= 5.0.6)
       simple_token_authentication (~> 1.15)
-      tinymce-rails (~> 4.5, >= 4.5.3)
+      tinymce-rails (~> 4.5, >= 4.5.4)
 
 GEM
   remote: https://rubygems.org/
@@ -337,7 +337,7 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.6)
-    tinymce-rails (4.5.3)
+    tinymce-rails (4.5.4)
       railties (>= 3.1.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
