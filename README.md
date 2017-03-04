@@ -2,7 +2,7 @@
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise)
 [![Dependency Status](https://gemnasium.com/badges/github.com/PHCNetworks/multi-tenancy-devise.svg)](https://gemnasium.com/github.com/PHCNetworks/multi-tenancy-devise)
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/PHCNetworks/multi-tenancy-devise/blob/master/MIT-LICENSE)
   
 ### Mtdevise(3) (MultiTenancyDevise) Documentation  
 PHC mtdevise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Bootstrap Devise views included.  
