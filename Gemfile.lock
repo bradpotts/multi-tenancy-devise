@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (3.10.0)
+    mtdevise (3.10.1)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       carrierwave (~> 1.0)
       cloudinary (~> 1.5, >= 1.5.2)
@@ -21,7 +21,7 @@ PATH
       omniauth-twitter (~> 1.4)
       paper_trail (~> 6.0, >= 6.0.2)
       pg (~> 0.19.0)
-      phcadmin3 (~> 1.7)
+      phcadmin3 (~> 1.7, >= 1.7.1)
       phcnotifi (~> 3.9)
       phctitleseo (~> 4.3)
       rabl (~> 0.13.1)
@@ -212,7 +212,7 @@ GEM
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
     pg (0.19.0)
-    phcadmin3 (1.7.0)
+    phcadmin3 (1.7.1)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       country_select (~> 3.0)
       font-awesome-rails (~> 4.7, >= 4.7.0.1)
@@ -223,7 +223,7 @@ GEM
       pg (~> 0.19.0)
       rails (~> 5.0, >= 5.0.2)
       sass-rails (~> 5.0, >= 5.0.6)
-      tinymce-rails (~> 4.5, >= 4.5.3)
+      tinymce-rails (~> 4.5, >= 4.5.4)
     phcnotifi (3.9.0)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       country_select (~> 3.0)
