@@ -49,5 +49,3 @@ module Mtdevise
   
   end
 end
-
-

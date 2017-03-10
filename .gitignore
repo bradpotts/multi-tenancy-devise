@@ -9,3 +9,5 @@ spec/testapp/db/*.sqlite3
 spec/testapp/db/*.sqlite3-journal
 spec/testapp/log/*.log
 spec/testapp/tmp/
+
+.DS_Store

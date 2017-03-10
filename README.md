@@ -88,4 +88,3 @@ Once installed views can be generated and customized to your apps needs.
 [Managed by PHCNetworks](http://phcnetworks.net)  
   
 [![Circle CI](https://circleci.com/gh/PHCNetworks/multi-tenancy-devise/tree/master.svg?style=svg)](https://circleci.com/gh/PHCNetworks/multi-tenancy-devise/tree/master)
-
