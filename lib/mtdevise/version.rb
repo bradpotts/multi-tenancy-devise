@@ -1,3 +1,3 @@
 module Mtdevise
-  VERSION = '3.10.2'
+  VERSION = '4.0.0'
 end
