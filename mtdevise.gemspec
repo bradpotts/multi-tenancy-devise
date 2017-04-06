@@ -21,12 +21,7 @@ Gem::Specification.new do |spec|
   # Main Dependencies
   spec.add_dependency 'rails', '~> 5.0', '>= 5.0.2'
   spec.add_dependency 'pg', '~> 0.20.0'
-  spec.add_dependency 'paper_trail', '~> 6.0', '>= 6.0.2'
-
-  # PHCEngines & Theme Dependencies
-  spec.add_dependency 'phcadmin3', '~> 2.1'
-  spec.add_dependency 'phctitleseo', '~> 5.1'
-  spec.add_dependency 'phcnotifi', '~> 4.1'
+  spec.add_dependency 'paper_trail', '~> 7.0'
 
   # UI & Frontend Dependencies
   spec.add_dependency 'jquery-rails', '~> 4.3', '>= 4.3.1'
@@ -37,14 +32,19 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'country_select', '~> 3.0'
   spec.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
 
+  # WYSIWYG Editor Dependencies
+  spec.add_dependency 'tinymce-rails', '~> 4.5', '>= 4.5.6'
+
+  # PHCEngines & Theme Dependencies
+  spec.add_dependency 'phcadmin3', '~> 2.1', '>= 2.1.1'
+  spec.add_dependency 'phctitleseo', '~> 5.1', '>= 5.1.1'
+  spec.add_dependency 'phcnotifi', '~> 4.1', '>= 4.1.1'
+
   # API Dependencies
   spec.add_dependency 'oj', '~> 2.18', '>= 2.18.5'
   spec.add_dependency 'rabl', '~> 0.13.1'
   spec.add_dependency 'multi_json', '~> 1.12', '>= 1.12.1'
   spec.add_dependency 'responders', '~> 2.3'
-
-  # WYSIWYG Editor Dependencies
-  spec.add_dependency 'tinymce-rails', '~> 4.5', '>= 4.5.5'
 
   # Upload & Media Dependencies
   spec.add_dependency 'carrierwave', '~> 1.0'
