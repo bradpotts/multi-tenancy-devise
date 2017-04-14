@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   # Main Dependencies
   spec.add_dependency 'rails', '~> 5.0', '>= 5.0.2'
   spec.add_dependency 'pg', '~> 0.20.0'
-  spec.add_dependency 'paper_trail', '~> 7.0'
+  spec.add_dependency 'paper_trail', '~> 7.0', '>= 7.0.1'
 
   # UI & Frontend Dependencies
   spec.add_dependency 'jquery-rails', '~> 4.3', '>= 4.3.1'
@@ -36,9 +36,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'tinymce-rails', '~> 4.5', '>= 4.5.6'
 
   # PHCEngines & Theme Dependencies
-  spec.add_dependency 'phcadmin3', '~> 2.1', '>= 2.1.1'
-  spec.add_dependency 'phctitleseo', '~> 5.1', '>= 5.1.1'
-  spec.add_dependency 'phcnotifi', '~> 4.1', '>= 4.1.1'
+  spec.add_dependency 'phcadmin3', '~> 2.1', '>= 2.1.2'
+  spec.add_dependency 'phctitleseo', '~> 5.1', '>= 5.1.2'
+  spec.add_dependency 'phcnotifi', '~> 4.1', '>= 4.1.2'
 
   # API Dependencies
   spec.add_dependency 'oj', '~> 2.18', '>= 2.18.5'
@@ -48,7 +48,7 @@ Gem::Specification.new do |spec|
 
   # Upload & Media Dependencies
   spec.add_dependency 'carrierwave', '~> 1.0'
-  spec.add_dependency 'cloudinary', '~> 1.6'
+  spec.add_dependency 'cloudinary', '~> 1.7'
 
   # Extra Security Dependencies
   spec.add_dependency 'devise', '~> 4.2', '>= 4.2.1'
