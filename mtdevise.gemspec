@@ -33,12 +33,12 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
 
   # WYSIWYG Editor Dependencies
-  spec.add_dependency 'tinymce-rails', '~> 4.5', '>= 4.5.6'
+  spec.add_dependency 'tinymce-rails', '~> 4.5', '>= 4.5.7'
 
   # PHCEngines & Theme Dependencies
-  spec.add_dependency 'phcadmin3', '~> 2.1', '>= 2.1.4'
-  spec.add_dependency 'phctitleseo', '~> 5.1', '>= 5.1.4'
-  spec.add_dependency 'phcnotifi', '~> 4.1', '>= 4.1.4'
+  spec.add_dependency 'phcadmin3', '~> 2.1', '>= 2.1.5'
+  spec.add_dependency 'phctitleseo', '~> 5.1', '>= 5.1.5'
+  spec.add_dependency 'phcnotifi', '~> 4.1', '>= 4.1.5'
 
   # API Dependencies
   spec.add_dependency 'oj', '~> 3.0', '>= 3.0.2'
