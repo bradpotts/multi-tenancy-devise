@@ -73,7 +73,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'faker', '~> 1.7', '>= 1.7.3'
   spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
-  spec.add_development_dependency 'selenium-webdriver', '~> 3.3'
+  spec.add_development_dependency 'selenium-webdriver', '~> 3.4'
 
   # Extra Development & Testing Dependencies
   spec.add_development_dependency 'minitest', '~> 5.10', '>= 5.10.1'
