@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   # Main Dependencies
-  spec.add_dependency 'rails'
+  spec.add_dependency 'rails', '~> 5.1'
   spec.add_dependency 'pg'
   spec.add_dependency 'paper_trail'
 
@@ -77,22 +77,22 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'omniauth-github'
 
   # Development & Testing Dependencies
-  spec.add_development_dependency 'rspec-rails'
-  spec.add_development_dependency 'factory_girl_rails'
-  spec.add_development_dependency 'capybara'
-  spec.add_development_dependency 'byebug'
+  spec.add_development_dependency 'rspec-rails', '~> 3.5', '>= 3.5.2'
+  spec.add_development_dependency 'factory_girl_rails', '~> 4.8'
+  spec.add_development_dependency 'capybara', '~> 2.14'
+  spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.6'
 
-  spec.add_development_dependency 'sqlite3'
-  spec.add_development_dependency 'database_cleaner'
+  spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
+  spec.add_development_dependency 'database_cleaner', '~> 1.5', '>= 1.5.3'
 
-  spec.add_development_dependency 'faker'
-  spec.add_development_dependency 'launchy'
-  spec.add_development_dependency 'selenium-webdriver'
+  spec.add_development_dependency 'faker', '~> 1.7', '>= 1.7.3'
+  spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
+  spec.add_development_dependency 'selenium-webdriver', '~> 3.4'
 
   # Extra Development & Testing Dependencies
-  spec.add_development_dependency 'minitest'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'shoulda-matchers'
-  spec.add_development_dependency 'letter_opener'
+  spec.add_development_dependency 'minitest', '~> 5.10', '>= 5.10.1'
+  spec.add_development_dependency 'simplecov', '~> 0.14.1'
+  spec.add_development_dependency 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
+  spec.add_development_dependency 'letter_opener', '~> 1.4', '>= 1.4.1'
 
 end

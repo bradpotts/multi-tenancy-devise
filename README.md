@@ -4,7 +4,7 @@
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/PHCNetworks/multi-tenancy-devise/blob/master/MIT-LICENSE)
 
-### Mtdevise(3) (MultiTenancyDevise) Documentation  
+### Mtdevise(5)(MultiTenancyDevise) Documentation  
 PHC mtdevise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Bootstrap Devise views included.  
 
 * Multi-tenancy using subdomain scoping and account_id column.  
@@ -23,7 +23,7 @@ Generate a user.rb file in your mainapp and add the code below
 
 #### Step 2 - Add Mtdevise to your gemfile and run command  
 
-	gem 'mtdevise', '~> 3.10'
+	gem 'mtdevise', '~> 5.0'
 	bundle exec install
 
 #### Step 3 - Add and migrate mtdevise database tables
