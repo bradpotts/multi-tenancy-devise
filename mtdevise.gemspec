@@ -11,8 +11,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ["BradPotts"]
   spec.email       = ["info@phcnetworks.net"]
   spec.homepage    = "https://phcnetworks.net/"
-  spec.summary     = "Multi-Tenant Rails Engine Using Devise"
-  spec.description = "mtdevise(3) adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
+  spec.summary     = "Rails 5.1 Engine - MTDevise(5)"
+  spec.description = "MTDevise(5) Rails 5.1 engine that adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
   spec.license     = "MIT"
 
   #Load Engine Files
