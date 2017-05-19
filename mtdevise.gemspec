@@ -34,17 +34,17 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'webpacker', '~> 1.2'
 
   # WYSIWYG Editor Dependencies
-  spec.add_dependency 'tinymce-rails', '~> 4.6'
+  spec.add_dependency 'tinymce-rails', '~> 4.6', '>= 4.6.1'
 
   # API Dependencies
-  spec.add_dependency 'oj', '~> 3.0', '>= 3.0.7'
+  spec.add_dependency 'oj', '~> 3.0', '>= 3.0.9'
   spec.add_dependency 'rabl', '~> 0.13.1'
   spec.add_dependency 'multi_json', '~> 1.12', '>= 1.12.1'
   spec.add_dependency 'responders', '~> 2.4'
 
   # Upload & Media Dependencies
   spec.add_dependency 'carrierwave', '~> 1.1'
-  spec.add_dependency 'cloudinary', '~> 1.8'
+  spec.add_dependency 'cloudinary', '~> 1.8', '>= 1.8.1'
 
   # URL Dependencies
   spec.add_dependency 'friendly_id', '~> 5.2', '>= 5.2.1'
@@ -54,13 +54,13 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'phcnotifi', '~> 6.0'
 
   # PHCTheme Dependencies
-  spec.add_dependency 'phctheme1', '~> 14.0'
-  spec.add_dependency 'phctheme2', '~> 5.0'
+  spec.add_dependency 'phctheme1', '~> 14.0', '>= 14.0.1'
+  spec.add_dependency 'phctheme2', '~> 5.0', '>= 5.0.1'
 
   # PHCAdmin Dependencies
-  spec.add_dependency 'phcadmin1', '~> 10.0'
-  spec.add_dependency 'phcadmin2', '~> 8.0'
-  spec.add_dependency 'phcadmin3', '~> 5.0'
+  spec.add_dependency 'phcadmin1', '~> 10.0', '>= 10.0.1'
+  spec.add_dependency 'phcadmin2', '~> 8.0', '>= 8.0.1'
+  spec.add_dependency 'phcadmin3', '~> 5.0', '>= 5.0.1'
 
   # Security Dependencies
   spec.add_dependency 'devise', '~> 4.3'
