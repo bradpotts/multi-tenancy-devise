@@ -31,13 +31,13 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'sass-rails', '~> 5.0', '>= 5.0.6'
   spec.add_dependency 'country_select', '~> 3.0'
   spec.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
-  spec.add_dependency 'webpacker', '~> 1.2'
+  spec.add_dependency 'webpacker', '~> 2.0'
 
   # WYSIWYG Editor Dependencies
-  spec.add_dependency 'tinymce-rails', '~> 4.6', '>= 4.6.1'
+  spec.add_dependency 'tinymce-rails', '~> 4.6', '>= 4.6.2'
 
   # API Dependencies
-  spec.add_dependency 'oj', '~> 3.0', '>= 3.0.9'
+  spec.add_dependency 'oj', '~> 3.0', '>= 3.0.10'
   spec.add_dependency 'rabl', '~> 0.13.1'
   spec.add_dependency 'multi_json', '~> 1.12', '>= 1.12.1'
   spec.add_dependency 'responders', '~> 2.4'
@@ -50,17 +50,17 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'friendly_id', '~> 5.2', '>= 5.2.1'
 
   # PHCEngine Dependencies
-  spec.add_dependency 'phctitleseo', '~> 7.0'
-  spec.add_dependency 'phcnotifi', '~> 6.0'
+  spec.add_dependency 'phctitleseo', '~> 7.1'
+  spec.add_dependency 'phcnotifi', '~> 6.1'
 
   # PHCTheme Dependencies
-  spec.add_dependency 'phctheme1', '~> 14.0', '>= 14.0.1'
-  spec.add_dependency 'phctheme2', '~> 5.0', '>= 5.0.1'
+  spec.add_dependency 'phctheme1', '~> 14.2'
+  spec.add_dependency 'phctheme2', '~> 5.2'
 
   # PHCAdmin Dependencies
-  spec.add_dependency 'phcadmin1', '~> 10.0', '>= 10.0.1'
-  spec.add_dependency 'phcadmin2', '~> 8.0', '>= 8.0.1'
-  spec.add_dependency 'phcadmin3', '~> 5.0', '>= 5.0.1'
+  spec.add_dependency 'phcadmin1', '~> 10.2'
+  spec.add_dependency 'phcadmin2', '~> 8.2'
+  spec.add_dependency 'phcadmin3', '~> 5.2'
 
   # Security Dependencies
   spec.add_dependency 'devise', '~> 4.3'
@@ -71,8 +71,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'omniauth-facebook', '~> 4.0'
   spec.add_dependency 'omniauth-google-oauth2', '~> 0.4.1'
   spec.add_dependency 'omniauth-twitter', '~> 1.4'
-  spec.add_dependency 'omniauth-instagram', '~> 1.0', '>= 1.0.2'
-  spec.add_dependency 'omniauth-github', '~> 1.2', '>= 1.2.3'
+  spec.add_dependency 'omniauth-instagram', '~> 1.1'
+  spec.add_dependency 'omniauth-github', '~> 1.3'
 
   # Development & Testing Dependencies
   spec.add_development_dependency 'rspec-rails', '~> 3.6'
