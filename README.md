@@ -4,8 +4,8 @@
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/PHCNetworks/multi-tenancy-devise/blob/master/MIT-LICENSE)
 
-### MTDevise(5) Rails 5.1 Multi-Tenancy Engine Documentation  
-PHC MTDevise(5) Rails 5.1 engine adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Bootstrap Devise views included.  
+### MTDevise Rails 5.1 Multi-Tenancy Engine Documentation  
+PHC MTDevise Rails 5.1 engine adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Bootstrap Devise views included.  
 
 * Multi-tenancy using subdomain scoping and account_id column.  
 * Adds basecamp style logins to devise authentication gem.  
@@ -23,7 +23,7 @@ Generate a user.rb file in your mainapp and add the code below
 
 #### Step 2 - Add Mtdevise to your gemfile and run command  
 
-	gem 'mtdevise', '~> 5.0'
+	gem 'mtdevise', '~> 5.1', '>= 5.1.1'
 	bundle exec install
 
 #### Step 3 - Add and migrate mtdevise database tables

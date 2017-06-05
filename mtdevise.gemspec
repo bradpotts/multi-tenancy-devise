@@ -11,8 +11,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ["BradPotts"]
   spec.email       = ["info@phcnetworks.net"]
   spec.homepage    = "https://phcnetworks.net/"
-  spec.summary     = "Rails 5.1 Engine - MTDevise(5)"
-  spec.description = "MTDevise(5) Rails 5.1 engine that adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
+  spec.summary     = "Rails 5.1 Engine - MTDevise"
+  spec.description = "MTDevise Rails 5.1 engine that adds multi-tenant basecamp style user logins (multi-tenant authetication using devise) to your ruby on rails application."
   spec.license     = "MIT"
 
   #Load Engine Files
@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   # Main Dependencies
   spec.add_dependency 'rails', '~> 5.1', '>= 5.1.1'
   spec.add_dependency 'pg', '~> 0.20.0'
-  spec.add_dependency 'paper_trail', '~> 7.0', '>= 7.0.2'
+  spec.add_dependency 'paper_trail', '~> 7.0', '>= 7.0.3'
 
   # UI & Frontend Dependencies
   spec.add_dependency 'jquery-rails', '~> 4.3', '>= 4.3.1'
@@ -34,10 +34,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'webpacker', '~> 2.0'
 
   # WYSIWYG Editor Dependencies
-  spec.add_dependency 'tinymce-rails', '~> 4.6', '>= 4.6.2'
+  spec.add_dependency 'tinymce-rails', '~> 4.6', '>= 4.6.3'
 
   # API Dependencies
-  spec.add_dependency 'oj', '~> 3.0', '>= 3.0.10'
+  spec.add_dependency 'oj', '~> 3.0', '>= 3.0.11'
   spec.add_dependency 'rabl', '~> 0.13.1'
   spec.add_dependency 'multi_json', '~> 1.12', '>= 1.12.1'
   spec.add_dependency 'responders', '~> 2.4'
@@ -50,17 +50,17 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'friendly_id', '~> 5.2', '>= 5.2.1'
 
   # PHCEngine Dependencies
-  spec.add_dependency 'phctitleseo', '~> 7.1'
-  spec.add_dependency 'phcnotifi', '~> 6.1'
+  spec.add_dependency 'phctitleseo', '~> 7.1', '>= 7.1.1'
+  spec.add_dependency 'phcnotifi', '~> 6.1', '>= 6.1.1'
 
   # PHCTheme Dependencies
-  spec.add_dependency 'phctheme1', '~> 14.2'
-  spec.add_dependency 'phctheme2', '~> 5.2'
+  spec.add_dependency 'phctheme1', '~> 14.3'
+  spec.add_dependency 'phctheme2', '~> 5.3'
 
   # PHCAdmin Dependencies
-  spec.add_dependency 'phcadmin1', '~> 10.2'
-  spec.add_dependency 'phcadmin2', '~> 8.2'
-  spec.add_dependency 'phcadmin3', '~> 5.2'
+  spec.add_dependency 'phcadmin1', '~> 10.3'
+  spec.add_dependency 'phcadmin2', '~> 8.3'
+  spec.add_dependency 'phcadmin3', '~> 5.3'
 
   # Security Dependencies
   spec.add_dependency 'devise', '~> 4.3'
@@ -69,7 +69,7 @@ Gem::Specification.new do |spec|
 
   # Omniauth Authtication
   spec.add_dependency 'omniauth-facebook', '~> 4.0'
-  spec.add_dependency 'omniauth-google-oauth2', '~> 0.4.1'
+  spec.add_dependency 'omniauth-google-oauth2', '~> 0.5.0'
   spec.add_dependency 'omniauth-twitter', '~> 1.4'
   spec.add_dependency 'omniauth-instagram', '~> 1.1'
   spec.add_dependency 'omniauth-github', '~> 1.3'
