@@ -50,17 +50,17 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'friendly_id', '~> 5.2', '>= 5.2.1'
 
   # PHCEngine Dependencies
-  spec.add_dependency 'phctitleseo', '~> 7.1', '>= 7.1.1'
-  spec.add_dependency 'phcnotifi', '~> 6.1', '>= 6.1.1'
+  spec.add_dependency 'phctitleseo', '~> 7.1', '>= 7.1.2'
+  spec.add_dependency 'phcnotifi', '~> 6.1', '>= 6.1.2'
 
   # PHCTheme Dependencies
-  spec.add_dependency 'phctheme1', '~> 14.3'
-  spec.add_dependency 'phctheme2', '~> 5.3'
+  spec.add_dependency 'phctheme1', '~> 14.3', '>= 14.3.1'
+  spec.add_dependency 'phctheme2', '~> 5.3', '>= 5.3.1'
 
   # PHCAdmin Dependencies
-  spec.add_dependency 'phcadmin1', '~> 10.3'
-  spec.add_dependency 'phcadmin2', '~> 8.3'
-  spec.add_dependency 'phcadmin3', '~> 5.3'
+  spec.add_dependency 'phcadmin1', '~> 10.3', '>= 10.3.1'
+  spec.add_dependency 'phcadmin2', '~> 8.3', '>= 8.3.1'
+  spec.add_dependency 'phcadmin3', '~> 5.3', '>= 5.3.1'
 
   # Security Dependencies
   spec.add_dependency 'devise', '~> 4.3'
@@ -78,7 +78,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec-rails', '~> 3.6'
   spec.add_development_dependency 'factory_girl_rails', '~> 4.8'
   spec.add_development_dependency 'capybara', '~> 2.14'
-  spec.add_development_dependency 'nokogiri', '~> 1.7', '>= 1.7.2'
+  spec.add_development_dependency 'nokogiri', '~> 1.8'
 
   spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.6'
   spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
