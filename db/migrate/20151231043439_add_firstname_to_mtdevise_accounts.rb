@@ -1,4 +1,4 @@
-class AddFirstnameToMtdeviseAccounts < ActiveRecord::Migration[5.0]
+class AddFirstnameToMtdeviseAccounts < ActiveRecord::Migration[5.1]
   def change
 
     add_column :mtdevise_accounts, :firstname, :string

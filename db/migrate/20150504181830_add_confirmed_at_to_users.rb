@@ -1,4 +1,4 @@
-class AddConfirmedAtToUsers < ActiveRecord::Migration[5.0]
+class AddConfirmedAtToUsers < ActiveRecord::Migration[5.1]
   def change
 
     add_column :mtdevise_users, :confirmed_at, :timestamp

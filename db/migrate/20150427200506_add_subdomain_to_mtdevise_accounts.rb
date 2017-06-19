@@ -1,4 +1,4 @@
-class AddSubdomainToMtdeviseAccounts < ActiveRecord::Migration[5.0]
+class AddSubdomainToMtdeviseAccounts < ActiveRecord::Migration[5.1]
   def change
 
     add_column :mtdevise_accounts, :subdomain, :string

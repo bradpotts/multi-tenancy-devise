@@ -1,4 +1,4 @@
-class AddAuthenticationTokenToMtdeviseUsers < ActiveRecord::Migration[5.0]
+class AddAuthenticationTokenToMtdeviseUsers < ActiveRecord::Migration[5.1]
   def change
 
     add_column :mtdevise_users, :authentication_token, :string
