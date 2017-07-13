@@ -50,17 +50,17 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'friendly_id', '~> 5.2', '>= 5.2.1'
 
   # PHCEngine Dependencies
-  spec.add_dependency 'phctitleseo', '~> 7.3', '>= 7.3.1'
-  spec.add_dependency 'phcnotifi', '~> 6.3', '>= 6.3.1'
+  spec.add_dependency 'phctitleseo', '~> 7.3', '>= 7.3.2'
+  spec.add_dependency 'phcnotifi', '~> 6.3', '>= 6.3.2'
 
   # PHCTheme Dependencies
-  spec.add_dependency 'phctheme1', '~> 14.5', '>= 14.5.1'
-  spec.add_dependency 'phctheme2', '~> 5.7', '>= 5.7.1'
+  spec.add_dependency 'phctheme1', '~> 14.5', '>= 14.5.2'
+  spec.add_dependency 'phctheme2', '~> 5.7', '>= 5.7.2'
 
   # PHCAdmin Dependencies
-  spec.add_dependency 'phcadmin1', '~> 10.5', '>= 10.5.1'
-  spec.add_dependency 'phcadmin2', '~> 8.5', '>= 8.5.1'
-  spec.add_dependency 'phcadmin3', '~> 5.5', '>= 5.5.1'
+  spec.add_dependency 'phcadmin1', '~> 10.5', '>= 10.5.2'
+  spec.add_dependency 'phcadmin2', '~> 8.5', '>= 8.5.2'
+  spec.add_dependency 'phcadmin3', '~> 5.5', '>= 5.5.2'
 
   # Security Dependencies
   spec.add_dependency 'devise', '~> 4.3'
@@ -84,9 +84,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
   spec.add_development_dependency 'database_cleaner', '~> 1.6', '>= 1.6.1'
 
-  spec.add_development_dependency 'faker', '~> 1.8', '>= 1.8.3'
+  spec.add_development_dependency 'faker', '~> 1.8', '>= 1.8.4'
   spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
-  spec.add_development_dependency 'selenium-webdriver', '~> 3.4', '>= 3.4.3'
+  spec.add_development_dependency 'selenium-webdriver', '~> 3.4', '>= 3.4.4'
 
   # Extra Development & Testing Dependencies
   spec.add_development_dependency 'minitest', '~> 5.10', '>= 5.10.2'
