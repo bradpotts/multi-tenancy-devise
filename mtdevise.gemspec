@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
   spec.add_dependency 'sass-rails', '~> 5.0', '>= 5.0.6'
   spec.add_dependency 'webpacker', '~> 2.0'
-  spec.add_dependency 'country_select', '~> 3.0'
+  spec.add_dependency 'country_select', '~> 3.1'
   spec.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
 
   # WYSIWYG Editor Dependencies
@@ -54,13 +54,13 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'phcnotifi', '~> 6.3', '>= 6.3.2'
 
   # PHCTheme Dependencies
-  spec.add_dependency 'phctheme1', '~> 14.5', '>= 14.5.2'
-  spec.add_dependency 'phctheme2', '~> 5.7', '>= 5.7.2'
+  spec.add_dependency 'phctheme1', '~> 14.6'
+  spec.add_dependency 'phctheme2', '~> 5.8'
 
   # PHCAdmin Dependencies
-  spec.add_dependency 'phcadmin1', '~> 10.5', '>= 10.5.2'
-  spec.add_dependency 'phcadmin2', '~> 8.5', '>= 8.5.2'
-  spec.add_dependency 'phcadmin3', '~> 5.5', '>= 5.5.2'
+  spec.add_dependency 'phcadmin1', '~> 10.6'
+  spec.add_dependency 'phcadmin2', '~> 8.6'
+  spec.add_dependency 'phcadmin3', '~> 5.5', '>= 5.5.3'
 
   # Security Dependencies
   spec.add_dependency 'devise', '~> 4.3'
@@ -69,7 +69,7 @@ Gem::Specification.new do |spec|
 
   # Omniauth Authtication
   spec.add_dependency 'omniauth-facebook', '~> 4.0'
-  spec.add_dependency 'omniauth-google-oauth2', '~> 0.5.0'
+  spec.add_dependency 'omniauth-google-oauth2', '~> 0.5.1'
   spec.add_dependency 'omniauth-twitter', '~> 1.4'
   spec.add_dependency 'omniauth-instagram', '~> 1.1'
   spec.add_dependency 'omniauth-github', '~> 1.3'
@@ -89,7 +89,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'selenium-webdriver', '~> 3.4', '>= 3.4.4'
 
   # Extra Development & Testing Dependencies
-  spec.add_development_dependency 'minitest', '~> 5.10', '>= 5.10.2'
+  spec.add_development_dependency 'minitest', '~> 5.10', '>= 5.10.3'
   spec.add_development_dependency 'simplecov', '~> 0.14.1'
   spec.add_development_dependency 'shoulda-matchers', '~> 3.1', '>= 3.1.2'
   spec.add_development_dependency 'letter_opener', '~> 1.4', '>= 1.4.1'
