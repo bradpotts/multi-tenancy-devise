@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   # Main Dependencies
-  spec.add_dependency 'paper_trail', '~> 7.1'
+  spec.add_dependency 'paper_trail', '~> 7.1', '>= 7.1.1'
   spec.add_dependency 'pg', '~> 0.21.0'
   spec.add_dependency 'rails', '~> 5.1', '>= 5.1.3'
 
@@ -40,7 +40,7 @@ Gem::Specification.new do |spec|
 
   # API Dependencies
   spec.add_dependency 'multi_json', '~> 1.12', '>= 1.12.1'
-  spec.add_dependency 'oj', '~> 3.3', '>= 3.3.4'
+  spec.add_dependency 'oj', '~> 3.3', '>= 3.3.5'
   spec.add_dependency 'rabl', '~> 0.13.1'
   spec.add_dependency 'responders', '~> 2.4'
 
@@ -52,17 +52,17 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'friendly_id', '~> 5.2', '>= 5.2.1'
 
   # PHCEngine Dependencies
-  spec.add_dependency 'phcnotifi', '~> 7.0'
-  spec.add_dependency 'phctitleseo', '~> 8.0'
+  spec.add_dependency 'phcnotifi', '~> 7.0', '>= 7.0.1'
+  spec.add_dependency 'phctitleseo', '~> 8.0', '>= 8.0.1'
 
   # PHCTheme Dependencies
-  spec.add_dependency 'phctheme1', '~> 15.0'
-  spec.add_dependency 'phctheme2', '~> 6.0'
+  spec.add_dependency 'phctheme1', '~> 16.0'
+  spec.add_dependency 'phctheme2', '~> 6.0', '>= 6.0.1'
 
   # PHCAdmin Dependencies
-  spec.add_dependency 'phcadmin1', '~> 11.0'
-  spec.add_dependency 'phcadmin2', '~> 9.0'
-  spec.add_dependency 'phcadmin3', '~> 6.0'
+  spec.add_dependency 'phcadmin1', '~> 11.0', '>= 11.0.1'
+  spec.add_dependency 'phcadmin2', '~> 9.0', '>= 9.0.1'
+  spec.add_dependency 'phcadmin3', '~> 6.0', '>= 6.0.1'
 
   # Security Dependencies
   spec.add_dependency 'devise', '~> 4.3'
@@ -76,7 +76,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'omniauth-twitter', '~> 1.4'
 
   # Development & Testing Dependencies
-  spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.6'
+  spec.add_development_dependency 'byebug', '~> 9.1'
   spec.add_development_dependency 'capybara', '~> 2.15', '>= 2.15.1'
   spec.add_development_dependency 'database_cleaner', '~> 1.6', '>= 1.6.1'
 
@@ -84,8 +84,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'faker', '~> 1.8', '>= 1.8.4'
   spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
 
-  spec.add_development_dependency 'rspec-rails', '~> 3.6'
-  spec.add_development_dependency 'selenium-webdriver', '~> 3.4', '>= 3.4.4'
+  spec.add_development_dependency 'rspec-rails', '~> 3.6', '>= 3.6.1'
+  spec.add_development_dependency 'selenium-webdriver', '~> 3.5', '>= 3.5.1'
   spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
 
   spec.add_development_dependency 'nokogiri', '~> 1.8'
@@ -94,6 +94,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'minitest', '~> 5.10', '>= 5.10.3'
   spec.add_development_dependency 'letter_opener', '~> 1.4', '>= 1.4.1'
   spec.add_development_dependency 'shoulda-matchers', '~> 3.1', '>= 3.1.2'
-  spec.add_development_dependency 'simplecov', '~> 0.14.1'
+  spec.add_development_dependency 'simplecov', '~> 0.15.0'
 
 end
