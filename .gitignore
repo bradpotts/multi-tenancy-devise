@@ -10,4 +10,6 @@ spec/testapp/db/*.sqlite3-journal
 spec/testapp/log/*.log
 spec/testapp/tmp/
 
+node_modules/
+
 .DS_Store
