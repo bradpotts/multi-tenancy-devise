@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   # Main Dependencies
-  spec.add_dependency 'paper_trail', '~> 8.0'
+  spec.add_dependency 'paper_trail', '~> 8.0', '>= 8.0.1'
   spec.add_dependency 'pg', '~> 0.21.0'
   spec.add_dependency 'rails', '~> 5.1', '>= 5.1.4'
 
@@ -40,7 +40,7 @@ Gem::Specification.new do |spec|
 
   # API Dependencies
   spec.add_dependency 'multi_json', '~> 1.12', '>= 1.12.2'
-  spec.add_dependency 'oj', '~> 3.3', '>= 3.3.8'
+  spec.add_dependency 'oj', '~> 3.3', '>= 3.3.9'
   spec.add_dependency 'rabl', '~> 0.13.1'
   spec.add_dependency 'responders', '~> 2.4'
 
@@ -52,17 +52,17 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'friendly_id', '~> 5.2', '>= 5.2.3'
 
   # PHCEngine Dependencies
-  spec.add_dependency 'phcnotifi', '~> 10.0'
-  spec.add_dependency 'phctitleseo', '~> 11.0'
+  spec.add_dependency 'phcnotifi', '~> 11.0'
+  spec.add_dependency 'phctitleseo', '~> 12.0'
 
   # PHCTheme Dependencies
-  spec.add_dependency 'phctheme1', '~> 19.0'
-  spec.add_dependency 'phctheme2', '~> 9.0'
+  spec.add_dependency 'phctheme1', '~> 20.0'
+  spec.add_dependency 'phctheme2', '~> 10.0'
 
   # PHCAdmin Dependencies
-  spec.add_dependency 'phcadmin1', '~> 14.0'
-  spec.add_dependency 'phcadmin2', '~> 12.0'
-  spec.add_dependency 'phcadmin3', '~> 9.0'
+  spec.add_dependency 'phcadmin1', '~> 15.0'
+  spec.add_dependency 'phcadmin2', '~> 13.0'
+  spec.add_dependency 'phcadmin3', '~> 10.0'
 
   # Security Dependencies
   spec.add_dependency 'devise', '~> 4.3'
@@ -78,14 +78,14 @@ Gem::Specification.new do |spec|
   # Development & Testing Dependencies
   spec.add_development_dependency 'byebug', '~> 9.1'
   spec.add_development_dependency 'capybara', '~> 2.15', '>= 2.15.4'
-  spec.add_development_dependency 'database_cleaner', '~> 1.6', '>= 1.6.1'
+  spec.add_development_dependency 'database_cleaner', '~> 1.6', '>= 1.6.2'
 
   spec.add_development_dependency 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   spec.add_development_dependency 'faker', '~> 1.8', '>= 1.8.4'
   spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
 
   spec.add_development_dependency 'rspec-rails', '~> 3.7', '>= 3.7.1'
-  spec.add_development_dependency 'selenium-webdriver', '~> 3.6'
+  spec.add_development_dependency 'selenium-webdriver', '~> 3.7'
   spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
 
   spec.add_development_dependency 'nokogiri', '~> 1.8', '>= 1.8.1'
