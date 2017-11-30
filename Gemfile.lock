@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtdevise (12.0.0)
+    mtdevise (12.0.1)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       carrierwave (~> 1.2, >= 1.2.1)
       cloudinary (~> 1.8, >= 1.8.2)
@@ -21,7 +21,7 @@ PATH
       omniauth-twitter (~> 1.4)
       paper_trail (~> 8.0, >= 8.0.1)
       pg (~> 0.21.0)
-      phcadmin1 (~> 16.0)
+      phcadmin1 (~> 16.0, >= 16.0.1)
       phcadmin2 (~> 14.0)
       phcadmin3 (~> 11.0)
       phcnotifi (~> 12.0)
