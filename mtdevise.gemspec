@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   # Main Dependencies
-  spec.add_dependency 'paper_trail', '~> 8.0', '>= 8.0.1'
+  spec.add_dependency 'paper_trail', '~> 8.1'
   spec.add_dependency 'pg', '~> 0.21.0'
   spec.add_dependency 'rails', '~> 5.1', '>= 5.1.4'
 
@@ -52,17 +52,17 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'friendly_id', '~> 5.2', '>= 5.2.3'
 
   # PHCEngine Dependencies
-  spec.add_dependency 'phcnotifi', '~> 12.0'
-  spec.add_dependency 'phctitleseo', '~> 13.0'
+  spec.add_dependency 'phcnotifi', '~> 13.0'
+  spec.add_dependency 'phctitleseo', '~> 14.0'
 
   # PHCTheme Dependencies
-  spec.add_dependency 'phctheme1', '~> 21.0'
-  spec.add_dependency 'phctheme2', '~> 11.0'
+  spec.add_dependency 'phctheme1', '~> 22.0'
+  spec.add_dependency 'phctheme2', '~> 12.0'
 
   # PHCAdmin Dependencies
-  spec.add_dependency 'phcadmin1', '~> 16.0', '>= 16.0.1'
-  spec.add_dependency 'phcadmin2', '~> 14.0'
-  spec.add_dependency 'phcadmin3', '~> 11.0'
+  spec.add_dependency 'phcadmin1', '~> 17.0'
+  spec.add_dependency 'phcadmin2', '~> 15.0'
+  spec.add_dependency 'phcadmin3', '~> 12.0'
 
   # Security Dependencies
   spec.add_dependency 'devise', '~> 4.3'
@@ -85,7 +85,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
 
   spec.add_development_dependency 'rspec-rails', '~> 3.7', '>= 3.7.2'
-  spec.add_development_dependency 'selenium-webdriver', '~> 3.7'
+  spec.add_development_dependency 'selenium-webdriver', '~> 3.8'
   spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
 
   spec.add_development_dependency 'nokogiri', '~> 1.8', '>= 1.8.1'
