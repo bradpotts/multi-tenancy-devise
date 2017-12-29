@@ -1,6 +1,5 @@
 [![security](https://hakiri.io/github/PHCNetworks/multi-tenancy-devise/master.svg)](https://hakiri.io/github/PHCNetworks/multi-tenancy-devise/master)
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-devise)
-[![Dependency Status](https://gemnasium.com/badges/github.com/PHCNetworks/multi-tenancy-devise.svg)](https://gemnasium.com/github.com/PHCNetworks/multi-tenancy-devise)
 [![Gem Version](https://badge.fury.io/rb/mtdevise.svg)](https://badge.fury.io/rb/mtdevise)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/PHCNetworks/multi-tenancy-devise/blob/master/MIT-LICENSE)
 
@@ -23,7 +22,7 @@ Generate a user.rb file in your mainapp and add the code below
 
 #### Step 2 - Add Mtdevise to your gemfile and run command  
 
-	gem 'mtdevise', '~> 13.0'
+	gem 'mtdevise', '~> 14.0'
 	bundle exec install
 
 #### Step 3 - Add and migrate mtdevise database tables
