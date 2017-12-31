@@ -78,7 +78,7 @@ Once installed views can be generated and customized to your apps needs.
 	rake assets:clobber
 	rake assets:precompile
 
-#### Having troubles ?  
+#### Additional Documentation  
 [Multi-Tenant Starter App](https://github.com/PHCNetworks/multi-tenancy-starter-devise)  
 [Documentation (Github Wiki)](https://github.com/PHCNetworks/multi-tenancy-devise/wiki)  
 [Environment Variables](https://github.com/PHCNetworks/multi-tenancy-devise/wiki/ENV---Environment-Variables)  
