@@ -47,7 +47,7 @@ Gem::Specification.new do |spec|
 
   # API Dependencies
   spec.add_dependency 'multi_json', '~> 1.13'
-  spec.add_dependency 'oj', '~> 3.3'
+  spec.add_dependency 'oj', '~> 3.4'
   spec.add_dependency 'rabl', '~> 0.13.1'
   spec.add_dependency 'responders', '~> 2.4'
 
@@ -72,7 +72,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'omniauth-twitter', '~> 1.4'
 
   # Development & Testing Dependencies
-  spec.add_development_dependency 'byebug', '~> 9.1'
+  spec.add_development_dependency 'byebug', '~> 10.0'
   spec.add_development_dependency 'capybara', '~> 2.17'
   spec.add_development_dependency 'database_cleaner', '~> 1.6'
 
